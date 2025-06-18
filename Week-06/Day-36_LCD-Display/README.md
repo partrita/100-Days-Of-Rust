@@ -1,24 +1,22 @@
-# LCD Display
+# LCD 디스플레이
 
-A friend of yours has just bought a new computer. Before this, the most powerful machine he ever used was a pocket calculator. He is a little disappointed because he liked the LCD display of his calculator more than the screen on his new computer! To make him happy, write a program that prints numbers in LCD display style.
+친구가 새 컴퓨터를 샀습니다. 이전에는 그가 사용했던 가장 강력한 기계는 주머니 계산기였습니다. 그는 새 컴퓨터 화면보다 계산기의 LCD 디스플레이를 더 좋아했기 때문에 약간 실망했습니다! 그를 기쁘게 하기 위해 LCD 디스플레이 스타일로 숫자를 인쇄하는 프로그램을 작성하십시오.
 
-## Objective
-Write a **toLCD** function which returns a LCD display representation as a string.
+## 목표
+LCD 디스플레이 표현을 문자열로 반환하는 **toLCD** 함수를 작성하십시오.
 
-The function has one input parameter:
-- **n**: integer to be converted to LCD display
-- **s**: size as number of signs
+이 함수에는 다음과 같은 입력 매개변수가 있습니다.
+- **n**: LCD 디스플레이로 변환할 정수
+- **s**: 기호 수로서의 크기
 
-The function returns:
--  LCD display representation as a string
+이 함수는 다음을 반환합니다.
+-  LCD 디스플레이 표현을 문자열로 반환합니다.
 
-Print the number specified in the input in an LCD display-style using s “-” signs for the horizontal segments ands “|” signs for the vertical ones. Each digit occupies exactly s + 2 columns and 2s + 3 rows. 
+가로 세그먼트에는 s개의 "–" 기호를 사용하고 세로 세그먼트에는 s개의 "|" 기호를 사용하여 입력에 지정된 숫자를 LCD 디스플레이 스타일로 인쇄합니다. 각 숫자는 정확히 s + 2개의 열과 2s + 3개의 행을 차지합니다.
 
-Be sure to fill all the white space occupied by the digits with blanks, including the last digit. There must be exactly one column of blanks between two digits.
+마지막 숫자를 포함하여 숫자가 차지하는 모든 공백을 공백으로 채우십시오. 두 숫자 사이에는 정확히 하나의 공백 열이 있어야 합니다.
 
-### Examples for input (n=12345, s=2) and (n=67890, s=3):
+### 입력 예시 (n=12345, s=2) 및 (n=67890, s=3):
 <p align="left">
   <img src="../../assets/lcd.png" alt="LCD">
 </p>
-
-

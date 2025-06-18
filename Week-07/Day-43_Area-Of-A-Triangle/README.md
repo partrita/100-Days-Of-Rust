@@ -1,8 +1,8 @@
-# Area of a Triangle
+# 삼각형의 넓이
 
-Write a function that takes the base and height of a triangle and return its area.
+삼각형의 밑변과 높이를 입력받아 넓이를 반환하는 함수를 작성하십시오.
 
-## Example
+## 예시
 ```text
 triArea(3, 2) ➞ 3
 triArea(5, 4) ➞ 10

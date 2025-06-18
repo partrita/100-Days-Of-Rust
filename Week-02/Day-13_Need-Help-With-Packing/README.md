@@ -1,32 +1,32 @@
-## Need Help With Your Packing?
+## 짐 싸기 도와줄래요?
 
-You arrive at the supermarket checkout and you've only got a limited number of shopping bags with you. Miser that you are, you hate buying extra bags when you've got dozens at home that you forgot to bring with you!! Can you fit all your shopping into the bags you've got with you?
+슈퍼마켓 계산대에 도착했는데 쇼핑백이 몇 개 없습니다. 구두쇠인 당신은 집에 수십 개의 가방을 두고 와서 추가 가방을 사는 것을 싫어합니다!! 가진 가방에 모든 쇼핑 물품을 담을 수 있을까요?
 
-Each bag can carry a maximum of 10kg and each item you've purchased weighs between 1 and 10kg.
+각 가방은 최대 10kg까지 담을 수 있으며 구매한 각 품목의 무게는 1~10kg입니다.
 
-Create a function that takes two parameters, a list of the weights of each item and the number of bags you are carrying. Return `True` if there are enough bags to contain all the items, otherwise `False`.
+각 품목의 무게 목록과 가지고 있는 가방 수를 두 개의 매개변수로 사용하는 함수를 만드세요. 모든 품목을 담을 수 있는 가방이 충분하면 `True`를, 그렇지 않으면 `False`를 반환합니다.
 
-### Example
+### 예시
 
 ```text
 CanFit(new int[] { 2, 1, 2, 5, 4, 3, 6, 1, 1, 9, 3, 2 }, 4) ➞ True
-// Bag 1 = [2, 1, 2, 5] (10kg)
-// Bag 2 = [4, 3, 3] (10kg)
-// Bag 3 = [6, 2, 1, 1] (10kg)
-// Bag 4 = [9] (9kg)
+// 가방 1 = [2, 1, 2, 5] (10kg)
+// 가방 2 = [4, 3, 3] (10kg)
+// 가방 3 = [6, 2, 1, 1] (10kg)
+// 가방 4 = [9] (9kg)
 
-CanFit(new int[] { 2, 7, 1, 3, 3, 4, 7, 4, 1, 8, 2 ], 4) ➞ False
-// Bag 1 = [2, 8] (10kg)
-// Bag 2 = [3, 7] (10kg)
-// Bag 3 = [2, 4, 4] (10kg)
-// Bag 4 = [7, 3] (10kg)
-// two 1kg items left over!
+CanFit(new int[] { 2, 7, 1, 3, 3, 4, 7, 4, 1, 8, 2 }, 4) ➞ False
+// 가방 1 = [2, 8] (10kg)
+// 가방 2 = [3, 7] (10kg)
+// 가방 3 = [2, 4, 4] (10kg)
+// 가방 4 = [7, 3] (10kg)
+// 1kg짜리 물건 두 개가 남았습니다!
 ```
 
 ---
 
-### Notes
+### 참고
 
-- All weights will be integers between 1 and 10kg inclusive
-- Items can be packed in any order
-- There may be more than one way to fit all the items in the available bags
+- 모든 무게는 1에서 10kg 사이의 정수입니다.
+- 물품은 어떤 순서로든 포장할 수 있습니다.
+- 사용 가능한 가방에 모든 물품을 담는 방법이 두 가지 이상 있을 수 있습니다.

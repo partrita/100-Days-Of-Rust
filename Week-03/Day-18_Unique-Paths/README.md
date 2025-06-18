@@ -1,53 +1,53 @@
-## Unique Paths
+## 고유한 경로
 
-A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+로봇이 m x n 그리드의 왼쪽 상단 모서리에 있습니다(아래 다이어그램에서 '시작'으로 표시됨).
 
-The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+로봇은 언제든지 아래 또는 오른쪽으로만 이동할 수 있습니다. 로봇은 그리드의 오른쪽 하단 모서리(아래 다이어그램에서 '종료'로 표시됨)에 도달하려고 합니다.
 
-How many possible unique paths are there?
+가능한 고유한 경로는 몇 개일까요?
 
-### Examples
+### 예시
 
-**Example 1**
+**예시 1**
 
 <p align="left">
-  <img src="../../assets/robot_maze.png" alt="Robot Maze">
+  <img src="../../assets/robot_maze.png" alt="로봇 미로">
 </p>
 
 ```text
-Input: m = 3, n = 7
-Output: 28
+입력: m = 3, n = 7
+출력: 28
 ```
 
-**Example 2**
+**예시 2**
 
 ```text
-Input: m = 3, n = 2
-Output: 3
-Explanation:
-From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
-1. Right -> Down -> Down
-2. Down -> Down -> Right
-3. Down -> Right -> Down
+입력: m = 3, n = 2
+출력: 3
+설명:
+왼쪽 상단 모서리에서 오른쪽 하단 모서리에 도달하는 방법은 총 3가지입니다:
+1. 오른쪽 -> 아래 -> 아래
+2. 아래 -> 아래 -> 오른쪽
+3. 아래 -> 오른쪽 -> 아래
 ```
 
-**Example 3**
+**예시 3**
 
 ```text
-Input: m = 7, n = 3
-Output: 28
+입력: m = 7, n = 3
+출력: 28
 ```
 
-**Example 4**
+**예시 4**
 
 ```text
-Input: m = 3, n = 3
-Output: 6
+입력: m = 3, n = 3
+출력: 6
 ```
 
 ---
 
-### Constraints
+### 제약 조건
 
 - `1 <= m, n <= 100`
-- It's guaranteed that the answer will be less than or equal to `2 * 109`.
+- 답은 `2 * 109` 이하임이 보장됩니다.

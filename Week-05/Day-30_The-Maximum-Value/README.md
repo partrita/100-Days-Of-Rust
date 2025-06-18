@@ -1,16 +1,16 @@
-# The Maximum Value
+# 최댓값
 
-Write a function that returns the maximum possible value obtained by inserting any single digit inside the decimal representation of integer N.
+정수 N의 10진수 표현 안에 단일 숫자를 삽입하여 얻을 수 있는 최댓값을 반환하는 함수를 작성하십시오.
 
-## Details
+## 세부 정보
 
-Write a function that returns the maximum possible value obtained by inserting one single digit inside the decimal representation of integer N.
+정수 N의 10진수 표현 안에 단일 숫자를 삽입하여 얻을 수 있는 최댓값을 반환하는 함수를 작성하십시오.
 
-_Example_
+_예시_
 
 ```text
-Given N = 276, Digit = 3, function should return 3276
-Given N = -999, Digit = 4, function should return -4999
-Given N = 0, Digit = 3, function should return 30
-Given N = 860, Digit = 7, function should return 8760
+N = 276, 숫자 = 3이 주어지면 함수는 3276을 반환해야 합니다.
+N = -999, 숫자 = 4가 주어지면 함수는 -4999를 반환해야 합니다.
+N = 0, 숫자 = 3이 주어지면 함수는 30을 반환해야 합니다.
+N = 860, 숫자 = 7이 주어지면 함수는 8760을 반환해야 합니다.
 ```

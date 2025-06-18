@@ -1,8 +1,8 @@
-# Tic Tac Toe
+# 틱택토
 
-Create a function that takes an array of char inputs from a _Tic Tac Toe_ game. Inputs will be taken from player1 as **"X"**, player2 as **"O"**, and empty spaces as **"#"**. The program will return the winner or tie results.
+_틱택토_ 게임에서 문자 입력 배열을 받는 함수를 만드십시오. 입력은 플레이어 1로부터 **"X"**로, 플레이어 2로부터 **"O"**로, 빈칸은 **"#"**으로 받습니다. 프로그램은 승자 또는 무승부 결과를 반환합니다.
 
-## Examples
+## 예시
 ```text
 ticTacToe([
   ["X", "O", "O"],

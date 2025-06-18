@@ -1,31 +1,31 @@
-# Asteroid Collision
+# 소행성 충돌
 
-You are given an array **asteroids** of integers representing asteroids in a row.
+한 줄에 있는 소행성을 나타내는 정수 배열 **asteroids**가 주어집니다.
 
-For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.
+각 소행성에 대해 절댓값은 크기를 나타내고 부호는 방향을 나타냅니다(양수는 오른쪽, 음수는 왼쪽). 각 소행성은 같은 속도로 움직입니다.
 
-Find out the state of the **asteroids** after all collisions. If two **asteroids** meet, the smaller one will explode. If both are the same size, both will explode. Two asteroids moving in the same direction will never meet.
+모든 충돌 후 **asteroids**의 상태를 확인하십시오. 두 **asteroids**가 만나면 작은 것이 폭발합니다. 둘 다 크기가 같으면 둘 다 폭발합니다. 같은 방향으로 움직이는 두 소행성은 절대 만나지 않습니다.
 
-## Examples
+## 예시
 ```text
-Input: asteroids = [5,10,-5]
-Output: [5,10]
-Explanation: The 10 and -5 collide resulting in 10.  The 5 and 10 never collide.
+입력: asteroids = [5,10,-5]
+출력: [5,10]
+설명: 10과 -5가 충돌하여 10이 됩니다. 5와 10은 절대 충돌하지 않습니다.
 
-Input: asteroids = [8,-8]
-Output: []
-Explanation: The 8 and -8 collide exploding each other.
+입력: asteroids = [8,-8]
+출력: []
+설명: 8과 -8이 충돌하여 서로 폭발합니다.
 
-Input: asteroids = [10,2,-5]
-Output: [10]
-Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
+입력: asteroids = [10,2,-5]
+출력: [10]
+설명: 2와 -5가 충돌하여 -5가 됩니다. 10과 -5가 충돌하여 10이 됩니다.
 
-Input: asteroids = [-2,-1,1,2]
-Output: [-2,-1,1,2]
-Explanation: The -2 and -1 are moving left, while the 1 and 2 are moving right. Asteroids moving the same direction never meet, so no asteroids will meet each other.
+입력: asteroids = [-2,-1,1,2]
+출력: [-2,-1,1,2]
+설명: -2와 -1은 왼쪽으로 움직이고 1과 2는 오른쪽으로 움직입니다. 같은 방향으로 움직이는 소행성은 절대 만나지 않으므로 어떤 소행성도 서로 만나지 않습니다.
 ```
 
-## Constraints
+## 제약 조건
 - 1 <= asteroids <= 104
 - -1000 <= asteroids[i] <= 1000
 - asteroids[i] != 0

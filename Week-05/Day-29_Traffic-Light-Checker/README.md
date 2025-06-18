@@ -1,42 +1,42 @@
-## Traffic Light Checker
+## 신호등 검사기
 
-A three-color traffic light must switch lights in the following order: red, green, yellow, red.
+3색 신호등은 빨간색, 녹색, 노란색, 빨간색 순서로 불이 바뀌어야 합니다.
 
-To indicate when crossing slowly without a stop is permitted, the yellow signal may be flashed. To indicate when crossing immediately after a full stop is permitted, the red signal may be flashed.
+정지 없이 천천히 횡단하는 것이 허용될 때를 나타내기 위해 노란색 신호가 깜박일 수 있습니다. 완전히 정지한 후 즉시 횡단하는 것이 허용될 때를 나타내기 위해 빨간색 신호가 깜박일 수 있습니다.
 
-Either flash sequence may only be started after the red light is lit and must be followed with a red. All lights are initially off. All sequences must begin a red light. Lighting any light causes all other lights to turn off. No color may be repeated: e.g., red, red is not allowed.
+두 깜박임 시퀀스 모두 빨간색 불이 켜진 후에만 시작할 수 있으며 빨간색 불이 뒤따라야 합니다. 모든 불은 처음에 꺼져 있습니다. 모든 시퀀스는 빨간색 불로 시작해야 합니다. 어떤 불이든 켜지면 다른 모든 불은 꺼집니다. 어떤 색도 반복될 수 없습니다. 예를 들어, 빨간색, 빨간색은 허용되지 않습니다.
 
-## The problem
+## 문제
 
-Write a program that checks a sequence of light codes and determines if that sequence follows or violates the traffic light rules.
+일련의 조명 코드를 확인하고 해당 시퀀스가 신호등 규칙을 따르는지 또는 위반하는지 확인하는 프로그램을 작성하십시오.
 
-Input Read from STDIN a sequence of the follow codes: R (red), Y (yellow), G (Green), P (Pause - flash red), C (Caution - flash yellow), and X (off). Each code must be separated with a space. The entire sequence is submitted by an end-of-line (e.g., pressing the Enter key.) A sequence must have no more than 15 codes in total.
+입력 STDIN에서 다음 코드 시퀀스를 읽습니다: R (빨간색), Y (노란색), G (녹색), P (일시 중지 - 빨간색 깜박임), C (주의 - 노란색 깜박임) 및 X (꺼짐). 각 코드는 공백으로 구분해야 합니다. 전체 시퀀스는 줄 바꿈(예: Enter 키 누르기)으로 제출됩니다. 시퀀스는 총 15개 이하의 코드를 가져야 합니다.
 
-## Examples
+## 예시
 
 ```text
-1 - Input: R G Y R C R G Y R                  Output: ACCEPT
-2 - Input: G Y R G Y R                        Output: REJECT
-3 - Input: R Y G P                            Output: REJECT
-4 - Input: R G Y                              Output: ERROR
-5 - Input: X 8 S                              Output: ERROR
-6 - Input: R G Y R C R P R G Y R G Y R G Y R  Output: ERROR
+1 - 입력: R G Y R C R G Y R                  출력: ACCEPT
+2 - 입력: G Y R G Y R                        출력: REJECT
+3 - 입력: R Y G P                            출력: REJECT
+4 - 입력: R G Y                              출력: ERROR
+5 - 입력: X 8 S                              출력: ERROR
+6 - 입력: R G Y R C R P R G Y R G Y R G Y R  출력: ERROR
 ```
 
-**Explanation**
-1 - Correct
-2 - Doesn’t start with R
-3 - Invalid sequence
-4 - Undefined code
-5 - Undefined Codes e.g. X is not part of the grammar
-6 - The input is malformed – undefined code, too short, too long, etc
+**설명**
+1 - 정확함
+2 - R로 시작하지 않음
+3 - 잘못된 시퀀스
+4 - 정의되지 않은 코드
+5 - 정의되지 않은 코드(예: X는 문법의 일부가 아님)
+6 - 입력 형식이 잘못됨 – 정의되지 않은 코드, 너무 짧거나 너무 김 등
 
-## Contraints
+## 제약 조건
 
-Output Write to STDOUT an evaluation of the sequence:
+출력 STDOUT에 시퀀스 평가를 작성합니다:
 
-- ACCEPT >> The entire input sequence meets all rules.
+- ACCEPT >> 전체 입력 시퀀스가 모든 규칙을 충족합니다.
 
-- REJECT >> The input sequence violates any sequence constraint; for example G Y.
+- REJECT >> 입력 시퀀스가 시퀀스 제약 조건을 위반합니다. 예를 들어 G Y.
 
-- ERROR >> The input is malformed – undefined code, too short, too long, etc.
+- ERROR >> 입력 형식이 잘못되었습니다 – 정의되지 않은 코드, 너무 짧거나 너무 김 등.

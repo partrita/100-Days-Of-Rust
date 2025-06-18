@@ -1,12 +1,12 @@
-## The Karaca's Encryption Algorithm
+## 카라카 암호화 알고리즘
 
-Make a function that encrypts a given input with these steps:
+다음 단계에 따라 주어진 입력을 암호화하는 함수를 만드세요:
 
-Input: `"apple"`
+입력: `"apple"`
 
-Step 1: Reverse the input: `"elppa"`
+1단계: 입력을 뒤집습니다: `"elppa"`
 
-Step 2: Replace all vowels using the following chart:
+2단계: 다음 차트를 사용하여 모든 모음을 바꿉니다:
 
 ```text
 a => 0
@@ -18,11 +18,11 @@ u => 3
 // "1lpp0"
 ```
 
-Step 3: Add "aca" to the end of the word: `"1lpp0aca"`
+3단계: 단어 끝에 "aca"를 추가합니다: `"1lpp0aca"`
 
-Output: `"1lpp0aca"`
+출력: `"1lpp0aca"`
 
-### Example
+### 예시
 
 ```text
 Encrypt("banana") ➞ "0n0n0baca"
@@ -36,6 +36,6 @@ Encrypt("alpaca") ➞ "0c0pl0aca"
 
 ---
 
-### Notes
+### 참고
 
-- All inputs are strings, no uppercases and all output must be strings.
+- 모든 입력은 문자열이고 대문자는 없으며 모든 출력은 문자열이어야 합니다.

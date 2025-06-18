@@ -1,36 +1,36 @@
-## Prison Break
+## 탈옥
 
-A prison can be represented as an array of cells. Each cell contains exactly one prisoner. A `1` represents an unlocked cell and a `0` represents a locked cell.
-
-```
-[1, 1, 0, 0, 0, 1, 0]
-```
-
-Starting inside the leftmost cell, you are tasked with seeing how many prisoners you can set free, with a catch. You are the prisoner in the first cell. If the first cell is locked, you cannot free anyone. Each time you free a prisoner, the locked cells become unlocked, and the unlocked cells become locked again.
-
-So, if we use the example above:
+감옥은 감방 배열로 나타낼 수 있습니다. 각 감방에는 정확히 한 명의 죄수가 들어 있습니다. `1`은 잠금 해제된 감방을 나타내고 `0`은 잠긴 감방을 나타냅니다.
 
 ```
 [1, 1, 0, 0, 0, 1, 0]
-// You free the prisoner in the 1st cell.
+```
+
+가장 왼쪽 감방에서 시작하여 얼마나 많은 죄수를 풀어줄 수 있는지 확인하는 임무를 맡았지만, 함정이 있습니다. 당신은 첫 번째 감방의 죄수입니다. 첫 번째 감방이 잠겨 있으면 아무도 풀어줄 수 없습니다. 죄수를 풀어줄 때마다 잠긴 감방은 잠금 해제되고 잠금 해제된 감방은 다시 잠깁니다.
+
+따라서 위 예시를 사용하면 다음과 같습니다:
+
+```
+[1, 1, 0, 0, 0, 1, 0]
+// 첫 번째 감방의 죄수를 풀어줍니다.
 
 [0, 0, 1, 1, 1, 0, 1]
-// You free the prisoner in the 3rd cell (2nd one locked).
+// 세 번째 감방의 죄수를 풀어줍니다 (두 번째 감방은 잠겨 있음).
 
 [1, 1, 0, 0, 0, 1, 0]
-// You free the prisoner in the 6th cell (3rd, 4th, and 5th locked).
+// 여섯 번째 감방의 죄수를 풀어줍니다 (세 번째, 네 번째, 다섯 번째 감방은 잠겨 있음).
 
 [0, 0, 1, 1, 1, 0, 1]
-// You free the prisoner in the 7th cell - and you are done!
+// 일곱 번째 감방의 죄수를 풀어주고 끝납니다!
 ```
 
-Here, we have set free `4` prisoners in total.
+여기서는 총 `4`명의 죄수를 풀어주었습니다.
 
-Create a function that, given this unique prison arrangement, returns the number of freed prisoners.
+이 독특한 감옥 배열이 주어졌을 때, 풀려난 죄수의 수를 반환하는 함수를 만드세요.
 
-### Examples
+### 예시
 
-**Example 1**
+**예시 1**
 
 ```text
 freedPrisoners([1, 1, 0, 0, 0, 1, 0]) ➞ 4
@@ -44,8 +44,8 @@ freedPrisoners([0, 1, 1, 1]) ➞ 0
 
 ---
 
-### Notes
+### 참고
 
-- You are the prisoner in the first cell. You must be freed to free anyone else.
-- You must free a prisoner in order for the locks to switch. So in the second example where the input is `[1, 1, 1]` after you release the first prisoner, the locks change to `[0, 0, 0]`. Since all cells are locked, you can release no more prisoners.
-- You always start with the leftmost element in the array (the first prison cell). If all the prison cells to your right are all zeroes, you cannot free any more prisoners.
+- 당신은 첫 번째 감방의 죄수입니다. 다른 사람을 풀어주려면 당신이 먼저 풀려나야 합니다.
+- 자물쇠를 바꾸려면 죄수를 풀어주어야 합니다. 따라서 입력이 `[1, 1, 1]`인 두 번째 예시에서 첫 번째 죄수를 풀어준 후 자물쇠는 `[0, 0, 0]`으로 바뀝니다. 모든 감방이 잠겨 있으므로 더 이상 죄수를 풀어줄 수 없습니다.
+- 항상 배열의 가장 왼쪽 요소(첫 번째 감방)부터 시작합니다. 오른쪽에 있는 모든 감방이 모두 0이면 더 이상 죄수를 풀어줄 수 없습니다.

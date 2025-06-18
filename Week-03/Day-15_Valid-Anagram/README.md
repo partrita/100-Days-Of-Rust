@@ -1,25 +1,25 @@
-## Valid Anagram
+## 유효한 아나그램
 
-Given two strings s and t , write a function to determine if t is an anagram of s.
+두 문자열 s와 t가 주어졌을 때, t가 s의 아나그램인지 확인하는 함수를 작성하세요.
 
-### Examples
+### 예시
 
-**Example 1**
+**예시 1**
 
 ```text
-Input: s = "anagram", t = "nagaram"
-Output: true
+입력: s = "anagram", t = "nagaram"
+출력: true
 ```
 
-**Example 2**
+**예시 2**
 
 ```text
-Input: s = "rat", t = "car"
-Output: false
+입력: s = "rat", t = "car"
+출력: false
 ```
 
 ---
 
-### Notes
+### 참고
 
-- You may assume the string contains only lowercase alphabets.
+- 문자열에는 소문자 알파벳만 포함된다고 가정할 수 있습니다.

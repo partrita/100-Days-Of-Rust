@@ -2,130 +2,130 @@ use std::io::{Write};
 use termcolor::{Color, ColorChoice, ColorSpec, WriteColor, StandardStream};
 
 pub fn print_green(text: &str) {
-    // Create a color specification for green
+    // 녹색에 대한 색상 사양을 만듭니다.
     let mut spec = ColorSpec::new();
     spec.set_fg(Some(Color::Green));
 
-    // Create a standard stream for writing to the console
+    // 콘솔에 쓰기 위한 표준 스트림을 만듭니다.
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
-    // Write the text to the console with the green color
+    // 녹색으로 콘솔에 텍스트를 씁니다.
     stdout.set_color(&spec).unwrap();
     writeln!(&mut stdout, "{}", text).unwrap();
 
-    // Reset the color specification to the default
+    // 색상 사양을 기본값으로 재설정합니다.
     stdout.reset().unwrap();
 }
 
 pub fn print_black(text: &str) {
-    // Create a color specification for black
+    // 검은색에 대한 색상 사양을 만듭니다.
     let mut spec = ColorSpec::new();
     spec.set_fg(Some(Color::Black));
 
-    // Create a standard stream for writing to the console
+    // 콘솔에 쓰기 위한 표준 스트림을 만듭니다.
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
-    // Write the text to the console with the green color
+    // 녹색으로 콘솔에 텍스트를 씁니다.
     stdout.set_color(&spec).unwrap();
     writeln!(&mut stdout, "{}", text).unwrap();
 
-    // Reset the color specification to the default
+    // 색상 사양을 기본값으로 재설정합니다.
     stdout.reset().unwrap();
 }
 
 pub fn print_blue(text: &str) {
-    // Create a color specification for blue
+    // 파란색에 대한 색상 사양을 만듭니다.
     let mut spec = ColorSpec::new();
     spec.set_fg(Some(Color::Blue));
 
-    // Create a standard stream for writing to the console
+    // 콘솔에 쓰기 위한 표준 스트림을 만듭니다.
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
-    // Write the text to the console with the green color
+    // 녹색으로 콘솔에 텍스트를 씁니다.
     stdout.set_color(&spec).unwrap();
     writeln!(&mut stdout, "{}", text).unwrap();
 
-    // Reset the color specification to the default
+    // 색상 사양을 기본값으로 재설정합니다.
     stdout.reset().unwrap();
 }
 
 pub fn print_red(text: &str) {
-    // Create a color specification for red
+    // 빨간색에 대한 색상 사양을 만듭니다.
     let mut spec = ColorSpec::new();
     spec.set_fg(Some(Color::Red));
 
-    // Create a standard stream for writing to the console
+    // 콘솔에 쓰기 위한 표준 스트림을 만듭니다.
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
-    // Write the text to the console with the green color
+    // 녹색으로 콘솔에 텍스트를 씁니다.
     stdout.set_color(&spec).unwrap();
     writeln!(&mut stdout, "{}", text).unwrap();
 
-    // Reset the color specification to the default
+    // 색상 사양을 기본값으로 재설정합니다.
     stdout.reset().unwrap();
 }
 
 pub fn print_cyan(text: &str) {
-    // Create a color specification for cyan
+    // 청록색에 대한 색상 사양을 만듭니다.
     let mut spec = ColorSpec::new();
     spec.set_fg(Some(Color::Cyan));
 
-    // Create a standard stream for writing to the console
+    // 콘솔에 쓰기 위한 표준 스트림을 만듭니다.
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
-    // Write the text to the console with the green color
+    // 녹색으로 콘솔에 텍스트를 씁니다.
     stdout.set_color(&spec).unwrap();
     writeln!(&mut stdout, "{}", text).unwrap();
 
-    // Reset the color specification to the default
+    // 색상 사양을 기본값으로 재설정합니다.
     stdout.reset().unwrap();
 }
 
 pub fn print_magenta(text: &str) {
-    // Create a color specification for magenta
+    // 자홍색에 대한 색상 사양을 만듭니다.
     let mut spec = ColorSpec::new();
     spec.set_fg(Some(Color::Magenta));
 
-    // Create a standard stream for writing to the console
+    // 콘솔에 쓰기 위한 표준 스트림을 만듭니다.
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
-    // Write the text to the console with the green color
+    // 녹색으로 콘솔에 텍스트를 씁니다.
     stdout.set_color(&spec).unwrap();
     writeln!(&mut stdout, "{}", text).unwrap();
 
-    // Reset the color specification to the default
+    // 색상 사양을 기본값으로 재설정합니다.
     stdout.reset().unwrap();
 }
 
 pub fn print_yellow(text: &str) {
-    // Create a color specification for yellow
+    // 노란색에 대한 색상 사양을 만듭니다.
     let mut spec = ColorSpec::new();
     spec.set_fg(Some(Color::Yellow));
 
-    // Create a standard stream for writing to the console
+    // 콘솔에 쓰기 위한 표준 스트림을 만듭니다.
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
-    // Write the text to the console with the green color
+    // 녹색으로 콘솔에 텍스트를 씁니다.
     stdout.set_color(&spec).unwrap();
     writeln!(&mut stdout, "{}", text).unwrap();
 
-    // Reset the color specification to the default
+    // 색상 사양을 기본값으로 재설정합니다.
     stdout.reset().unwrap();
 }
 
 pub fn print_white(text: &str) {
-    // Create a color specification for white
+    // 흰색에 대한 색상 사양을 만듭니다.
     let mut spec = ColorSpec::new();
     spec.set_fg(Some(Color::White));
 
-    // Create a standard stream for writing to the console
+    // 콘솔에 쓰기 위한 표준 스트림을 만듭니다.
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
-    // Write the text to the console with the green color
+    // 녹색으로 콘솔에 텍스트를 씁니다.
     stdout.set_color(&spec).unwrap();
     writeln!(&mut stdout, "{}", text).unwrap();
 
-    // Reset the color specification to the default
+    // 색상 사양을 기본값으로 재설정합니다.
     stdout.reset().unwrap();
 }
 

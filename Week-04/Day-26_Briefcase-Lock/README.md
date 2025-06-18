@@ -1,37 +1,37 @@
-## Briefcase Lock
+## 서류 가방 자물쇠
 
-A briefcase has a 4-digit **rolling-lock**. Each digit is a number from `0-9` that can be rolled either forwards or backwards.
+서류 가방에는 4자리 **회전식 자물쇠**가 있습니다. 각 자리는 앞으로 또는 뒤로 돌릴 수 있는 `0-9` 사이의 숫자입니다.
 
-Create a function that returns the smallest number of turns it takes to transform the lock from the current combination to the target combination. One turn is equivalent to rolling a number forwards or backwards by one.
+자물쇠를 현재 조합에서 대상 조합으로 바꾸는 데 걸리는 최소 회전 수를 반환하는 함수를 만드세요. 한 번의 회전은 숫자를 앞으로 또는 뒤로 한 칸 돌리는 것과 같습니다.
 
-To illustrate:
+설명하자면:
 
-- **current-lock**: 4089
-- **target-lock**: 5672
+- **현재 자물쇠**: 4089
+- **대상 자물쇠**: 5672
 
-What is the minimum number of turns it takes to transform `4089` to `5672`?
+`4089`를 `5672`로 바꾸는 데 필요한 최소 회전 수는 얼마일까요?
 
 ```
 4 ➞ 5
-4 ➞ 5  // Forward Turns: 1 <- Min
-4 ➞ 3 ➞ 2 ➞ 1 ➞ 0 ➞ 9 ➞ 8 ➞ 7 ➞ 6 ➞ 5  // Backward Turns: 9
+4 ➞ 5  // 앞으로 회전: 1 <- 최소
+4 ➞ 3 ➞ 2 ➞ 1 ➞ 0 ➞ 9 ➞ 8 ➞ 7 ➞ 6 ➞ 5  // 뒤로 회전: 9
 
 0 ➞ 6
-0 ➞ 1 ➞ 2 ➞ 3 ➞ 4 ➞ 5 ➞ 6  // Forward Turns: 6
-0 ➞ 9 ➞ 8 ➞ 7 ➞ 6  // Backward Turns: 4  <- Min
+0 ➞ 1 ➞ 2 ➞ 3 ➞ 4 ➞ 5 ➞ 6  // 앞으로 회전: 6
+0 ➞ 9 ➞ 8 ➞ 7 ➞ 6  // 뒤로 회전: 4  <- 최소
 
 8 ➞ 7
-8 ➞ 9 ➞ 0 ➞ 1 ➞ 2 ➞ 3 ➞ 4 ➞ 5 ➞ 6 ➞ 7  // Forward Turns: 9
-8 ➞ 7  // Backward Turns: 1  <- Min
+8 ➞ 9 ➞ 0 ➞ 1 ➞ 2 ➞ 3 ➞ 4 ➞ 5 ➞ 6 ➞ 7  // 앞으로 회전: 9
+8 ➞ 7  // 뒤로 회전: 1  <- 최소
 
 9 ➞ 2
-9 ➞ 0 ➞ 1 ➞ 2  // Forward Turns: 3  <- Min
-9 ➞ 8 ➞ 7 ➞ 6 ➞ 5 ➞ 4 ➞ 3 ➞ 2  // Backward Turns: 7
+9 ➞ 0 ➞ 1 ➞ 2  // 앞으로 회전: 3  <- 최소
+9 ➞ 8 ➞ 7 ➞ 6 ➞ 5 ➞ 4 ➞ 3 ➞ 2  // 뒤로 회전: 7
 ```
 
-It takes `1 + 4 + 1 + 3 = 9` minimum turns to change the lock from `4089` to `5672`.
+자물쇠를 `4089`에서 `5672`로 바꾸는 데 필요한 최소 회전 수는 `1 + 4 + 1 + 3 = 9`입니다.
 
-### Example
+### 예시
 
 ```text
 MinTurns("4089", "5672") ➞ 9
@@ -41,7 +41,7 @@ MinTurns("1111", "1100") ➞ 2
 MinTurns("2391", "4984") ➞ 10
 ```
 
-### Notes
+### 참고
 
-- Both locks are in string format.
-- A `9` rolls forward to `0`, and a `0` rolls backwards to a `9`.
+- 두 자물쇠 모두 문자열 형식입니다.
+- `9`는 앞으로 회전하면 `0`이 되고, `0`은 뒤로 회전하면 `9`가 됩니다.

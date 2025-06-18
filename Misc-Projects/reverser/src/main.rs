@@ -14,21 +14,21 @@ struct Cli {
 #[derive(Subcommand)]
 
 enum Commands {
-    /// Reverses a string
+    /// 문자열을 뒤집습니다.
     Reverse(Reverse),
-    /// Inspects a string
+    /// 문자열을 검사합니다.
     Inspect(Inspect),
 }
 
 #[derive(Args)]
 struct Reverse {
-    /// The string to reverse
+    /// 뒤집을 문자열
     string: Option<String>,
 }
 
 #[derive(Args)]
 struct Inspect {
-    /// The string to inspect
+    /// 검사할 문자열
     string: Option<String>,
 
     #[arg(short = 'd', long = "digits")]

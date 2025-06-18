@@ -1,21 +1,21 @@
-## Marcio Mello's Challenge
+## 마르시우 멜루의 도전 과제
 
-The deforested are of the Amazon rain Forest was 9,762 km² between August 2018 and July 2019, according to official figures from the federal government Inpe (National Institute for Space Research).
-This is an increase of 29.5% over the previous period (August 2017 to July 2018), which recorded 7,536 km² of deforested area. The proeminent brazilian matematician **Marcio Mello**, calculated the deforest area in football fields to make it easier to regular people to understand how big is the damage of the current government to the environment.
-Taking him as an example, create an algorithm that given a deforested area (in km2) it returns the correspondent amount of football fields.
+연방 정부 Inpe(국립 우주 연구소)의 공식 수치에 따르면 2018년 8월부터 2019년 7월 사이 아마존 열대 우림의 삼림 벌채 면적은 9,762km²였습니다.
+이는 이전 기간(2017년 8월부터 2018년 7월까지)의 삼림 벌채 면적 7,536km²보다 29.5% 증가한 수치입니다. 저명한 브라질 수학자 **마르시우 멜루**는 일반 사람들이 현 정부가 환경에 미치는 피해 규모를 쉽게 이해할 수 있도록 삼림 벌채 면적을 축구장 개수로 계산했습니다.
+그를 예로 들어, 삼림 벌채 면적(km²)이 주어지면 해당 면적에 해당하는 축구장 수를 반환하는 알고리즘을 만드세요.
 
 <p align="left">
-  <img src="../../assets/amazon_deforestation.jpg" alt="Amazon Forest Burning">
+  <img src="../../assets/amazon_deforestation.jpg" alt="아마존 숲 화재">
 </p>
 
-## Examples
+## 예시
 
 ```text
-input: 1.034
+입력: 1.034
 
-result: 100.000 football fields
+결과: 축구장 100,000개
 ```
 
-## Constraints
+## 제약 조건
 
-- Fifa standard football field: `105m x 68m`
+- FIFA 표준 축구장: `105m x 68m`

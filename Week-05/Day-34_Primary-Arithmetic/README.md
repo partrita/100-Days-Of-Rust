@@ -1,25 +1,25 @@
-# Primary Arithmetic
+# 초등 산수
 
-Children are taught to add multi-digit numbers from right to left, one digit at a time. 
-Many find the “carry” operation, wherea 1 is carried from one digit position to the next, to be a significant challenge. 
+아이들은 여러 자리 숫자를 오른쪽에서 왼쪽으로 한 번에 한 자리씩 더하는 법을 배웁니다.
+많은 아이들이 한 자리에서 다음 자리로 1을 넘기는 "올림" 연산을 상당히 어려워합니다.
 
-Your job is to count the number of carry operations for each of a set of addition problems so that educators may assess their difficulty.
+여러분의 임무는 교육자들이 덧셈 문제의 난이도를 평가할 수 있도록 각 덧셈 문제에 대한 올림 연산 횟수를 세는 것입니다.
 
-## Details
+## 세부 정보
 
-Write a **carryOperations** function.
-The function has the following parameters:
-- **num1**: first integer to sum
-- **num2**: second integer to sum
+**carryOperations** 함수를 작성하십시오.
+이 함수에는 다음과 같은 매개변수가 있습니다.
+- **num1**: 더할 첫 번째 정수
+- **num2**: 더할 두 번째 정수
 
-Returns:
-- Number of carry operations as an integer
+반환 값:
+- 올림 연산 횟수를 정수로 반환합니다.
 
-## Constraints
-- Input parameters are unsigned integers less than 10 digits.
+## 제약 조건
+- 입력 매개변수는 10자리 미만의 부호 없는 정수입니다.
 
 
-### Example
+### 예시
 ```text
 carryOperations(123, 456) ➞ 0
 carryOperations(555, 555) ➞ 3

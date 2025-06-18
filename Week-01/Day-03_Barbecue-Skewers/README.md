@@ -1,20 +1,20 @@
-## Barbecue Skewers
+## 바비큐 꼬치
 
-You are in charge of the barbecue grill. A **vegetarian skewer** is a skewer that has **only vegetables (-o)**. A **non-vegetarian skewer** is a skewer with **at least one piece of meat (-x)**.
+당신은 바비큐 그릴 담당입니다. **채식 꼬치**는 **채소(-o)만** 있는 꼬치입니다. **비채식 꼬치**는 **고기(-x)가 하나 이상** 있는 꼬치입니다.
 
-For example, the grill below has **4 non-vegetarian skewers** and **1 vegetarian skewer** (the one in the middle).
+예를 들어, 아래 그릴에는 **4개의 비채식 꼬치**와 **1개의 채식 꼬치**(가운데 있는 것)가 있습니다.
 
 ```text
 ["--xo--x--ox--",
 "--xx--x--xx--",
-"--oo--o--oo--",      <<< vegetarian skewer
+"--oo--o--oo--",      <<< 채식 꼬치
 "--xx--x--ox--",
 "--xx--x--ox--"]
 ```
 
-#### Examples
+#### 예시
 
-Given a BBQ grill, write a function that returns `[# vegetarian skewers, # non-vegetarian skewers]`. For example above, the function should return `[1, 4]`.
+BBQ 그릴이 주어지면 `[채식 꼬치 수, 비채식 꼬치 수]`를 반환하는 함수를 작성하세요. 위 예시의 경우 함수는 `[1, 4]`를 반환해야 합니다.
 
 ```text
  [
@@ -36,6 +36,6 @@ Given a BBQ grill, write a function that returns `[# vegetarian skewers, # non-v
 
 ---
 
-### Notes
+### 참고
 
-- NA
+- 해당 없음

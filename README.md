@@ -3,35 +3,35 @@
 <img width="" src="https://media4.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif?cid=ecf05e4796b9znwjl0zqxljtzh2xe4yer17y5oojmj5kztep&rid=giphy.gif&ct=g" align="center" alt="gif" />
 </p>
 
-# Introduction
-Welcome to the 100 Days of Rust Coding Challenge! This challenge is designed to help you learn and improve your Rust programming skills over the course of 100 days.
+# 소개
+100 Days of Rust 코딩 챌린지에 오신 것을 환영합니다! 이 챌린지는 100일 동안 Rust 프로그래밍 기술을 배우고 향상시키는 데 도움이 되도록 설계되었습니다.
 
-Each day, you will tackle a new Rust programming concept, project, or problem. You will learn about ownership and borrowing, concurrency and parallelism, the Rust standard library, web development with Rust, game development with Rust, machine learning in Rust, system programming in Rust, cryptography in Rust, and blockchain development in Rust.
+매일 새로운 Rust 프로그래밍 개념, 프로젝트 또는 문제에 도전하게 됩니다. 소유권과 빌림, 동시성과 병렬성, Rust 표준 라이브러리, Rust를 사용한 웹 개발, Rust를 사용한 게임 개발, Rust에서의 머신 러닝, Rust에서의 시스템 프로그래밍, Rust에서의 암호화, Rust에서의 블록체인 개발에 대해 배우게 됩니다.
 
-This challenge is suitable for Rust beginners and intermediate learners who want to improve their skills and build practical projects. It is also a great opportunity to connect with other Rust learners and share knowledge and experiences.
+이 챌린지는 기술을 향상시키고 실용적인 프로젝트를 만들고 싶은 Rust 초보자 및 중급 학습자에게 적합합니다. 또한 다른 Rust 학습자와 교류하고 지식과 경험을 공유할 수 있는 좋은 기회이기도 합니다.
 
-We hope you find this challenge fun and rewarding, and we can't wait to see what you build with Rust!
+이 챌린지가 재미있고 보람 있기를 바라며, Rust로 무엇을 만들지 기대됩니다!
 
-# How to Participate
-Fork this repository and create a new branch to track your progress.
-Commit to coding and learning Rust for at least an hour every day for 100 days.
-Share your progress on social media with the hashtag #100DaysOfRustCodingChallenge and tag @LiveGray on Twitter.
-We encourage you to share your progress and ask questions in the Discussions section of this repository.
+# 참여 방법
+이 저장소를 포크하고 새 브랜치를 만들어 진행 상황을 추적하세요.
+100일 동안 매일 최소 한 시간 동안 Rust를 코딩하고 학습하는 데 전념하세요.
+소셜 미디어에 #100DaysOfRustCodingChallenge 해시태그와 함께 진행 상황을 공유하고 트위터에서 @LiveGray를 태그하세요.
+이 저장소의 토론 섹션에서 진행 상황을 공유하고 질문하는 것을 권장합니다.
 
-# Rules
-- The main rule is: Code at least an hour every day (don't skip weekends/holidays)
+# 규칙
+- 주요 규칙은 다음과 같습니다: 매일 최소 한 시간 동안 코딩하세요 (주말/공휴일 건너뛰지 마세요).
 
-- Choose an area of Rust you wan't to learn or improve
+- 배우거나 향상시키고 싶은 Rust 영역을 선택하세요.
 
-- Share your progress daily in your social medias
+- 소셜 미디어에 매일 진행 상황을 공유하세요.
 
-- Try not to copy code from the internet
+- 인터넷에서 코드를 복사하지 마세요.
 
-- Try to come up with a clean and elegant solution
+- 깔끔하고 우아한 해결책을 제시하려고 노력하세요.
  
-- Once you can, write tests (and make them pass)
+- 가능하면 테스트를 작성하세요 (그리고 통과시키세요).
 
-# Resources
+# 자료
 [The Rust Programming Language Book](https://doc.rust-lang.org/book/title-page.html)
 
 [The Rust Standard Library Documentation](https://doc.rust-lang.org/std/index.html)
@@ -43,9 +43,9 @@ We encourage you to share your progress and ask questions in the Discussions sec
 [Awesome Rust](https://github.com/rust-unofficial/awesome-rust)
 
 
-# Project List
+# 프로젝트 목록
 
-| Day           | Project Name                       | Completed                 |
+| 날짜          | 프로젝트 이름                      | 완료 여부                 |
 | ------------- |:-------------------------------------:| -------------------------:|
 | Day #1        | [Convert Age To Days](https://github.com/LiveGray/100-Days-Of-Rust/tree/main/Week-01/Day-01_Convert-Ages-To-Days)                   | :white_check_mark:      |
 | Day #2        | [Finding Nemo](https://github.com/LiveGray/100-Days-Of-Rust/tree/main/Week-01/Day-02_Finding-Nemo)                          | :white_large_square:      |

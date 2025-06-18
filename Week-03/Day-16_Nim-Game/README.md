@@ -1,43 +1,43 @@
-## Nim Game
+## 님 게임
 
-You are playing the following Nim Game with your friend:
+친구와 다음과 같은 님 게임을 하고 있습니다:
 
-- Initially, there is a heap of stones on the table.
-- You and your friend will alternate taking turns, and **you go first**.
-- On each turn, the person whose turn it is will remove 1 to 3 stones from the heap.
-- The one who removes the last stone is the winner.
-- Given `n`, the number of stones in the heap, return `true` if you can win the game assuming both you and your friend play optimally, otherwise return `false`.
+- 처음에는 테이블 위에 돌무더기가 있습니다.
+- 당신과 당신의 친구는 번갈아 가며 차례를 가지며, **당신이 먼저 시작합니다**.
+- 각 차례에, 차례인 사람은 돌무더기에서 1개에서 3개의 돌을 제거합니다.
+- 마지막 돌을 제거하는 사람이 승자입니다.
+- 돌무더기에 있는 돌의 수 `n`이 주어졌을 때, 당신과 당신의 친구 모두 최적으로 플레이한다고 가정할 때 당신이 게임에서 이길 수 있으면 `true`를, 그렇지 않으면 `false`를 반환합니다.
 
-### Examples
+### 예시
 
-**Example 1**
+**예시 1**
 
 ```text
-Input: n = 4
-Output: false
-Explanation: These are the possible outcomes:
-1. You remove 1 stone. Your friend removes 3 stones, including the last stone. Your friend wins.
-2. You remove 2 stones. Your friend removes 2 stones, including the last stone. Your friend wins.
-3. You remove 3 stones. Your friend removes the last stone. Your friend wins.
-In all outcomes, your friend wins.
+입력: n = 4
+출력: false
+설명: 가능한 결과는 다음과 같습니다:
+1. 당신이 돌 1개를 제거합니다. 당신의 친구는 마지막 돌을 포함하여 돌 3개를 제거합니다. 당신의 친구가 이깁니다.
+2. 당신이 돌 2개를 제거합니다. 당신의 친구는 마지막 돌을 포함하여 돌 2개를 제거합니다. 당신의 친구가 이깁니다.
+3. 당신이 돌 3개를 제거합니다. 당신의 친구는 마지막 돌을 제거합니다. 당신의 친구가 이깁니다.
+모든 결과에서 당신의 친구가 이깁니다.
 ```
 
-**Example 2**
+**예시 2**
 
 ```text
-Input: n = 1
-Output: true
+입력: n = 1
+출력: true
 ```
 
-**Example 3**
+**예시 3**
 
 ```text
-Input: n = 2
-Output: true
+입력: n = 2
+출력: true
 ```
 
 ---
 
-### Constraints
+### 제약 조건
 
 - `1 <= n <= 231 - 1`

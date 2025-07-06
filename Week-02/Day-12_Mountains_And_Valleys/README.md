@@ -1,39 +1,39 @@
-## Mountains or Valleys
+## 산 또는 계곡
 
-A mountain is an array with **exactly one peak.**
+산은 **정확히 하나의 봉우리**를 가진 배열입니다.
 
-- All numbers to the left of the **peak** are increasing.
-- All numbers to the right of the **peak** are decreasing.
-- The peak CANNOT be on the boundary.
+- **봉우리** 왼쪽의 모든 숫자는 증가합니다.
+- **봉우리** 오른쪽의 모든 숫자는 감소합니다.
+- 봉우리는 경계에 있을 수 없습니다.
 
-A valley is an array with **exactly one trough**.
+계곡은 **정확히 하나의 골짜기**를 가진 배열입니다.
 
-- All numbers to the left of the **trough** are decreasing.
-- All numbers to the right of the **trough** are increasing.
-- The trough CANNOT be on the boundary.
+- **골짜기** 왼쪽의 모든 숫자는 감소합니다.
+- **골짜기** 오른쪽의 모든 숫자는 증가합니다.
+- 골짜기는 경계에 있을 수 없습니다.
 
-### Some examples of **mountains** and **valleys**:
-
-```text
-Mountain A:  [1, 3, 5, 4, 3, 2]   // 5 is the peak
-Mountain B:  [-1, 0, -1]   // 0 is the peak
-Mountain B:  [-1, -1, 0, -1, -1]   // 0 is the peak (plateau on both sides is okay)
-
-Valley A: [10, 9, 8, 7, 2, 3, 4, 5]   // 2 is the trough
-Valley B: [350, 100, 200, 400, 700]  // 100 is the trough
-```
-
-Neither **mountains** nor **valleys**:
+### **산**과 **계곡**의 몇 가지 예:
 
 ```text
-Landscape A: [1, 2, 3, 2, 4, 1]  // 2 peaks (3, 4), not 1
-Landscape B: [5, 4, 3, 2, 1]  // Peak cannot be a boundary element
-Landscape B: [0, -1, -1, 0, -1, -1]  // 2 peaks (0)
+산 A:  [1, 3, 5, 4, 3, 2]   // 5가 봉우리입니다.
+산 B:  [-1, 0, -1]   // 0이 봉우리입니다.
+산 C:  [-1, -1, 0, -1, -1]   // 0이 봉우리입니다 (양쪽에 고원이 있어도 괜찮습니다).
+
+계곡 A: [10, 9, 8, 7, 2, 3, 4, 5]   // 2가 골짜기입니다.
+계곡 B: [350, 100, 200, 400, 700]  // 100이 골짜기입니다.
 ```
 
-Based on the rules above, write a function that takes in an array and returns either `"mountain"`, `"valley"`, or `"neither"`.
+**산**도 **계곡**도 아닌 경우:
 
-### Examples
+```text
+풍경 A: [1, 2, 3, 2, 4, 1]  // 봉우리가 2개 (3, 4)이므로 해당되지 않습니다.
+풍경 B: [5, 4, 3, 2, 1]  // 봉우리는 경계 요소가 될 수 없습니다.
+풍경 C: [0, -1, -1, 0, -1, -1]  // 봉우리가 2개 (0)이므로 해당되지 않습니다.
+```
+
+위의 규칙에 따라 배열을 입력받아 `"mountain"`, `"valley"` 또는 `"neither"`를 반환하는 함수를 작성하세요.
+
+### 예시
 
 ```text
 LandscapeType([3, 4, 5, 4, 3]) ➞ "mountain"
@@ -47,7 +47,7 @@ LandscapeType([9, 8, 9, 8]) ➞ "neither"
 
 ---
 
-### Notes
+### 참고
 
-- A peak is not exactly the same as the **max** of an array. The **max** is a unique number, but an array may have multiple peaks. However, if there exists only one peak in an array, then it is true that the peak = max.
-- See comments for a hint.
+- 봉우리는 배열의 **최댓값**과 정확히 같지 않습니다. **최댓값**은 고유한 숫자이지만 배열에는 여러 개의 봉우리가 있을 수 있습니다. 그러나 배열에 봉우리가 하나만 있는 경우 봉우리 = 최댓값이 참입니다.
+- 힌트는 주석을 참조하세요.

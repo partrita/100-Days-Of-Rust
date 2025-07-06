@@ -1,29 +1,29 @@
-# The Time in Words
+# 말로 표현한 시간
 
-Given the time in numerals we may convert it into words, as shown below: 
+아래와 같이 숫자로 표시된 시간을 말로 변환할 수 있습니다.
 
 <p align="left">
-  <img src="../../assets/The Time in Words.png" alt="The Time in Words">
+  <img src="../../assets/The Time in Words.png" alt="말로 표현한 시간">
 </p>
 
-## Details
+## 세부 정보
 
-At *minutes = 0*, use o' clock. For *1 <= minutes <= 30*, use past, and for *30 < minutes* use to. Note the space between the apostrophe and clock in o' clock. 
+*minutes = 0*일 경우 o' clock을 사용합니다. *1 <= minutes <= 30*일 경우 past를 사용하고, *30 < minutes*일 경우 to를 사용합니다. o' clock에서 아포스트로피와 clock 사이의 공백에 유의하십시오.
 
-Write a **timeInWords** function which prints the time in words for the input given in the format described. 
-The function has the following parameters:
-- **h**: an integer representing hour of the day
-- **m**: an integer representing minutes after the hour
+설명된 형식으로 주어진 입력에 대해 시간을 말로 출력하는 **timeInWords** 함수를 작성하십시오.
+이 함수에는 다음과 같은 매개변수가 있습니다.
+- **h**: 시간을 나타내는 정수
+- **m**: 분을 나타내는 정수
 
-## Constraints
+## 제약 조건
 - *1 <= h <= 12*
 - *0 <= m < 60*
 
-### Examples
+### 예시
 ```text
-timeInWords(5, 47) ➞ thirteen minutes to six
-timeInWords(3, 00) ➞ three o' clock
-timeInWords(7, 15) ➞ quarter past seven
-timeInWords(5, 30) ➞ half past five
-timeInWords(5, 01) ➞ one minute past five
+timeInWords(5, 47) ➞ thirteen minutes to six (6시 13분 전)
+timeInWords(3, 00) ➞ three o' clock (3시 정각)
+timeInWords(7, 15) ➞ quarter past seven (7시 15분)
+timeInWords(5, 30) ➞ half past five (5시 30분)
+timeInWords(5, 01) ➞ one minute past five (5시 1분)
 ```

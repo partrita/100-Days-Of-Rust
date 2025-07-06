@@ -1,15 +1,15 @@
-# Larry's Array
+# 래리의 배열
 
-Larry has been given a permutation of a sequence of natural numbers incrementing from 1 as an array. 
+래리는 1부터 증가하는 자연수 시퀀스의 순열을 배열로 받았습니다.
 
-He must determine whether the array can be sorted using the following operation any number of times: 
-- Choose any **3** consecutive indices and rotate their elements in such a way that **ABC ➞ BCA ➞ CAB ➞ ABC**.
+그는 다음 연산을 몇 번이든 사용하여 배열을 정렬할 수 있는지 확인해야 합니다.
+- 연속된 **3**개의 인덱스를 선택하고 해당 요소를 **ABC ➞ BCA ➞ CAB ➞ ABC**와 같이 회전합니다.
 
-## Example
+## 예시
 ```textV
 A = {1, 6, 5, 2, 4, 3}
 
-A		        rotate 
+A		        회전
 [1,6,5,2,4,3]	[6,5,2]
 [1,5,2,6,4,3]	[5,2,6]
 [1,2,6,5,4,3]	[5,4,3]

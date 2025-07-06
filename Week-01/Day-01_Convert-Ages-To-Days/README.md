@@ -1,8 +1,8 @@
-## Convert Age to Days
+## 나이를 일수로 변환하기
 
-Create a function that takes the age and return the age in days.
+나이를 입력받아 일수로 반환하는 함수를 만드세요.
 
-#### Examples
+#### 예시
 
 ```text
 calcAge(65) ➞ 23725
@@ -12,8 +12,8 @@ calcAge(0) ➞ 0
 calcAge(20) ➞ 7300
 ```
 
-### Notes
+### 참고
 
-- Use 365 days as the length of a year for this challenge.
-- Ignore leap years and days between last birthday and now.
-- Expect only positive integer inputs.
+- 이 챌린지에서는 1년을 365일로 가정합니다.
+- 윤년과 마지막 생일과 현재 사이의 날짜는 무시합니다.
+- 양의 정수 입력만 예상합니다.

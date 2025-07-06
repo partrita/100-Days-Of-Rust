@@ -1,43 +1,43 @@
-## The Dining Philosophers
+## 식사하는 철학자들
 
-Five silent philosophers sit at a round table with bowls of spaghetti. Forks are placed between each pair of adjacent philosophers.
+다섯 명의 말없는 철학자가 스파게티 그릇이 놓인 원형 테이블에 앉아 있습니다. 포크는 인접한 철학자 쌍 사이에 놓여 있습니다.
 
-Each philosopher must alternately think and eat. However, a philosopher can only eat spaghetti when they have both left and right forks. Each fork can be held by only one philosopher and so a philosopher can use the fork only if it is not being used by another philosopher. After an individual philosopher finishes eating, they need to put down both forks so that the forks become available to others. A philosopher can take the fork on their right or the one on their left as they become available, but cannot start eating before getting both forks.
+각 철학자는 번갈아 생각하고 식사해야 합니다. 그러나 철학자는 왼쪽과 오른쪽 포크를 모두 가지고 있을 때만 스파게티를 먹을 수 있습니다. 각 포크는 한 명의 철학자만 잡을 수 있으므로 철학자는 다른 철학자가 사용하지 않는 경우에만 포크를 사용할 수 있습니다. 개별 철학자가 식사를 마치면 다른 사람이 사용할 수 있도록 두 포크를 모두 내려놓아야 합니다. 철학자는 사용 가능해지면 오른쪽 또는 왼쪽 포크를 가져갈 수 있지만 두 포크를 모두 얻기 전에는 식사를 시작할 수 없습니다.
 
-Eating is not limited by the remaining amounts of spaghetti or stomach space; an infinite supply and an infinite demand are assumed.
+식사는 남은 스파게티 양이나 위장 공간에 의해 제한되지 않습니다. 무한한 공급과 무한한 수요가 가정됩니다.
 
-Design a discipline of behaviour (a concurrent algorithm) such that no philosopher will starve; i.e., each can forever continue to alternate between eating and thinking, assuming that no philosopher can know when others may want to eat or think.
+어떤 철학자도 굶주리지 않도록 행동 규율(동시성 알고리즘)을 설계하십시오. 즉, 다른 철학자가 언제 먹거나 생각하고 싶어하는지 알 수 없다고 가정할 때 각 철학자는 영원히 식사와 생각 사이를 번갈아 가며 계속할 수 있습니다.
 
 <p align="left">
-  <img src="../../assets/dining_philosophers_problem.png" width=400 height=400 alt="Dining Philosophers">
+  <img src="../../assets/dining_philosophers_problem.png" width=400 height=400 alt="식사하는 철학자들">
 </p>
 
-The philosophers' ids are numbered from **0** to **4** in a **clockwise** order. Implement the function void wantsToEat(philosopher, pickLeftFork, pickRightFork, eat, putLeftFork, putRightFork) where:
+철학자 ID는 **시계 방향**으로 **0**에서 **4**까지 번호가 매겨집니다. 다음 함수를 구현하십시오: void wantsToEat(philosopher, pickLeftFork, pickRightFork, eat, putLeftFork, putRightFork)
 
-- `philosopher` is the id of the philosopher who wants to eat.
-- `pickLeftFork` and `pickRightFork` are functions you can call to pick the corresponding forks of that philosopher.
-- `eat` is a function you can call to let the philosopher eat once he has picked both forks.
-- `putLeftFork` and `putRightFork` are functions you can call to put down the corresponding forks of that philosopher.
-- The philosophers are assumed to be thinking as long as they are not asking to eat (the function is not being called with their number).
+- `philosopher`는 식사를 원하는 철학자의 ID입니다.
+- `pickLeftFork`와 `pickRightFork`는 해당 철학자의 해당 포크를 집기 위해 호출할 수 있는 함수입니다.
+- `eat`은 철학자가 두 포크를 모두 집으면 식사하도록 호출할 수 있는 함수입니다.
+- `putLeftFork`와 `putRightFork`는 해당 철학자의 해당 포크를 내려놓기 위해 호출할 수 있는 함수입니다.
+- 철학자들은 식사를 요청하지 않는 한(해당 번호로 함수가 호출되지 않는 한) 생각하고 있는 것으로 간주됩니다.
 
-Five threads, each representing a philosopher, will simultaneously use one object of your class to simulate the process. The function may be called for the same philosopher more than once, even before the last call ends.
+각각 철학자를 나타내는 다섯 개의 스레드가 동시에 클래스의 한 개체를 사용하여 프로세스를 시뮬레이션합니다. 마지막 호출이 끝나기 전이라도 동일한 철학자에 대해 함수가 두 번 이상 호출될 수 있습니다.
 
-### Example
+### 예시
 
 ```text
-Input: n = 1
-Output: [[4,2,1],[4,1,1],[0,1,1],[2,2,1],[2,1,1],[2,0,3],[2,1,2],[2,2,2],[4,0,3],[4,1,2],[0,2,1],[4,2,2],[3,2,1],[3,1,1],[0,0,3],[0,1,2],[0,2,2],[1,2,1],[1,1,1],[3,0,3],[3,1,2],[3,2,2],[1,0,3],[1,1,2],[1,2,2]]
+입력: n = 1
+출력: [[4,2,1],[4,1,1],[0,1,1],[2,2,1],[2,1,1],[2,0,3],[2,1,2],[2,2,2],[4,0,3],[4,1,2],[0,2,1],[4,2,2],[3,2,1],[3,1,1],[0,0,3],[0,1,2],[0,2,2],[1,2,1],[1,1,1],[3,0,3],[3,1,2],[3,2,2],[1,0,3],[1,1,2],[1,2,2]]
 
-Explanation:
-n is the number of times each philosopher will call the function.
-The output array describes the calls you made to the functions controlling the forks and the eat function, its format is:
-output[i] = [a, b, c] (three integers)
+설명:
+n은 각 철학자가 함수를 호출하는 횟수입니다.
+출력 배열은 포크와 eat 함수를 제어하는 함수에 대한 호출을 설명하며 형식은 다음과 같습니다:
+output[i] = [a, b, c] (세 개의 정수)
 
-- a is the id of a philosopher.
-- b specifies the fork: {1 : left, 2 : right}.
-- c specifies the operation: {1 : pick, 2 : put, 3 : eat}.
+- a는 철학자의 ID입니다.
+- b는 포크를 지정합니다: {1: 왼쪽, 2: 오른쪽}.
+- c는 작업을 지정합니다: {1: 집기, 2: 놓기, 3: 먹기}.
 ```
 
-### Constraints
+### 제약 조건
 
 - `1 <= n <= 60`

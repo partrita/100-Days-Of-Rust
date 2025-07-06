@@ -1,27 +1,27 @@
-# Climbing the Leaderboard
+# 리더보드 오르기
 
-An arcade game player wants to climb to the top of the leaderboard and track their ranking. 
+아케이드 게임 플레이어가 리더보드 정상에 오르고 자신의 순위를 추적하고 싶어합니다.
 
-The game uses [Dense Ranking][1], so its leaderboard works like this:
-- The player with the highest score is ranked number 1 on the leaderboard.
-- Players who have equal scores receive the same ranking number, and the next player(s) receive the immediately following ranking number.
+이 게임은 [밀집 순위(Dense Ranking)][1]를 사용하므로 리더보드는 다음과 같이 작동합니다.
+- 가장 높은 점수를 받은 플레이어가 리더보드에서 1위를 차지합니다.
+- 점수가 같은 플레이어는 같은 순위 번호를 받고, 다음 플레이어는 바로 다음 순위 번호를 받습니다.
 
 
-Create a function with the following input parameters, in this order:
-- **rankedScores**: leaderboard scores as an integer list
-- **playerScores**: the scores of the games of the player as an integer list
+다음 입력 매개변수를 이 순서대로 사용하여 함수를 만듭니다.
+- **rankedScores**: 정수 목록으로 된 리더보드 점수
+- **playerScores**: 정수 목록으로 된 플레이어의 게임 점수
 
-Returns:
-- The player's rank after each new score, as an integer list
+반환 값:
+- 각 새로운 점수 후 플레이어의 순위를 정수 목록으로 반환합니다.
 
-### Example
+### 예시
 ```text
 playerRank([100, 90, 90, 80], [70, 80, 105])  ➞ [4, 3, 1]
 ```
 
-In the above example, ranked players will have ranks **1**, **2**, **2**, and **3**, respectively. If the player's scores are **70**, **80** and **105**, their rankings after each game are **4***th*, **3***th* and **1***th*. Return **[4, 3, 1]**.
+위 예시에서 순위가 매겨진 플레이어는 각각 **1**, **2**, **2**, **3**위가 됩니다. 플레이어의 점수가 **70**, **80**, **105**이면 각 게임 후 순위는 **4**위, **3**위, **1**위가 됩니다. **[4, 3, 1]**을 반환합니다.
 
-### Additional Example
+### 추가 예시
 ```text
 playerRank([100, 90, 90, 80], [106, 107, 105])  ➞ [1, 1, 1]
 ```

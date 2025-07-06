@@ -1,17 +1,17 @@
-## URL Shortener
+## URL 단축기
 
-URL shortening is used to create shorter aliases for long URLs. We call these shortened aliases “short links.” Users are redirected to the original URL when they hit these short links. Short links save a lot of space when displayed, printed, messaged, or tweeted. Additionally, users are less likely to mistype shorter URLs. URL shortening is used to optimize links across devices, track individual links to analyze audience, measure ad campaigns’ performance, or hide affiliated original URLs.
+URL 단축은 긴 URL에 대한 짧은 별칭을 만드는 데 사용됩니다. 이러한 단축된 별칭을 "단축 링크"라고 합니다. 사용자가 이러한 단축 링크를 누르면 원래 URL로 리디렉션됩니다. 단축 링크는 표시, 인쇄, 메시지 또는 트윗할 때 많은 공간을 절약합니다. 또한 사용자는 짧은 URL을 잘못 입력할 가능성이 적습니다. URL 단축은 장치 간 링크 최적화, 개별 링크를 추적하여 잠재 고객 분석, 광고 캠페인 성과 측정 또는 제휴된 원래 URL 숨기기에 사용됩니다.
 
 <p align="left">
-  <img src="../../assets/url_shortener.png" alt="Rain water trap">
+  <img src="../../assets/url_shortener.png" alt="빗물 가두기">
 </p>
 
 ---
 
-### Constraints
+### 제약 조건
 
-- Given a URL, our service should generate a shorter and unique alias of it. This is called a short link. This link should be short enough to be easily copied and pasted into applications.
-- Users should optionally be able to pick a custom short link for their URL.
-- URL format must be validated
-- URL < 200 characters
-- Shortened links should not be guessable (not predictable).
+- URL이 주어지면 서비스는 더 짧고 고유한 별칭을 생성해야 합니다. 이를 단축 링크라고 합니다. 이 링크는 애플리케이션에 쉽게 복사하여 붙여넣을 수 있을 만큼 충분히 짧아야 합니다.
+- 사용자는 선택적으로 URL에 대한 사용자 지정 단축 링크를 선택할 수 있어야 합니다.
+- URL 형식을 확인해야 합니다.
+- URL < 200자
+- 단축된 링크는 추측할 수 없어야 합니다(예측 불가능).

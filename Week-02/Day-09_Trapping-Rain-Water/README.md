@@ -1,29 +1,29 @@
-## Trapping Rain Water
+## 빗물 가두기
 
-Given `n` non-negative integers representing an elevation map where the width of each bar is `1`, compute how much water it can trap after raining.
+각 막대의 너비가 `1`인 고도 맵을 나타내는 `n`개의 음이 아닌 정수가 주어졌을 때, 비가 온 후 가둘 수 있는 물의 양을 계산합니다.
 
-### Examples
+### 예시
 
-**Example 1:**
+**예시 1:**
 
 <p align="left">
-  <img src="../../assets/rainwatertrap.png" alt="Rain water trap">
+  <img src="../../assets/rainwatertrap.png" alt="빗물 가두기">
 </p>
 
 ```text
-Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]
-Output: 6
-Explanation: The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped.
+입력: height = [0,1,0,2,1,0,1,3,2,1,2,1]
+출력: 6
+설명: 위의 고도 맵(검은색 부분)은 배열 [0,1,0,2,1,0,1,3,2,1,2,1]로 표시됩니다. 이 경우 6단위의 빗물(파란색 부분)이 갇힙니다.
 ```
 
-**Example 2:**
+**예시 2:**
 
 ```text
-Input: height = [4,2,0,3,2,5]
-Output: 9
+입력: height = [4,2,0,3,2,5]
+출력: 9
 ```
 
-### Constraints
+### 제약 조건
 
 - `n == height.length`
 - `0 <= n <= 3 * 104`
@@ -31,6 +31,6 @@ Output: 9
 
 ---
 
-### Notes
+### 참고
 
-- N/A
+- 해당 없음

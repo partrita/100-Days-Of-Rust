@@ -1,8 +1,8 @@
-# Christmas Tree
+# 크리스마스 트리
 
-Write a function to create a Christmas tree based on height **h**.
+높이 **h**를 기준으로 크리스마스 트리를 만드는 함수를 작성하십시오.
 
-## Examples
+## 예시
 ```text
 tree(1) ➞ [
   "#"

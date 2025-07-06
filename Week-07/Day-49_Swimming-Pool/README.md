@@ -1,6 +1,6 @@
-# Swimming Pool
+# 수영장
 
-Suppose a swimming pool blueprint can be represented as a 2D array, where **1**s represent the pool and **0**s represent the rest of the backyard.
+수영장 설계도가 2D 배열로 표현될 수 있다고 가정합니다. 여기서 **1**은 수영장을 나타내고 **0**은 나머지 뒷마당을 나타냅니다.
 
 ```text
 [[0, 0, 0, 0, 0, 0, 0, 0],
@@ -8,23 +8,23 @@ Suppose a swimming pool blueprint can be represented as a 2D array, where **1**s
 [0, 1, 1, 1, 1, 1, 0, 0],
 [0, 1, 1, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0]]
-// Legitimate
+// 합법적
 ```
 
-Suppose a pool is considered legitimate if it does not touch any of the four borders in this 2D array.
+수영장이 이 2D 배열의 네 테두리 중 어느 곳에도 닿지 않으면 합법적인 것으로 간주됩니다.
 
 ```text
 [[1, 1, 0, 0, 0, 0, 0, 0],
 [1, 1, 1, 1, 1, 1, 0, 0],
 [0, 1, 1, 1, 1, 1, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0]]
-// Illegitimate! 
-// The 1s are touching both the left "fence" and the upper "fence".
+// 불법!
+// 1이 왼쪽 "울타리"와 위쪽 "울타리" 모두에 닿아 있습니다.
 ```
 
-Create a function that returns true if the pool plan is legitimate, and false otherwise.
+수영장 계획이 합법적이면 true를, 그렇지 않으면 false를 반환하는 함수를 만드십시오.
 
-## Examples
+## 예시
 ```text
 isLegitimate([
   [0, 0, 0, 0, 0, 0, 0, 0],

@@ -1,22 +1,22 @@
-## Coin Trouble
+## 동전 문제
 
-Given an array of coins, father needs to distribute them amongst his three children. Write a function to determine if the coins can be distributed equally or not. Return `true` if each son receives the same amount of money, otherwise return `false`.
+동전 배열이 주어지면 아버지는 세 자녀에게 동전을 분배해야 합니다. 동전을 똑같이 분배할 수 있는지 확인하는 함수를 작성하세요. 각 아들이 같은 금액을 받으면 `true`를 반환하고, 그렇지 않으면 `false`를 반환합니다.
 
 ```
 [1, 2, 3, 2, 2, 2, 3] ➞ true
 ```
 
-- Amount to be distributed to each child = `(1+2+3+2+4+3)/3 => 15/3 => 5`
-- Possible set of coin to be distributed to children = `[(1,2,2),(2,3),(2,3)]`
+- 각 자녀에게 분배될 금액 = `(1+2+3+2+4+3)/3 => 15/3 => 5`
+- 자녀에게 분배될 수 있는 가능한 동전 세트 = `[(1,2,2),(2,3),(2,3)]`
 
 ```
 [5, 3, 10, 1, 2] ➞ false
 ```
 
-- Amount to be distributed to each child = `(5+3+10+1+2)/3 => 21/3 => 7`
-- But there are no combination such that each child get equal value which is `7`.
+- 각 자녀에게 분배될 금액 = `(5+3+10+1+2)/3 => 21/3 => 7`
+- 그러나 각 자녀가 `7`이라는 동일한 가치를 얻는 조합은 없습니다.
 
-### Example
+### 예시
 
 ```text
 coinsDiv([1, 2, 3, 2, 2, 2, 3]) ➞ true
@@ -26,7 +26,7 @@ coinsDiv([5, 3, 10, 1, 2]) ➞ false
 coinsDiv([2, 4, 3, 2, 4, 9, 7, 8, 6, 9]) ➞ true
 ```
 
-### Notes
+### 참고
 
-- Inputs will be an array of positive integers only.
-- Coin can be any positive value.
+- 입력은 양의 정수 배열만 사용합니다.
+- 동전은 양의 값을 가질 수 있습니다.

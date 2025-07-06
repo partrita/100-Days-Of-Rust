@@ -1,8 +1,8 @@
-## Next Prime
+## 다음 소수 찾기
 
-Given an integer, create a function that returns the next prime. If the number is prime, return the number itself.
+정수가 주어지면 다음 소수를 반환하는 함수를 만드세요. 숫자가 소수이면 숫자 자체를 반환합니다.
 
-### Examples
+### 예시
 
 ```text
 NextPrime(12) ➞ 13
@@ -10,11 +10,11 @@ NextPrime(12) ➞ 13
 NextPrime(24) ➞ 29
 
 NextPrime(11) ➞ 11
-// 11 is a prime, so we return the number itself.
+// 11은 소수이므로 숫자 자체를 반환합니다.
 ```
 
 ---
 
-### Notes
+### 참고
 
-- N/A
+- 해당 없음

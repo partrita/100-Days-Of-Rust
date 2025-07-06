@@ -1,54 +1,54 @@
-## Restore IP Addresses
+## IP 주소 복원
 
-Given a string s containing only digits, return all possible valid IP addresses that can be obtained from s. You can return them in **any** order.
+숫자만 포함하는 문자열 s가 주어지면 s에서 얻을 수 있는 모든 가능한 유효한 IP 주소를 반환합니다. **어떤** 순서로든 반환할 수 있습니다.
 
-A **valid IP address** consists of exactly four integers, each integer is between 0 and 255, separated by single dots and cannot have leading zeros. For example, "0.1.2.201" and "192.168.1.1" are **valid** IP addresses and "0.011.255.245", "192.168.1.312" and "192.168@1.1" are **invalid** IP addresses.
+**유효한 IP 주소**는 정확히 4개의 정수로 구성되며, 각 정수는 0에서 255 사이이고 단일 점으로 구분되며 앞에 0이 올 수 없습니다. 예를 들어, "0.1.2.201" 및 "192.168.1.1"은 **유효한** IP 주소이고 "0.011.255.245", "192.168.1.312" 및 "192.168@1.1"은 **유효하지 않은** IP 주소입니다.
 
-### Examples
+### 예시
 
-**Example 1:**
-
-```text
-Input: s = "25525511135"
-Output: ["255.255.11.135","255.255.111.35"]
-```
-
-**Example 2:**
+**예시 1:**
 
 ```text
-Input: s = "0000"
-Output: ["0.0.0.0"]
+입력: s = "25525511135"
+출력: ["255.255.11.135","255.255.111.35"]
 ```
 
-**Example 3:**
+**예시 2:**
 
 ```text
-Input: s = "1111"
-Output: ["1.1.1.1"]
+입력: s = "0000"
+출력: ["0.0.0.0"]
 ```
 
-**Example 4:**
+**예시 3:**
 
 ```text
-Input: s = "010010"
-Output: ["0.10.0.10","0.100.1.0"]
+입력: s = "1111"
+출력: ["1.1.1.1"]
 ```
 
-**Example 5:**
+**예시 4:**
 
 ```text
-Input: s = "101023"
-Output: ["1.0.10.23","1.0.102.3","10.1.0.23","10.10.2.3","101.0.2.3"]
+입력: s = "010010"
+출력: ["0.10.0.10","0.100.1.0"]
 ```
 
-### Constraints
+**예시 5:**
+
+```text
+입력: s = "101023"
+출력: ["1.0.10.23","1.0.102.3","10.1.0.23","10.10.2.3","101.0.2.3"]
+```
+
+### 제약 조건
 
 - `0 <= s.length`
-- `s consists of digits only.`
-- `Ipv4 format only.`
+- `s는 숫자로만 구성됩니다.`
+- `IPv4 형식만 해당됩니다.`
 
 ---
 
-### Notes
+### 참고
 
-- `All digits in string s MUST be used to obtain each valid IP`
+- `각 유효한 IP를 얻으려면 문자열 s의 모든 숫자를 사용해야 합니다.`

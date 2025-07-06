@@ -1,13 +1,13 @@
-## Word Search
+## 단어 찾기
 
-Given a 2D board and a list of words from the dictionary, find all words in the board.
+2D 보드와 사전의 단어 목록이 주어지면 보드에서 모든 단어를 찾으십시오.
 
-Each word must be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
+각 단어는 순차적으로 인접한 셀의 문자로 구성되어야 하며, "인접한" 셀은 가로 또는 세로로 이웃한 셀입니다. 동일한 문자 셀은 한 단어에서 두 번 이상 사용할 수 없습니다.
 
-### Examples
+### 예시
 
 ```text
-Input:
+입력:
 board = [
   ['o','a','a','n'],
   ['e','t','a','e'],
@@ -16,12 +16,12 @@ board = [
 ]
 words = ["oath","pea","eat","rain"]
 
-Output: ["eat","oath"]
+출력: ["eat","oath"]
 ```
 
 ---
 
-### Note:
+### 참고:
 
-- All inputs are consist of lowercase letters `a-z`.
-- The values of `words` are distinct.
+- 모든 입력은 소문자 `a-z`로 구성됩니다.
+- `words`의 값은 고유합니다.

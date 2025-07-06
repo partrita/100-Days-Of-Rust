@@ -1,14 +1,14 @@
-## The Josephus Problem
+## 요세푸스 문제
 
-This classic problem dates back to Roman times. There are 41 soldiers arranged in a circle. Every third soldier is to be killed by their captors, continuing around the circle until only one soldier remains. He is to be freed. Assuming you would like to stay alive, at what position in the circle would you stand?
+이 고전적인 문제는 로마 시대로 거슬러 올라갑니다. 원형으로 배열된 41명의 병사가 있습니다. 포로로 잡은 자들은 세 번째 병사마다 죽이고, 원을 따라 계속 진행하여 단 한 명의 병사만 남을 때까지 계속합니다. 그는 풀려날 것입니다. 살아남고 싶다면 원의 어느 위치에 서겠습니까?
 
-Generalize this problem by creating a function that accepts the number of soldiers `n` and the interval at which they are killed `i`, and returns the position of the fortunate survivor.
+병사의 수 `n`과 병사가 죽는 간격 `i`를 입력받아 운 좋은 생존자의 위치를 반환하는 함수를 만들어 이 문제를 일반화하십시오.
 
 <p align="left">
-  <img src="../../assets/josephus-problem.jpg" alt="Josephus Problem">
+  <img src="../../assets/josephus-problem.jpg" alt="요세푸스 문제">
 </p>
 
-### Example
+### 예시
 
 ```text
 josephus(41, 3) ➞ 31
@@ -20,7 +20,7 @@ josephus(11, 1) ➞ 11
 josephus(2, 2) ➞ 1
 ```
 
-### Notes
+### 참고
 
-- Assume the positions are numbered 1 to `n` going **clockwise** around the circle.
-- If the interval is 3, the first soldiers to die are at positions 3, 6, and 9.
+- 위치는 원을 따라 **시계 방향**으로 1부터 `n`까지 번호가 매겨진다고 가정합니다.
+- 간격이 3이면 가장 먼저 죽는 병사는 3, 6, 9번 위치에 있습니다.

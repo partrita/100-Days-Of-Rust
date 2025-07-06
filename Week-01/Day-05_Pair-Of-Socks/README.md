@@ -1,10 +1,10 @@
-## Pair of Socks
+## 양말 짝 맞추기
 
-Joseph is in the middle of packing for a vacation. He's having a bit of trouble finding all of his socks, though.
+조셉은 휴가 준비로 짐을 싸는 중입니다. 그런데 양말을 모두 찾는 데 약간의 어려움을 겪고 있습니다.
 
-Write a function that returns the number of sock pairs he has. A sock pair consists of two of the same letter, such as `"AA"`. The socks are represented as an unordered sequence.
+그가 가진 양말 짝의 수를 반환하는 함수를 작성하세요. 양말 짝은 `"AA"`와 같이 동일한 문자 두 개로 구성됩니다. 양말은 순서 없는 시퀀스로 표시됩니다.
 
-### Examples
+### 예시
 
 ```text
 SockPairs("AA") ➞ 1
@@ -16,7 +16,7 @@ SockPairs("CABBACCC") ➞ 4
 
 ---
 
-### Notes
+### 참고
 
-- If given an empty string (no socks in the drawer), return 0.
-- There can be multiple pairs of the same type of sock, such as two pairs of CC for the last example.
+- 빈 문자열(서랍에 양말 없음)이 주어지면 0을 반환합니다.
+- 마지막 예시처럼 CC 두 짝과 같이 동일한 종류의 양말이 여러 짝 있을 수 있습니다.

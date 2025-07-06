@@ -1,53 +1,53 @@
-## Task Scheduler
+## 작업 스케줄러
 
-Given a characters array `tasks`, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle.
+CPU가 수행해야 하는 작업을 나타내는 문자 배열 `tasks`가 주어지며, 각 문자는 다른 작업을 나타냅니다. 작업은 어떤 순서로든 수행할 수 있습니다. 각 작업은 한 단위 시간에 수행됩니다. 각 단위 시간에 CPU는 하나의 작업을 완료하거나 유휴 상태일 수 있습니다.
 
-However, there is a non-negative integer `n` that represents the cooldown period between two **same tasks** (the same letter in the array), that is that there must be at least `n` units of time between any two same tasks.
+그러나 두 개의 **동일한 작업**(배열의 동일한 문자) 사이의 재사용 대기시간을 나타내는 음이 아닌 정수 `n`이 있으며, 이는 두 개의 동일한 작업 사이에 최소 `n` 단위 시간이 있어야 함을 의미합니다.
 
-Return the least number of units of times that the CPU will take to finish all the given tasks.
+CPU가 지정된 모든 작업을 완료하는 데 걸리는 최소 시간 단위를 반환합니다.
 
-### Examples
+### 예시
 
-**Example 1**
+**예시 1**
 
 ```text
-Input: tasks = ["A","A","A","B","B","B"], n = 2
-Output: 8
+입력: tasks = ["A","A","A","B","B","B"], n = 2
+출력: 8
 
-Explanation:
-A -> B -> idle -> A -> B -> idle -> A -> B
-There is at least 2 units of time between any two same tasks.
+설명:
+A -> B -> 유휴 -> A -> B -> 유휴 -> A -> B
+두 개의 동일한 작업 사이에는 최소 2 단위 시간이 있습니다.
 ```
 
-**Example 2**
+**예시 2**
 
 ```text
-Input: tasks = ["A","A","A","B","B","B"], n = 0
-Output: 6
+입력: tasks = ["A","A","A","B","B","B"], n = 0
+출력: 6
 
-Explanation: On this case any permutation of size 6 would work since n = 0.
+설명: 이 경우 n = 0이므로 크기가 6인 모든 순열이 작동합니다.
 ["A","A","A","B","B","B"]
 ["A","B","A","B","A","B"]
 ["B","B","B","A","A","A"]
 ...
-And so on.
+등등.
 ```
 
-**Example 3**
+**예시 3**
 
 ```text
-Input: tasks = ["A","A","A","A","A","A","B","C","D","E","F","G"], n = 2
-Output: 16
+입력: tasks = ["A","A","A","A","A","A","B","C","D","E","F","G"], n = 2
+출력: 16
 
-Explanation:
-One possible solution is
-A -> B -> C -> A -> D -> E -> A -> F -> G -> A -> idle -> idle -> A -> idle -> idle -> A
+설명:
+가능한 해결책 중 하나는 다음과 같습니다.
+A -> B -> C -> A -> D -> E -> A -> F -> G -> A -> 유휴 -> 유휴 -> A -> 유휴 -> 유휴 -> A
 ```
 
 ---
 
-### Constraints
+### 제약 조건
 
 - `1 <= task.length <= 104`
-- `tasks[i]` is upper-case English letter.
-- The integer `n` is in the range `[0, 100]`.
+- `tasks[i]`는 대문자 영어 문자입니다.
+- 정수 `n`은 `[0, 100]` 범위에 있습니다.

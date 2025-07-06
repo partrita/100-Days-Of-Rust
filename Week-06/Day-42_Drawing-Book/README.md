@@ -1,25 +1,25 @@
-# Drawing Book
+# 그림책
 
-A teacher asks the class to open their books to a page number. A student can either start turning pages from the front of the book or from the back of the book. They always turn pages one at a time. When they open the book, page *1* is always on the right side:
+선생님이 반 학생들에게 책을 특정 페이지 번호로 펴라고 합니다. 학생은 책의 앞쪽부터 페이지를 넘기거나 뒤쪽부터 페이지를 넘길 수 있습니다. 항상 한 번에 한 페이지씩 넘깁니다. 책을 펴면 항상 *1*페이지가 오른쪽에 있습니다.
 
 <p align="center">
-  <img src="../../assets/page1.png" alt="page1">
+  <img src="../../assets/page1.png" alt="1페이지">
 </p>
 
-When they flip page *1* , they see pages *2* and *3*. Each page except the last page will always be printed on both sides. The last page may only be printed on the front, given the length of the book. 
+*1*페이지를 넘기면 *2*페이지와 *3*페이지가 보입니다. 마지막 페이지를 제외한 모든 페이지는 항상 양면에 인쇄됩니다. 마지막 페이지는 책의 길이에 따라 앞면에만 인쇄될 수 있습니다.
 
-If the book is *n* pages long, and a student wants to turn to page *p*, **what is the minimum number of pages to turn?** They can start at the beginning or the end of the book.
+책이 *n*페이지이고 학생이 *p*페이지로 넘기고 싶다면, **넘겨야 하는 최소 페이지 수는 얼마일까요?** 책의 처음이나 끝에서 시작할 수 있습니다.
 
-Given *n* and *p*, find and return the minimum number of pages that must be turned in order to arrive at page *p*. 
+*n*과 *p*가 주어지면 *p*페이지에 도달하기 위해 넘겨야 하는 최소 페이지 수를 찾아 반환합니다.
 
-## Example
+## 예시
 ```text
-Considering n = 5 and p = 3:
+n = 5이고 p = 3인 경우:
 
 minPages(5, 3) ➞ 1
 ```
 <p align="center">
-  <img src="../../assets/page1_to_5.png" alt="page1">
+  <img src="../../assets/page1_to_5.png" alt="1페이지부터 5페이지까지">
 </p>
 
-Using the diagram above, if the student wants to get to page *3*, they open the book to page *1*, flip *1* page and they are on the correct page. If they open the book to the last page, page *5*, they turn *1* page and are at the correct page. Return *1*.
+위 다이어그램을 사용하면 학생이 *3*페이지로 가고 싶다면 책을 *1*페이지로 펴고 *1*페이지를 넘기면 올바른 페이지에 도달합니다. 책을 마지막 페이지인 *5*페이지로 펴면 *1*페이지를 넘겨 올바른 페이지에 도달합니다. *1*을 반환합니다.

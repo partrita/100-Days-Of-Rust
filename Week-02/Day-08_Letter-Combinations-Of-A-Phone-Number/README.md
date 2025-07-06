@@ -1,43 +1,43 @@
-## Letter Combinations of a Phone Number
+## 전화번호 문자 조합
 
-Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in **any order**.
+2-9까지의 숫자가 포함된 문자열이 주어지면, 해당 숫자가 나타낼 수 있는 모든 가능한 문자 조합을 반환합니다. 답은 **어떤 순서로든** 반환할 수 있습니다.
 
-A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
+아래에 숫자와 문자 매핑(전화 버튼과 동일)이 나와 있습니다. 1은 어떤 문자에도 매핑되지 않는다는 점에 유의하세요.
 
 <p align="left">
-  <img src="../../assets/Telephone-keypad2.png" alt="telefone keypad">
+  <img src="../../assets/Telephone-keypad2.png" alt="전화 키패드">
 </p>
 
-### Examples
+### 예시
 
-**Example 1:**
-
-```text
-Input: digits = "23"
-Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
-```
-
-**Example 2:**
+**예시 1:**
 
 ```text
-Input: digits = ""
-Output: []
+입력: digits = "23"
+출력: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
 ```
 
-**Example 3:**
+**예시 2:**
 
 ```text
-Input: digits = "2"
-Output: ["a","b","c"]
+입력: digits = ""
+출력: []
 ```
 
-### Constraints
+**예시 3:**
+
+```text
+입력: digits = "2"
+출력: ["a","b","c"]
+```
+
+### 제약 조건
 
 - `0 <= digits.length <= 4`
-- `digits[i] is a digit in the range ['2', '9'].`
+- `digits[i]는 ['2', '9'] 범위의 숫자입니다.`
 
 ---
 
-### Notes
+### 참고
 
-- N/A
+- 해당 없음

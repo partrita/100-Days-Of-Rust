@@ -1,14 +1,14 @@
-## Unique Binary Search Trees
+## 고유한 이진 검색 트리
 
-Given `n`, how many structurally unique **BST's** (binary search trees) that store values 1 ... `n`?
+`n`이 주어졌을 때, 1부터 `n`까지의 값을 저장하는 구조적으로 고유한 **BST**(이진 검색 트리)는 몇 개일까요?
 
-### Examples
+### 예시
 
 ```text
-Input: 3
-Output: 5
-Explanation:
-Given n = 3, there are a total of 5 unique BST's:
+입력: 3
+출력: 5
+설명:
+n = 3이 주어지면 총 5개의 고유한 BST가 있습니다:
 
    1         3     3      2      1
     \       /     /      / \      \
@@ -17,12 +17,12 @@ Given n = 3, there are a total of 5 unique BST's:
    2     1         2                 3
 ```
 
-### Constraints
+### 제약 조건
 
 - `1 <= n <= 19`
 
 ---
 
-### Notes
+### 참고
 
-- N/A
+- 해당 없음

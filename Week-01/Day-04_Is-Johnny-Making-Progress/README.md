@@ -1,14 +1,14 @@
-## Is Johnny Making Progress?
+## 조니는 발전하고 있는가?
 
-To train for an upcoming marathon, Johnny goes on one long-distance run each Saturday. He wants to track how often the number of miles he runs this Saturday exceeds the number of miles run the **previous** Saturday. This is called a **progress day**.
+다가오는 마라톤을 위해 조니는 매주 토요일 장거리 달리기를 합니다. 그는 이번 주 토요일에 달린 마일 수가 **이전** 토요일에 달린 마일 수를 초과하는 횟수를 추적하고 싶어합니다. 이를 **발전일**이라고 합니다.
 
-Create a function that takes in an array of miles run every Saturday and returns Johnny's total number of progress days.
+매주 토요일에 달린 마일 배열을 입력받아 조니의 총 발전일 수를 반환하는 함수를 만드세요.
 
-### Examples
+### 예시
 
 ```text
 progressDays([3, 4, 1, 2]) ➞ 2
-// There are two progress days, (3->4) and (1->2)
+// (3->4)와 (1->2) 두 번의 발전일이 있습니다.
 
 progressDays([10, 11, 12, 9, 10]) ➞ 3
 
@@ -19,6 +19,6 @@ progressDays([9, 9])  ➞ 0
 
 ---
 
-### Notes
+### 참고
 
-- Running the **same number of miles** as last week does not count as a progress day.
+- 지난주와 **같은 마일 수**를 달리는 것은 발전일로 간주하지 않습니다.

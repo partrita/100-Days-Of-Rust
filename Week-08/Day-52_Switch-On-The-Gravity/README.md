@@ -1,8 +1,8 @@
-# Switch on the Gravity
+# 중력 켜기
 
-Given a 2D array of some suspended blocks (represented as hastags), return another 2D array which shows the end result once gravity is switched on.
+일부 매달린 블록(해시태그로 표시)의 2D 배열이 주어지면 중력이 켜졌을 때의 최종 결과를 보여주는 다른 2D 배열을 반환합니다.
 
-## Examples
+## 예시
 ```text
 switchGravityOn([
   ["-", "#", "#", "-"],

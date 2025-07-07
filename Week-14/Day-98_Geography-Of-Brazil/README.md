@@ -1,58 +1,58 @@
-## Geography of Brazil
+## 브라질 지리
 
-Today's theme is the Geography of BRAZIL, a very large country.
-Currently, the country is divided into 26 states and the Federal District, altogether there are 27 federative units.
+오늘의 주제는 매우 큰 나라인 브라질의 지리입니다.
+현재 이 나라는 26개 주와 연방 지구로 나뉘어 총 27개의 연방 단위가 있습니다.
 
-Brazil has gone through several regionalizations, which have changed the configuration of the Brazilian territory over the years. The current regionalization is related to the Federal Constitution of 1988, in which some states arose and other territories were elevated to the category of state.
+브라질은 여러 차례의 지역화를 거쳤으며, 이로 인해 수년에 걸쳐 브라질 영토의 구성이 변경되었습니다. 현재의 지역화는 1988년 연방 헌법과 관련이 있으며, 이 헌법에서 일부 주가 생겨났고 다른 영토는 주의 범주로 승격되었습니다.
 
-What few people actually know is the number of Municipalities per State. Create a function that obtains this information!
+실제로 아는 사람이 거의 없는 것은 주별 지방 자치 단체의 수입니다. 이 정보를 얻는 함수를 만드십시오!
 
 
-### Input & Example
-The only input parameter is the state's acronym.
+### 입력 및 예시
+유일한 입력 매개변수는 주의 약자입니다.
 ```
 SP
 ```
 
-### Output & Example
-The output is the number of municipalities in the state informed.
+### 출력 및 예시
+출력은 해당 주의 지방 자치 단체 수입니다.
 ```
 645
 ```
 
 
-### Brazilian states and acronyms
+### 브라질 주 및 약자
 |||
 |--- |--- |
-|State|Acronym|
-|Acre|AC|
-|Alagoas|AL|
-|Amapá|AP|
-|Amazonas|AM|
-|Bahia|BA|
-|Ceará|CE|
-|Espírito Santo|ES|
-|Goiás|GO|
-|Maranhão|MA|
-|Mato Grosso|MT|
-|Mato Grosso do Sul|MS|
-|Minas Gerais|MG|
-|Pará|PA|
-|Paraíba|PB|
-|Paraná|PR|
-|Pernambuco|PE|
-|Piauí|PI|
-|Rio de Janeiro|RJ|
-|Rio Grande do Norte|RN|
-|Rio Grande do Sul|RS|
-|Rondônia|RO|
-|Roraima|RR|
-|Santa Catarina|SC|
-|São Paulo|SP|
-|Sergipe|SE|
-|Tocantins|TO|
-|Distrito Federal|DF|
+|주|약자|
+|아크리|AC|
+|알라고아스|AL|
+|아마파|AP|
+|아마조나스|AM|
+|바이아|BA|
+|세아라|CE|
+|이스피리투산투|ES|
+|고이아스|GO|
+|마라냥|MA|
+|마투그로수|MT|
+|마투그로수두술|MS|
+|미나스제라이스|MG|
+|파라|PA|
+|파라이바|PB|
+|파라나|PR|
+|페르남부쿠|PE|
+|피아우이|PI|
+|리우데자네이루|RJ|
+|히우그란지두노르치|RN|
+|히우그란지두술|RS|
+|혼도니아|RO|
+|호라이마|RR|
+|산타카타리나|SC|
+|상파울루|SP|
+|세르지피|SE|
+|토칸칭스|TO|
+|연방 지구|DF|
 
 
-### Notes:
-You can make use of the public [API](https://servicodados.ibge.gov.br/api/v1/localidades/municipios) of the Brazilian Institute of Geography and Statistics (IBGE).
+### 참고:
+브라질 지리 통계 연구소(IBGE)의 공용 [API](https://servicodados.ibge.gov.br/api/v1/localidades/municipios)를 사용할 수 있습니다.

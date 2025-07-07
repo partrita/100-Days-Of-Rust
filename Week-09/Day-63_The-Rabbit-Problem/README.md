@@ -1,65 +1,65 @@
-# The rabbit problem
+# 토끼 문제
 
-Rabbits are known for their fast breeding, but how soon will they dominate the earth?
+토끼는 번식 속도가 빠른 것으로 알려져 있지만, 얼마나 빨리 지구를 지배하게 될까요?
 
-Starting with a small population of male and female rabbits we have to figure out how long it will take for them to outnumber humans 2:1.
+수컷과 암컷 토끼의 작은 개체군으로 시작하여 인간보다 2:1로 많아지는 데 얼마나 걸리는지 알아내야 합니다.
 
-Every month a fertile female will have 14 offspring (5 males and 9 females).
+매달 번식 가능한 암컷은 14마리의 새끼(수컷 5마리, 암컷 9마리)를 낳습니다.
 
-A female rabbit is fertile when it has reached the age of 4 months, they never stop being fertile.
+암컷 토끼는 생후 4개월이 되면 번식할 수 있으며, 번식 능력을 잃지 않습니다.
 
-Rabbits die at the age of 8 years (96 months).
+토끼는 8살(96개월)에 죽습니다.
 
-## Input Description
+## 입력 설명
 
-You will be given a list of numbers as following:
+다음과 같은 숫자 목록이 제공됩니다.
 
 ```text
-Male_rabbits Female_rabbits Rabbits_needed_alive
+수컷_토끼 암컷_토끼 필요한_살아있는_토끼_수
 ```
 
-The initial rabbits will always be 2 months old and fertile females will always produce 14 offspring (5 male, 9 female)
+초기 토끼는 항상 생후 2개월이며 번식 가능한 암컷은 항상 14마리의 새끼(수컷 5마리, 암컷 9마리)를 낳습니다.
 
-Every month that passes things should be done in this order:
+매달 다음과 같은 순서로 일이 진행되어야 합니다.
 
-    Fertile female reproduce (so 7 year & 11 months old will reproduce)
+    번식 가능한 암컷 번식 (즉, 7년 11개월 된 토끼도 번식)
 
-    rabbits age (except newborn) (and rabbits reaching 8 years will die, the 7 year & 11 months old will die)
+    토끼 나이 먹기 (새끼 제외) (그리고 8살이 된 토끼는 죽음, 7년 11개월 된 토끼도 죽음)
 
-fx:
+예시:
 ```text
 2 4 1000000000
 ```
 
-## Output Description
+## 출력 설명
 
-You output how many months it took for world domination.
+세계 정복에 몇 달이 걸렸는지 출력합니다.
 
-## Example
+## 예시
 
-Looking just at the female population:
+암컷 개체군만 살펴보면 다음과 같습니다.
 
 ```text
-we start with 1 female with the given starting age of 2 months
+주어진 시작 연령인 생후 2개월 된 암컷 1마리로 시작합니다.
 
-the index is their age (0-index is 0 months old)
-[ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0] Month 0
-[ 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] Month 1
-[ 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] Month 2
-[ 9, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] Month 3
-[ 9, 9, 0, 0, 0, 0, 1, 0, 0, 0, 0] Month 4
-[ 9, 9, 9, 0, 0, 0, 0, 1, 0, 0, 0] Month 5
-[ 9, 9, 9, 9, 0, 0, 0, 0, 1, 0, 0] Month 6
-[ 9, 9, 9, 9, 9, 0, 0, 0, 0, 1, 0] Month 7
-[90, 9, 9, 9, 9, 9, 0, 0, 0, 0, 1] Month 8
+인덱스는 나이입니다 (0 인덱스는 생후 0개월).
+[ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0] 0개월
+[ 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] 1개월
+[ 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0] 2개월
+[ 9, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0] 3개월
+[ 9, 9, 0, 0, 0, 0, 1, 0, 0, 0, 0] 4개월
+[ 9, 9, 9, 0, 0, 0, 0, 1, 0, 0, 0] 5개월
+[ 9, 9, 9, 9, 0, 0, 0, 0, 1, 0, 0] 6개월
+[ 9, 9, 9, 9, 9, 0, 0, 0, 0, 1, 0] 7개월
+[90, 9, 9, 9, 9, 9, 0, 0, 0, 0, 1] 8개월
 
 ```
 
-## For inspiration 
+## 영감을 얻기 위해
 
-[The rabbit problem](http://go-here.nl/the-rabbit-problem.html)
+[토끼 문제](http://go-here.nl/the-rabbit-problem.html)
 
-**Challenge input(s)**
+**과제 입력**
 ```text
 2 4 1000000000
 ```
@@ -68,7 +68,7 @@ the index is their age (0-index is 0 months old)
 ```
 
 
-**Challenge output(s)**
+**과제 출력**
 ```text
 32
 ```
@@ -76,6 +76,6 @@ the index is their age (0-index is 0 months old)
 36
 ```
 
-**Bonus**
+**보너스**
 
-Tell how many dead rabbits there are when they dominate earth.
+지구를 지배했을 때 죽은 토끼의 수를 알려주십시오.

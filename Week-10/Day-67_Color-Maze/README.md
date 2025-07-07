@@ -1,37 +1,37 @@
-# Color maze
+# 색깔 미로
 
-Today we are going to do something colorfull and amazing. Yes it is a color maze :D (you can downvote me now, it was totally worth it).
+오늘은 다채롭고 놀라운 것을 할 것입니다. 네, 바로 색깔 미로입니다 :D (지금 저에게 반대표를 던지셔도 됩니다. 그럴 만한 가치가 있었어요).
 
-You traverse a color by following a sequence of colors. For example this maze can be solved by the sequence 'orange -> green':
-
-<p align="center">
-  <img src="../../assets/maze_color_1.png" alt="maze color">
-</p>
-
-Then you would have something like this (paint skills):
+색깔 순서를 따라 색깔을 통과합니다. 예를 들어 이 미로는 '주황색 -> 초록색' 순서로 풀 수 있습니다.
 
 <p align="center">
-  <img src="../../assets/maze_color_2.png" alt="maze color solution">
+  <img src="../../assets/maze_color_1.png" alt="색깔 미로">
 </p>
 
-For the mazes you always pick a spot on the bottom, in the starting color and try to get to the first row. Once you reach the first row, you are out of the maze. The sequence does not have to be complete.
+그러면 다음과 같은 결과가 나올 것입니다 (그림판 실력):
 
-You can move horizontally and vertically, but not diagonally. It is also allowed to move on the same node more then once.
+<p align="center">
+  <img src="../../assets/maze_color_2.png" alt="색깔 미로 해결책">
+</p>
 
-## Objective
+미로의 경우 항상 맨 아래, 시작 색깔의 한 지점을 선택하고 첫 번째 줄로 이동하려고 합니다. 첫 번째 줄에 도달하면 미로에서 빠져나온 것입니다. 순서가 완전할 필요는 없습니다.
 
-Write a function with **two input parameters**:
-- Sequence of colors to follow as a array/vector of chars
-- The maze as a array/vector of chars
+가로 및 세로로 이동할 수 있지만 대각선으로는 이동할 수 없습니다. 동일한 노드에서 두 번 이상 이동하는 것도 허용됩니다.
 
-## Output
-The path in the maze as coordinates x, y.
+## 목표
 
-## Example
+**두 개의 입력 매개변수**를 사용하는 함수를 작성하십시오.
+- 따라야 할 색깔 순서를 문자 배열/벡터로
+- 미로를 문자 배열/벡터로
+
+## 출력
+미로의 경로를 좌표 x, y로 나타냅니다.
+
+## 예시
 ```text
-COLOR SEQUENCE: R W
+색깔 순서: R W
 
-MAZE:
+미로:
 [
   R  O  G
   W  R  W
@@ -39,7 +39,7 @@ MAZE:
   O  R  W
 ]
 
-SOLUTION:
+해결책:
 (1, 3)
 (2, 3)
 (2, 2)
@@ -50,9 +50,9 @@ SOLUTION:
 
 --------------------------------------------------------------------------------
 
-COLOR SEQUENCE: R W
+색깔 순서: R W
 
-MAZE:
+미로:
 [
   R  O  G
   W  R  W
@@ -60,12 +60,12 @@ MAZE:
   O  R  W
 ]
 
-SOLUTION: NO SOLUTION!
+해결책: 해결책 없음!
 --------------------------------------------------------------------------------
 
-COLOR SEQUENCE: O G
+색깔 순서: O G
 
-MAZE:
+미로:
 [
   C  O  R  O  Y
   O  R  V  G  R
@@ -74,7 +74,7 @@ MAZE:
   R  O  R  B  R
 ]
 
-SOLUTION:
+해결책:
 (1, 4)
 (1, 3)
 (1, 2)
@@ -85,9 +85,9 @@ SOLUTION:
 
 --------------------------------------------------------------------------------
 
-COLOR SEQUENCE: O G
+색깔 순서: O G
 
-MAZE:
+미로:
 [
   B  O  R  O  Y
   O  R  B  G  R
@@ -96,7 +96,7 @@ MAZE:
   R  O  R  B  R
 ]
 
-SOLUTION:
+해결책:
 (1, 4)
 (1, 3)
 (1, 2)
@@ -107,9 +107,9 @@ SOLUTION:
 
 --------------------------------------------------------------------------------
 
-COLOR SEQUENCE: O G
+색깔 순서: O G
 
-MAZE:
+미로:
 [
   G  O  R  O  Y
   O  R  B  C  R
@@ -118,7 +118,7 @@ MAZE:
   R  O  R  B  R
 ]
 
-SOLUTION:
+해결책:
 (1, 4)
 (1, 3)
 (1, 2)
@@ -128,9 +128,9 @@ SOLUTION:
 
 --------------------------------------------------------------------------------
 
-COLOR SEQUENCE: R O Y P O
+색깔 순서: R O Y P O
 
-MAZE:
+미로:
 [
   R  R  B  R  R  R  B  P  Y  G  P  B  B  B  G  P  B  P  P  R
   B  G  Y  P  R  P  Y  Y  O  R  Y  P  P  Y  Y  R  R  R  P  P
@@ -154,7 +154,7 @@ MAZE:
   R  B  B  R  R  R  R  B  B  B  Y  O  B  G  P  G  G  O  O  Y
 ]
 
-SOLUTION:
+해결책:
 (3, 19)
 (3, 18)
 (3, 17)

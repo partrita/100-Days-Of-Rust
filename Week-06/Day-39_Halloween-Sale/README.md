@@ -1,22 +1,22 @@
-# Halloween Sale
+# 할로윈 세일
 
-You wish to buy video games from the famous online video game store Mist.
+유명한 온라인 비디오 게임 상점 Mist에서 비디오 게임을 구매하고 싶습니다.
 
-Usually, all games are sold at the same price,*p* dollars. However, they are planning to have the seasonal Halloween Sale next month in which you can buy games at a cheaper price. Specifically, the first game you buy during the sale will be sold at *p* dollars, but every subsequent game you buy will be sold at exactly *d* dollars less than the cost of the previous one you bought. This will continue until the cost becomes less than or equal to *m* dollars, after which every game you buy will cost *m* dollars each.
+일반적으로 모든 게임은 동일한 가격인 *p* 달러에 판매됩니다. 그러나 다음 달에는 계절별 할로윈 세일을 진행하여 게임을 더 저렴한 가격에 구매할 수 있습니다. 구체적으로, 세일 기간 동안 구매하는 첫 번째 게임은 *p* 달러에 판매되지만, 이후에 구매하는 모든 게임은 이전에 구매한 게임보다 정확히 *d* 달러 저렴하게 판매됩니다. 이는 비용이 *m* 달러 이하가 될 때까지 계속되며, 그 이후에는 구매하는 모든 게임이 각각 *m* 달러가 됩니다.
 
-You have *s* dollars in your Mist wallet. How many games can you buy during the Halloween Sale?
+Mist 지갑에 *s* 달러가 있습니다. 할로윈 세일 기간 동안 몇 개의 게임을 구매할 수 있습니까?
 
-## Objective
-Create a **howManyGames** function, it has the following parameter(s):
-- int p Normal price of games
-- int d The discount
-- int m Minimium vale per game
-- int s The budget
+## 목표
+**howManyGames** 함수를 만듭니다. 이 함수에는 다음 매개변수가 있습니다.
+- int p: 일반 게임 가격
+- int d: 할인액
+- int m: 게임당 최소 가격
+- int s: 예산
 
-Returns
-- int: the number of games you can buy
+반환 값
+- int: 구매할 수 있는 게임 수
 
-## Example
+## 예시
 ```text
 howManyGames(20, 3, 6, 80) ➞ 6
 ```

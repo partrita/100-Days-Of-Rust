@@ -1,23 +1,23 @@
-# L33tspeak Converter
+# L33tspeak 변환기
 
-L33tspeak - the act of speaking like a computer hacker (or hax0r) - was popularized in the late 1990s as a mechanism of abusing ASCII art and character mappings to confuse outsiders. It was a lot of fun. One popular comic strip in 2000 showed just how far the joke ran.
+L33tspeak(컴퓨터 해커(또는 hax0r)처럼 말하는 행위)는 1990년대 후반에 외부인을 혼란스럽게 하기 위해 ASCII 아트와 문자 매핑을 남용하는 메커니즘으로 대중화되었습니다. 매우 재미있었습니다. 2000년의 한 인기 만화는 그 농담이 얼마나 멀리 갔는지 보여주었습니다.
 
 <p align="center">
   <img src="../../assets/L33tspeak.gif" alt="L33tspeak">
 </p>
 
-In **L33Tspeak** you substitute letters for their rough outlines in ASCII characters, e.g. symbols or numbers. You can have 1:1 mappings (like E -> 3) or 1:many mappings (like W -> `//). So then you wind up with words like this:
+**L33Tspeak**에서는 글자를 ASCII 문자의 대략적인 윤곽선(예: 기호 또는 숫자)으로 대체합니다. 1:1 매핑(예: E -> 3) 또는 1:다수 매핑(예: W -> `//)을 사용할 수 있습니다. 그러면 다음과 같은 단어가 됩니다.
 
 ```text
 BASIC => 6451C
-ELEET => 3L337 (pronounced elite)
+ELEET => 3L337 (엘리트로 발음)
 WOW => `//0`//
 MOM => (V)0(V)
 ```
 
-## Mappings
+## 매핑
 
-For this challenge we'll be using a subset of American Standard Leetspeak:
+이 과제에서는 미국 표준 Leetspeak의 하위 집합을 사용합니다.
 
 ```text
 A -> 4
@@ -33,9 +33,9 @@ V -> \/
 W -> `//
 ```
 
-Your **challenge**, should you choose to accept it, is to **translate to L33T**.
+여러분이 수락해야 할 **과제**는 **L33T로 번역**하는 것입니다.
 
-## Example
+## 예시
 
 ```text
 storm -> 570R(V)

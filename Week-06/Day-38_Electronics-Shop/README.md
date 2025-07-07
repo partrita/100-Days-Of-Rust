@@ -1,19 +1,19 @@
-# Electronics Shop
+# 전자제품 매장
 
-A person wants to determine the most expensive computer keyboard and USB drive that can be purchased with a give budget. Given price lists for keyboards and USB drives and a budget, find the cost to buy them. If it is not possible to buy both items, return -1.
+한 사람이 주어진 예산으로 구매할 수 있는 가장 비싼 컴퓨터 키보드와 USB 드라이브를 결정하려고 합니다. 키보드와 USB 드라이브의 가격 목록과 예산이 주어졌을 때, 그것들을 구매하는 데 드는 비용을 찾으십시오. 두 항목을 모두 구매할 수 없는 경우 -1을 반환합니다.
 
-## Objective
-Create a **getMoneySpent** function, it has the following parameter(s):
-- int keyboards[]: the keyboard prices 
-- int drives[]: the drive prices 
-- int b: the budget 
+## 목표
+**getMoneySpent** 함수를 만듭니다. 이 함수에는 다음 매개변수가 있습니다.
+- int keyboards[]: 키보드 가격
+- int drives[]: 드라이브 가격
+- int b: 예산
 
-Returns
-- int: the maximum that can be spent, or -1 if it is not possible to buy both items.
+반환 값
+- int: 지출할 수 있는 최대 금액 또는 두 항목을 모두 구매할 수 없는 경우 -1.
 
-## Example
+## 예시
 ```text
 getMoneySpent([40,50,60],[5,8,12],60) ➞ 58
 ```
 
-In the example above, the person can buy a *40 keyboard + 12 USB drive = 52* or a *50 keyboard + 8 USB drive = 58*. Choose the latter as the more expensive option and return *58*.
+위 예시에서 그 사람은 *40 키보드 + 12 USB 드라이브 = 52* 또는 *50 키보드 + 8 USB 드라이브 = 58*을 구매할 수 있습니다. 후자를 더 비싼 옵션으로 선택하고 *58*을 반환합니다.

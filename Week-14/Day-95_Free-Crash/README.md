@@ -1,18 +1,18 @@
-## Free Cash
+## 무료 현금
 
-Valera runs a 24/7 fast food cafe. He magically learned that next day n people will visit his cafe. For each person we know the arrival time: the i-th person comes exactly at hi hours mi minutes. The cafe spends less than a minute to serve each client, but if a client comes in and sees that there is no free cash, than he doesn't want to wait and leaves the cafe immediately.
+Valera는 24시간 패스트푸드 카페를 운영합니다. 그는 마법처럼 다음날 n명의 사람들이 자신의 카페를 방문할 것이라는 것을 알게 되었습니다. 각 사람에 대해 우리는 도착 시간을 알고 있습니다. i번째 사람은 정확히 hi시 mi분에 도착합니다. 카페는 각 고객을 서빙하는 데 1분도 채 걸리지 않지만, 고객이 들어와서 무료 현금이 없는 것을 보면 기다리고 싶어하지 않고 즉시 카페를 떠납니다.
 
-Valera is very greedy, so he wants to serve all n customers next day (and get more profit). However, for that he needs to ensure that at each moment of time the number of working cashes is no less than the number of clients in the cafe.
+Valera는 매우 탐욕스러워서 다음날 n명의 모든 고객에게 서비스를 제공하고 싶어합니다(그리고 더 많은 수익을 얻고 싶어합니다). 그러나 이를 위해서는 매 순간 작동하는 현금 계산대의 수가 카페에 있는 고객 수보다 적지 않도록 해야 합니다.
 
-Help Valera count the minimum number of cashes to work at his cafe next day, so that they can serve all visitors.
+Valera가 다음날 모든 방문객에게 서비스를 제공할 수 있도록 카페에서 일할 최소 현금 계산대 수를 계산하는 데 도움을 주세요.
 
 
-### Input
-The first line contains a single integer n (1 ≤ n ≤ 105), that is the number of cafe visitors.
+### 입력
+첫 번째 줄에는 카페 방문객 수인 단일 정수 n(1 ≤ n ≤ 105)이 포함됩니다.
 
-Each of the following n lines has two space-separated integers hi and mi (0 ≤ hi ≤ 23; 0 ≤ mi ≤ 59), representing the time when the i-th person comes into the cafe.
+다음 n개의 각 줄에는 i번째 사람이 카페에 들어오는 시간을 나타내는 두 개의 공백으로 구분된 정수 hi와 mi(0 ≤ hi ≤ 23; 0 ≤ mi ≤ 59)가 있습니다.
 
-Note that the time is given in the chronological order. All time is given within one 24-hour period.
+시간은 시간순으로 주어집니다. 모든 시간은 24시간 단위로 주어집니다.
 ```
 4
 8 0
@@ -21,13 +21,13 @@ Note that the time is given in the chronological order. All time is given within
 8 45
 ```
 
-### Output
-Print a single integer — the minimum number of cashes, needed to serve all clients next day.
+### 출력
+다음날 모든 고객에게 서비스를 제공하는 데 필요한 최소 현금 계산대 수를 나타내는 단일 정수를 인쇄합니다.
 ```
 2
 ```
 
-### Input
+### 입력
 ```
 3
 0 12
@@ -35,13 +35,13 @@ Print a single integer — the minimum number of cashes, needed to serve all cli
 22 22
 ```
 
-### Output
+### 출력
 ```
 1
 ```
 
 
-### Notes
-In the first sample it is not enough one cash to serve all clients, because two visitors will come into cafe in 8:10. Therefore, if there will be one cash in cafe, then one customer will be served by it, and another one will not wait and will go away.
+### 참고
+첫 번째 샘플에서는 8시 10분에 두 명의 방문객이 카페에 들어오기 때문에 모든 고객에게 서비스를 제공하기에 현금 계산대 하나로는 충분하지 않습니다. 따라서 카페에 현금 계산대가 하나만 있으면 한 명의 고객이 서비스를 받고 다른 고객은 기다리지 않고 떠나게 됩니다.
 
-In the second sample all visitors will come in different times, so it will be enough one cash.
+두 번째 샘플에서는 모든 방문객이 다른 시간에 도착하므로 현금 계산대 하나로 충분합니다.

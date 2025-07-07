@@ -47,9 +47,9 @@ assets/day-35_sample_6_invalid.txt
 ## 출력
 각 입력 세트에 대해 한 줄을 반환합니다.
 
-땅다람쥐가 탈출할 수 있는 경우 출력 줄은 _“The gopher can escape through the hole at (x, y).”_이어야 하며 적절한 굴을 밀리미터 단위까지 식별해야 합니다.
+땅다람쥐가 탈출할 수 있는 경우 출력 줄은 _“땅다람쥐는 (x, y)의 굴을 통해 탈출할 수 있습니다.”_이어야 하며 적절한 굴을 밀리미터 단위까지 식별해야 합니다.
 
-그렇지 않은 경우 출력 줄은 _“The gopher cannot escape.”_이어야 합니다.
+그렇지 않은 경우 출력 줄은 _“땅다람쥐는 탈출할 수 없습니다.”_이어야 합니다.
 
 땅다람쥐가 두 개 이상의 굴을 통해 탈출할 수 있는 경우 **입력에 먼저 나타나는** 굴을 보고합니다.
 
@@ -74,15 +74,15 @@ assets/day-35_sample_6_invalid.txt
 
 ### 예상 반환 값
 ```text
-["The gopher cannot escape.", "The gopher can escape through the hole at (2.500,2.500)."]
+["땅다람쥐는 탈출할 수 없습니다.", "땅다람쥐는 (2.500,2.500)의 굴을 통해 탈출할 수 있습니다."]
 ```
 
 
 ### 'assets' 폴더에서 사용 가능한 제공된 샘플 파일을 사용한 예시
 ```text
-gopherEscapePlan("...assets/day-35_sample_1_valid.txt") ➞ ["The gopher cannot escape.", "The gopher can escape through the hole at (2.500000,2.500000)."]
+gopherEscapePlan("...assets/day-35_sample_1_valid.txt") ➞ ["땅다람쥐는 탈출할 수 없습니다.", "땅다람쥐는 (2.500000,2.500000)의 굴을 통해 탈출할 수 있습니다."]
 
-gopherEscapePlan("...assets/day-35_sample_2_valid.txt") ➞ ["The gopher cannot escape.", "The gopher can escape through the hole at (2.500000,2.500000)."]
+gopherEscapePlan("...assets/day-35_sample_2_valid.txt") ➞ ["땅다람쥐는 탈출할 수 없습니다.", "땅다람쥐는 (2.500000,2.500000)의 굴을 통해 탈출할 수 있습니다."]
 
 gopherEscapePlan("...assets/day-35_sample_3_invalid.txt") ➞ ["BAD FILE!"]
 

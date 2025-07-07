@@ -1,20 +1,20 @@
-# Garage Door Opener
+# 차고 문 개폐기
 
-You just got a new garage door installed by the Automata™ Garage Door Company. You are having a lot of fun playing with the remote clicker, opening and closing the door, scaring your pets and annoying the neighbors.
+Automata™ 차고 문 회사에서 새 차고 문을 설치했습니다. 리모컨 버튼을 누르며 문을 열고 닫고, 애완동물을 놀라게 하고 이웃을 귀찮게 하며 즐거운 시간을 보내고 있습니다.
 
-The clicker is a one-button remote that works like this:
+버튼 하나짜리 리모컨은 다음과 같이 작동합니다.
 
-If the door is **OPEN** or **CLOSED**, clicking the button will cause the door to move, until it completes the cycle of opening or closing.
+문이 **열려 있거나** **닫혀 있으면** 버튼을 누르면 문이 열리거나 닫히는 주기가 완료될 때까지 문이 움직입니다.
 
-_Door: Closed -> Button clicked -> Door: Opening -> Cycle complete -> Door: Open._
+_문: 닫힘 -> 버튼 클릭 -> 문: 열리는 중 -> 주기 완료 -> 문: 열림_
 
-If the door is currently opening or closing, clicking the button will make the door stop where it is. When clicked again, the door will go the opposite direction, until complete or the button is clicked again.
+문이 현재 열리거나 닫히는 중이면 버튼을 누르면 문이 현재 위치에서 멈춥니다. 다시 클릭하면 완료되거나 버튼을 다시 클릭할 때까지 문이 반대 방향으로 움직입니다.
 
-We will assume the initial state is **CLOSED**.
+초기 상태는 **닫힘**으로 가정합니다.
 
-## Input
+## 입력
 
-Array/vector of a series of commands (can be hard coded, no need to parse):
+일련의 명령 배열/벡터 (하드 코딩 가능, 구문 분석 필요 없음):
 
 ```text
 button_clicked
@@ -27,30 +27,30 @@ button_clicked
 cycle_complete
 ```
 
-## Output
+## 출력
 
-Output should be the state of the door and the input commands, such as:
+출력은 다음과 같이 문의 상태와 입력 명령이어야 합니다.
 
 ```text
-Door: CLOSED
-> Button clicked.
-Door: OPENING
-> Cycle complete.
-Door: OPEN
-> Button clicked.
-Door: CLOSING
-> Button clicked.
-Door: STOPPED_WHILE_CLOSING
-> Button clicked.
-Door: OPENING
-> Button clicked.
-Door: STOPPED_WHILE_OPENING
-> Button clicked.
-Door: CLOSING
-> Cycle complete.
-Door: CLOSED
+문: 닫힘
+> 버튼 클릭됨.
+문: 열리는 중
+> 주기 완료.
+문: 열림
+> 버튼 클릭됨.
+문: 닫히는 중
+> 버튼 클릭됨.
+문: 닫히는 중 멈춤
+> 버튼 클릭됨.
+문: 열리는 중
+> 버튼 클릭됨.
+문: 열리는 중 멈춤
+> 버튼 클릭됨.
+문: 닫히는 중
+> 주기 완료.
+문: 닫힘
 ```
 
-## Notes
+## 참고
 
-- This is an example of a simple [Finite State Machine](https://en.wikipedia.org/wiki/Finite-state_machine) with 6 States and 2 inputs.
+- 이것은 6개의 상태와 2개의 입력을 가진 간단한 [유한 상태 기계](https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%95%9C_%EC%83%81%ED%83%9C_%EA%B8%B0%EA%B3%84)의 예입니다.

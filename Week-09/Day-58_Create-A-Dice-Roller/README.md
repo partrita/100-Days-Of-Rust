@@ -1,39 +1,39 @@
-# Create a Dice Roller
+# 주사위 굴리기 만들기
 
-I love playing D&D with my friends, and my favorite part is creating character sheets (my DM is notorious for killing us all off by level 3 or so). One major part of making character sheets is rolling the character's stats. Sadly, I have lost all my dice, so I'm asking for your help to make a dice roller for me to use!
+저는 친구들과 D&D를 하는 것을 좋아하고, 가장 좋아하는 부분은 캐릭터 시트를 만드는 것입니다(제 DM은 레벨 3 정도면 우리 모두를 죽이는 것으로 악명이 높습니다). 캐릭터 시트를 만드는 주요 부분 중 하나는 캐릭터의 능력치를 굴리는 것입니다. 안타깝게도 주사위를 모두 잃어버려서 제가 사용할 주사위 굴리기를 만드는 데 도움을 요청합니다!
 
-## Input description
-Your input will contain one array/vector of strings, where each entry will be in the form of "NdM"; for example:
+## 입력 설명
+입력에는 문자열 배열/벡터 하나가 포함되며, 각 항목은 "NdM" 형식입니다. 예를 들면 다음과 같습니다.
 
 ```text
 ["3d6", "4d12", "1d10", "5d4"]
 ```
 
-If you've ever played D&D you probably recognize those, but for the rest of you, this is what those mean:
+D&D를 해본 적이 있다면 아마 알아볼 수 있겠지만, 그렇지 않은 분들을 위해 설명하자면 다음과 같습니다.
 
-The first number is the number of dice to roll, the d just means "dice", it's just used to split up the two numbers, and the second number is how many sides the dice have. So the above example of "3d6" means "roll 3 6-sided dice". Also, just in case you didn't know, in D&D, not all the dice we roll are the normal cubes. A d6 is a cube, because it's a 6-sided die, but a d20 has twenty sides, so it looks a lot closer to a ball than a cube.
+첫 번째 숫자는 굴릴 주사위의 수이고, d는 "주사위"를 의미하며 두 숫자를 구분하는 데 사용되고, 두 번째 숫자는 주사위의 면 수입니다. 따라서 위 예시의 "3d6"은 "6면체 주사위 3개 굴리기"를 의미합니다. 또한 혹시 모르시는 분들을 위해 말씀드리자면, D&D에서 우리가 굴리는 모든 주사위가 일반적인 정육면체는 아닙니다. d6은 6면체 주사위이므로 정육면체이지만, d20은 20면체이므로 정육면체보다 공에 훨씬 가깝습니다.
 
-The first number, the number of dice to roll, can be any integer between 1 and 100, inclusive.
+첫 번째 숫자인 굴릴 주사위의 수는 1에서 100 사이의 정수(포함)일 수 있습니다.
 
-The second number, the number of sides of the dice, can be any integer between 2 and 100, inclusive.
+두 번째 숫자인 주사위의 면 수는 2에서 100 사이의 정수(포함)일 수 있습니다.
 
-## Output description
+## 출력 설명
 
-You should output the sum of all the rolls of that specified die, each on their own line. so if your input is "3d6", the output should look something like:
+지정된 주사위의 모든 굴림 합계를 각 줄에 출력해야 합니다. 따라서 입력이 "3d6"이면 출력은 다음과 같아야 합니다.
 
 ```text
 14: 6 3 5
 ```
 
-You rolled 3 6-sided dice, and they added up to 14 and you print out the result of each roll on the same line.
+6면체 주사위 3개를 굴렸고 합계는 14이며 각 굴림 결과를 같은 줄에 인쇄합니다.
 
-## Notes/Hints
+## 참고/힌트
 
-A dice roll is basically the same as picking a random number between 1 and 6 (or 12, or 20, or however many sides the die has). You should use some way of randomly selecting a number within a range based off of your input. Many common languages have random number generators available, but at least a few of them will give the same "random" numbers every time you use the program. In my opinion that's not very random. If you run your code 3+ times with the same inputs and it gives the same outputs, that wouldn't be super useful for a game of D&D, would it? If that happens with your code, try to find a way around that. I'm guessing for some of the newer folks, this might be one of the trickier parts to get correct.
+주사위 굴리기는 기본적으로 1에서 6 사이(또는 주사위 면 수에 따라 12, 20 등)의 임의의 숫자를 선택하는 것과 같습니다. 입력에 따라 범위 내에서 임의의 숫자를 선택하는 방법을 사용해야 합니다. 많은 일반적인 언어에는 난수 생성기가 있지만 적어도 일부는 프로그램을 사용할 때마다 동일한 "임의의" 숫자를 제공합니다. 제 생각에는 그다지 임의적이지 않습니다. 동일한 입력으로 코드를 3회 이상 실행했는데 동일한 출력이 나오면 D&D 게임에 그다지 유용하지 않겠죠? 코드에서 이런 일이 발생하면 해결 방법을 찾아보십시오. 제가 추측하기로는 일부 신규 사용자에게는 이것이 올바르게 수행하기 가장 까다로운 부분 중 하나일 수 있습니다.
 
-Don't just multiply your roll by the number of dice, please. I don't know if any of you were thinking about doing that, but I was. The problem is that if you do that, it eliminates a lot of possible values. For example, there's no way to roll 14 from 3d6 if you just roll it once and multiply by 3. Setting up a loop to roll each die is probably your best bet here.
+굴림에 주사위 수를 곱하지 마십시오. 그렇게 하려고 생각한 분이 계셨는지 모르겠지만 저는 그랬습니다. 문제는 그렇게 하면 가능한 많은 값이 제거된다는 것입니다. 예를 들어, 한 번만 굴리고 3을 곱하면 3d6에서 14를 굴릴 방법이 없습니다. 각 주사위를 굴리는 루프를 설정하는 것이 여기서는 최선의 방법일 것입니다.
 
-## Examples
+## 예시
 ```text
 14: 6 3 5
 22: 10 7 1 4

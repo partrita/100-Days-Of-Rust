@@ -1,15 +1,15 @@
-## Final Hello World
+## 최종 Hello World
 
-Your boss asks you to write a **"hello world"** program. Since you get paid for lines of code, you want to make it as complex as possible. However if you just add nonsense lines, or obviously useless or obfuscating stuff, you will never get it through code review. Therefore the challenge is:
+사장님이 **"hello world"** 프로그램을 작성하라고 요청합니다. 코드 줄 수에 따라 급여를 받으므로 가능한 한 복잡하게 만들고 싶습니다. 그러나 의미 없는 줄이나 명백히 쓸모없거나 난독화하는 내용을 추가하면 코드 검토를 통과할 수 없습니다. 따라서 과제는 다음과 같습니다.
 
-Write a **"hello world"** program which is as complex as possible under the condition that you can give a "_justification_" for every complexity in the code.
+코드의 모든 복잡성에 대해 "_정당화_"를 제공할 수 있다는 조건 하에 가능한 한 복잡한 **"hello world"** 프로그램을 작성하십시오.
 
-The required behavior of the program is to just output a single line "Hello world" (without the quotes, but with a newline at the end) and then exit successfully.
+프로그램의 필수 동작은 "Hello world"라는 한 줄을 출력하고(따옴표 제외, 끝에 줄 바꿈 포함) 성공적으로 종료하는 것입니다.
 
-"Justifications" include:
+"정당화"에는 다음이 포함됩니다.
 
-    - buzzword compatibility ("Modern software is object oriented!")
-    - generally accepted good programming practices ("Everyone knows that you should separate model and view")
-    - maintainability ("If we do it this way, we can more easily do XXX later")
-    - and of course any other justification you can imagine using (in other situations) for real code.
+    - 유행어 호환성 ("현대 소프트웨어는 객체 지향적입니다!")
+    - 일반적으로 인정되는 좋은 프로그래밍 관행 ("모델과 뷰를 분리해야 한다는 것은 누구나 알고 있습니다")
+    - 유지 관리성 ("이런 식으로 하면 나중에 XXX를 더 쉽게 할 수 있습니다")
+    - 물론 실제 코드에 (다른 상황에서) 사용할 수 있다고 상상할 수 있는 다른 모든 정당화.
 

@@ -1,37 +1,37 @@
-## Dreamoon and Stairs
+## 드리문과 계단
 
-Dreamoon wants to climb up a stair of **n** steps. He can climb 1 or 2 steps at each move. Dreamoon wants the number of moves to be a multiple of an integer **m**.
+드리문은 **n**개의 계단을 오르고 싶어합니다. 그는 한 번에 1개 또는 2개의 계단을 오를 수 있습니다. 드리문은 이동 횟수가 정수 **m**의 배수가 되기를 원합니다.
 
-What is the minimal number of moves making him climb to the top of the stairs that satisfies his condition?
+그의 조건을 만족시키면서 계단 꼭대기까지 오르는 최소 이동 횟수는 얼마입니까?
 
-### Input
-The single line contains two space separated integers **n**, **m** (0 < n ≤ 10000, 1 < m ≤ 10).
+### 입력
+한 줄에는 공백으로 구분된 두 개의 정수 **n**, **m** (0 < n ≤ 10000, 1 < m ≤ 10)이 포함됩니다.
 ```
 10 2
 ```
 
-### Output
-Print a single integer — the minimal number of moves being a multiple of **m**. If there is no way he can climb satisfying condition print  **-1** instead.
+### 출력
+**m**의 배수인 최소 이동 횟수를 나타내는 단일 정수를 인쇄합니다. 조건을 만족하는 방법이 없으면 대신 **-1**을 인쇄합니다.
 ```
 6
 ```
 
-### Input
+### 입력
 ```
 3 5
 ```
 
-### Output
+### 출력
 ```
 -1
 ```
 
-### Note
-For the first sample, Dreamoon could climb in 6 moves with following sequence of steps: {2, 2, 2, 2, 1, 1}.
+### 참고
+첫 번째 샘플의 경우 드리문은 다음 단계 순서로 6번 이동하여 오를 수 있습니다: {2, 2, 2, 2, 1, 1}.
 
-For the second sample, there are only three valid sequence of steps {2, 1}, {1, 2}, {1, 1, 1} with 2, 2, and 3 steps respectively. All these numbers are not multiples of 5.
+두 번째 샘플의 경우 각각 2, 2, 3단계인 세 가지 유효한 단계 순서 {2, 1}, {1, 2}, {1, 1, 1}만 있습니다. 이 모든 숫자는 5의 배수가 아닙니다.
 
-### More examples of Input & Output
+### 입력 및 출력의 추가 예시
 ```    
     climbMoves(13, 2) == 8 //2 2 2 2 2 1 1 1    
     climbMoves(6, 4) == 4 //2 2 1 1

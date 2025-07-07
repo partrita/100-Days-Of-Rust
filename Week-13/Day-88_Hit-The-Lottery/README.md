@@ -1,27 +1,27 @@
-## Hit the Lottery
+## 복권 당첨
 
-Allen has a LOT of money. He has 𝑛 dollars in the bank. For security reasons, he wants to withdraw it in cash (we will not disclose the reasons here). The denominations for dollar bills are **1**, **5**, **10**, **20**, **100**. 
+Allen은 돈이 아주 많습니다. 그는 은행에 n달러를 가지고 있습니다. 보안상의 이유로 그는 현금으로 인출하고 싶어합니다(여기서는 이유를 밝히지 않겠습니다). 달러 지폐의 종류는 **1**, **5**, **10**, **20**, **100**입니다.
 
-What is the minimum number of bills Allen could receive after withdrawing his entire balance?
+Allen이 전체 잔액을 인출한 후 받을 수 있는 최소 지폐 수는 얼마입니까?
 
-### Input
+### 입력
 ```
 125
 43
 1000000000
 ```
 
-### Output
+### 출력
 ```
 3
 5
 10000000
 ```
 
-### Note
+### 참고
 
-In the first sample case, Allen can withdraw this with a 100 dollar bill, a 20 dollar bill, and a 5 dollar bill. There is no way for Allen to receive 125 dollars in one or two bills.
+첫 번째 샘플 케이스에서 Allen은 100달러 지폐, 20달러 지폐, 5달러 지폐로 인출할 수 있습니다. Allen이 한두 장의 지폐로 125달러를 받을 방법은 없습니다.
 
-In the second sample case, Allen can withdraw two 20 dollar bills and three 1 dollar bills.
+두 번째 샘플 케이스에서 Allen은 20달러 지폐 두 장과 1달러 지폐 세 장을 인출할 수 있습니다.
 
-In the third sample case, Allen can withdraw 100000000 (ten million!) 100 dollar bills.
+세 번째 샘플 케이스에서 Allen은 100달러 지폐 천만 장(1억 달러!)을 인출할 수 있습니다.

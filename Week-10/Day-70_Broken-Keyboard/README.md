@@ -1,12 +1,12 @@
-# Broken Keyboard
+# 고장난 키보드
 
-Help! My keyboard is broken, only a few keys work any more. If I tell you what keys work, can you tell me what words I can write?
+도와주세요! 키보드가 고장 나서 몇 개의 키만 작동합니다. 어떤 키가 작동하는지 알려주면 어떤 단어를 쓸 수 있는지 알려주시겠어요?
 
-(You should use the trusty **dictionary1.txt** file, located at _assets_ folder).
+(_assets_ 폴더에 있는 신뢰할 수 있는 **dictionary1.txt** 파일을 사용해야 합니다.)
 
-## Input
+## 입력
 
-A string of letters representing the keys that work on the keyboard, example:
+키보드에서 작동하는 키를 나타내는 문자열입니다. 예시:
 
 ```text
 abcd
@@ -20,11 +20,11 @@ qwer
 hjklo
 ```
 
-## Output
+## 출력
 
-Your program should emit the longest valid English language word you can make for each keyboard configuration.
+프로그램은 각 키보드 구성에 대해 만들 수 있는 가장 긴 유효한 영어 단어를 출력해야 합니다.
 
-## Challenge Output
+## 과제 출력
 
 ```text
 longestWord("abcd") ➞ "abaca"

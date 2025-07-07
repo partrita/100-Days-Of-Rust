@@ -1,8 +1,8 @@
-## Minesweeper
+## 지뢰 찾기
 
-Minesweeper is a game where the objective is correctly identify the location of all mines in a given grid. You are given a uniform grid of gray squares in the beginning of the game. Each square contains either a mine (indicated by a value of 9), or an empty square. Empty squares have a number indicating the count of mines in the adjacent squares. Empty squares can have counts from zero (no adjacent mines) up to 8 (all adjacent squares are mines).
+지뢰 찾기는 주어진 그리드에서 모든 지뢰의 위치를 정확하게 식별하는 것이 목표인 게임입니다. 게임 시작 시 회색 사각형으로 이루어진 균일한 그리드가 주어집니다. 각 사각형에는 지뢰(값 9로 표시) 또는 빈 사각형이 들어 있습니다. 빈 사각형에는 인접한 사각형의 지뢰 수를 나타내는 숫자가 있습니다. 빈 사각형은 0(인접 지뢰 없음)부터 8(모든 인접 사각형이 지뢰임)까지의 수를 가질 수 있습니다.
 
-If you were to take a complete grid, for example, you can see which squares have mines and which squares are empty:
+예를 들어 완성된 그리드를 보면 어떤 사각형에 지뢰가 있고 어떤 사각형이 비어 있는지 알 수 있습니다.
 
 ```
 0  0  0  0  0
@@ -14,13 +14,13 @@ If you were to take a complete grid, for example, you can see which squares have
 0  1  1  1  0
 ```
 
-The squares with "2" indicate that there 2 mines adjacent to that particular square.
+"2"가 있는 사각형은 해당 특정 사각형에 인접한 지뢰가 2개 있음을 나타냅니다.
 
-Gameplay starts with a user un-hiding a square at random. If the square contains a mine, the game ends. If it is a blank, the number of adjacent mines is revealed.
+게임 플레이는 사용자가 무작위로 사각형을 숨김 해제하는 것으로 시작됩니다. 사각형에 지뢰가 있으면 게임이 종료됩니다. 빈 칸이면 인접한 지뢰의 수가 표시됩니다.
 
-Exposing a zero means that there are no adjacent mines, so exposing all adjacent squares is guaranteed safe. As a convenience to the player, the game continues to expose adjacent squares until a non-zero square is reached.
+0을 노출하면 인접한 지뢰가 없으므로 모든 인접 사각형을 노출하는 것이 안전합니다. 플레이어의 편의를 위해 게임은 0이 아닌 사각형에 도달할 때까지 인접한 사각형을 계속 노출합니다.
 
-For example, if you click on the top right corner you get this ('-' means hidden):
+예를 들어 오른쪽 상단 모서리를 클릭하면 다음과 같이 표시됩니다('-'는 숨김을 의미).
 
 ```
 0  0  0  0  0
@@ -32,8 +32,8 @@ For example, if you click on the top right corner you get this ('-' means hidden
 -  -  -  1  0
 ```
 
-Write functions to construct the playing field given the size and number of mines.
+크기와 지뢰 수가 주어지면 경기장을 구성하는 함수를 작성하십시오.
 
-### Tip
+### 팁
 
-An important part of this problem is figuring out a way to place the mines. The most naive implementation is to pick two random numbers (row and column) and place a mine there, but this will cause the board to have less mines than expected if the same coordinates are picked twice. Re-trying if the picked coordinates already have a mine fixes the immediate problem, but will take a very long time for cases such as a 100x100 board with 9999 mines.
+이 문제의 중요한 부분은 지뢰를 배치하는 방법을 알아내는 것입니다. 가장 순진한 구현은 두 개의 임의의 숫자(행과 열)를 선택하고 거기에 지뢰를 배치하는 것이지만, 동일한 좌표가 두 번 선택되면 보드에 예상보다 적은 지뢰가 생깁니다. 선택한 좌표에 이미 지뢰가 있는 경우 다시 시도하면 즉각적인 문제가 해결되지만 100x100 보드에 9999개의 지뢰가 있는 경우와 같이 매우 오랜 시간이 걸립니다.

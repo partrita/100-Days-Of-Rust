@@ -1,30 +1,30 @@
-## Tidy Numbers
+## 깔끔한 숫자
 
-Tatiana likes to keep things tidy. Her toys are sorted from smallest to largest, her pencils are sorted from shortest to longest and her computers from oldest to newest. One day, when practicing her counting skills, she noticed that some integers, when written in base 10 with no leading zeroes, have their digits sorted in non-decreasing order. Some examples of this are 8, 123, 555, and 224488. She decided to call these numbers tidy. Numbers that do not have this property, like 20, 321, 495 and 999990, are not tidy.
+타티아나는 물건을 깔끔하게 정리하는 것을 좋아합니다. 그녀의 장난감은 가장 작은 것부터 가장 큰 것 순으로 정렬되어 있고, 연필은 가장 짧은 것부터 가장 긴 것 순으로 정렬되어 있으며, 컴퓨터는 가장 오래된 것부터 가장 최신 것 순으로 정렬되어 있습니다. 어느 날, 그녀는 숫자 세기 연습을 하다가 일부 정수는 10진수로 썼을 때 앞에 0이 없고 숫자가 비감소 순서로 정렬된다는 것을 알게 되었습니다. 예를 들어 8, 123, 555, 224488이 있습니다. 그녀는 이러한 숫자를 깔끔한 숫자라고 부르기로 했습니다. 20, 321, 495, 999990과 같이 이 속성이 없는 숫자는 깔끔하지 않습니다.
 
-She just finished counting all positive integers in ascending order from 1 to **N**. What was the last tidy number she counted?
+그녀는 방금 1부터 **N**까지의 모든 양의 정수를 오름차순으로 세는 것을 마쳤습니다. 그녀가 센 마지막 깔끔한 숫자는 무엇이었을까요?
 
-### Input
+### 입력
 
-The first line of the input gives the number of test cases, **T. T** lines follow. Each line describes a test case with a single integer N, the last number counted by Tatiana.
+입력의 첫 번째 줄에는 테스트 케이스의 수 **T**가 주어집니다. **T**개의 줄이 이어집니다. 각 줄은 타티아나가 센 마지막 숫자인 단일 정수 N으로 테스트 케이스를 설명합니다.
 
-### Output
+### 출력
 
-For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is the last tidy number counted by Tatiana.
+각 테스트 케이스에 대해 Case #x: y 형식으로 한 줄을 출력합니다. 여기서 x는 테스트 케이스 번호(1부터 시작)이고 y는 타티아나가 센 마지막 깔끔한 숫자입니다.
 
-### Limits
+### 제한
 
-Time limit: 20 seconds per test set.
-Memory limit: 1 GB.
+시간 제한: 테스트 세트당 20초.
+메모리 제한: 1GB.
 1 ≤ **T** ≤ 100.
 
-Dataset
+데이터 세트
 1 ≤ N ≤ 1018.
 
-Sample
+샘플
 
 ```
-Input
+입력
 
 4
 132
@@ -32,7 +32,7 @@ Input
 7
 111111111111111110
 
-Output
+출력
 
 Case #1: 129
 Case #2: 999

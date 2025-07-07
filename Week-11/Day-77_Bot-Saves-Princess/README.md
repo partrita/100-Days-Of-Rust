@@ -1,24 +1,24 @@
-## Bot saves princess
+## 봇이 공주를 구하다
 
-In this version of "Bot saves princess", Princess Peach and bot's position are randomly set. Can you save the princess?
+"봇이 공주를 구하다"의 이 버전에서는 피치 공주와 봇의 위치가 무작위로 설정됩니다. 공주를 구할 수 있습니까?
 
-### Task
+### 과제
 
-Create a function nextMove which takes in 4 parameters - an integer N, integers r and c indicating the row & column position of the bot and the character array grid - and outputs the next move the bot makes to rescue the princess.
+정수 N, 봇의 행 및 열 위치를 나타내는 정수 r과 c, 문자 배열 그리드의 4개 매개변수를 입력받아 봇이 공주를 구하기 위해 취하는 다음 움직임을 출력하는 nextMove 함수를 만듭니다.
 
-### Input Format
+### 입력 형식
 
-The first input parameter is N (<100), the size of the board (NxN). The second and third parameters of the input represents the position of the bot.
+첫 번째 입력 매개변수는 보드 크기(NxN)인 N(<100)입니다. 입력의 두 번째 및 세 번째 매개변수는 봇의 위치를 나타냅니다.
 
-Grid is indexed using Matrix Convention
+그리드는 행렬 규칙을 사용하여 인덱싱됩니다.
 
-The position of the princess is indicated by the character 'p' and the position of the bot is indicated by the character 'm' and each cell is denoted by '-' (ascii value: 45).
+공주의 위치는 문자 'p'로 표시되고 봇의 위치는 문자 'm'으로 표시되며 각 셀은 '-' (ASCII 값: 45)로 표시됩니다.
 
-### Output Format
+### 출력 형식
 
-Output the shortest path you take to rescue the princess. Valid moves are LEFT, RIGHT, UP or DOWN
+공주를 구하기 위해 취하는 최단 경로를 출력합니다. 유효한 움직임은 LEFT, RIGHT, UP 또는 DOWN입니다.
 
-#### Sample Input
+#### 샘플 입력
 
 ```
 5,2,3
@@ -29,7 +29,7 @@ p--m-
 -----
 ```
 
-#### Sample Output
+#### 샘플 출력
 
 ```
 LEFT, LEFT, LEFT

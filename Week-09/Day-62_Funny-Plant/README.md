@@ -1,24 +1,24 @@
-# Funny plant
+# 재미있는 식물
 
-Scientist have discovered a new plant. The fruit of the plant can feed 1 person for a whole week and best of all, the plant never dies. Fruits needs 1 week to grow, so each weak you can harvest it fruits. Also the plant gives 1 fruit more than the week before and to get more plants you need to plant a fruit.
+과학자들이 새로운 식물을 발견했습니다. 이 식물의 열매는 일주일 동안 한 사람을 먹일 수 있으며, 무엇보다도 식물은 절대 죽지 않습니다. 열매가 자라는 데는 일주일이 걸리므로 매주 열매를 수확할 수 있습니다. 또한 식물은 일주일 전보다 열매를 하나 더 많이 맺으며, 더 많은 식물을 얻으려면 열매를 심어야 합니다.
 
-Now you need to calculate after how many weeks, you can support a group of x people, given y fruits to start with.
+이제 x명의 사람들을 부양하는 데 몇 주가 걸리는지, y개의 열매로 시작하여 계산해야 합니다.
 
-## Input Description
+## 입력 설명
 
-The input gives you 2 positive integers x and y, being x the number of people needed to be fed and y the number of fruits you start with.
+입력은 양의 정수 x와 y 두 개를 제공하며, x는 먹여야 할 사람의 수이고 y는 시작하는 열매의 수입니다.
 
-## Output Description
+## 출력 설명
 
-The number of weeks before you can feed the entire group of people.
+전체 인구를 먹일 수 있기까지 걸리는 주 수입니다.
 
-## Explanation
+## 설명
 
-Here you have a table that shows the growth when starting with 1 fruit. It shows when the plant came into existence (is planted) and how may fruit it bears each week:
+다음은 열매 1개로 시작했을 때의 성장을 보여주는 표입니다. 식물이 언제 생겨났는지(심어졌는지)와 매주 얼마나 많은 열매를 맺는지 보여줍니다.
 
 ```text
-  Plant 1  2  3  4  5  6  7  8  9 10 11 12 13    Total # of fruits in a harvest
-Week
+  식물 1  2  3  4  5  6  7  8  9 10 11 12 13    수확 시 총 열매 수
+주
 1       0  -  -  -  -  -  -  -  -  -  -  -  -     0
 2       1  0  -  -  -  -  -  -  -  -  -  -  -     1
 3       2  1  0  0  0  -  -  -  -  -  -  -  -     3
@@ -26,21 +26,21 @@ Week
 5       4  3  2  2  2  1  1  1  1  1  1  1  1    21  
 ```
 
-At week 1 we have 1 plant giving 0 fruits, because it has just been planted.
+1주차에는 식물 1개가 열매를 0개 맺는데, 이는 방금 심었기 때문입니다.
 
-When week 2 comes along we have 1 plant that gives off a fruit and then we use that fruit to plant plant 2.
+2주차가 되면 식물 1개가 열매를 맺고 그 열매를 사용하여 식물 2를 심습니다.
 
-Then in week 3 we have 2 fruits from plant 1, 1 from plant 2, so we can plant 3 new plants.
+그런 다음 3주차에는 식물 1에서 열매 2개, 식물 2에서 열매 1개를 얻으므로 새 식물 3개를 심을 수 있습니다.
 
 
-## Examples
+## 예시
 ```text
-input: 200, 15
-output: 5
+입력: 200, 15
+출력: 5
 
-input: 50000, 1
-output: 14
+입력: 50000, 1
+출력: 14
 
-input: 150000, 250
-output: 9
+입력: 150000, 250
+출력: 9
 ```

@@ -1,21 +1,21 @@
-## Draw the “G” Logo
+## "G" 로고 그리기
 
-Write a program or function that takes in a positive integer N, and outputs an N×N pixel image of Google's "G" logo according to this\* construction:
-
-<p align="left">
-  <img src="../../assets/google_logo.png" width=600 height=600 alt="google logo">
-</p>
-
-For example, if N is 200, a 200×200 pixel logo should be output, with correct dimensions and colors:
+양의 정수 N을 입력받아 이 구성에 따라 Google의 "G" 로고를 N×N 픽셀 이미지로 출력하는 프로그램이나 함수를 작성하십시오.
 
 <p align="left">
-  <img src="../../assets/google_logo_2.png" width=200 height=200 alt="google logo">
+  <img src="../../assets/google_logo.png" width=600 height=600 alt="구글 로고">
 </p>
 
-- It should look accurate regardless of how large or small N is.
+예를 들어 N이 200이면 올바른 크기와 색상으로 200×200 픽셀 로고를 출력해야 합니다.
 
-- Your code should not need to connect to the internet. For example, scaling an externally hosted svg is not allowed. (Scaling an svg encoded in your code would be fine though.)
+<p align="left">
+  <img src="../../assets/google_logo_2.png" width=200 height=200 alt="구글 로고">
+</p>
 
-- Anti-aliasing may be used or not. It's up to you.
+- N의 크기에 관계없이 정확하게 보여야 합니다.
 
-- Notice that the horizontal bar of the "G" does not extend all the way to the right edge of the image. The circle curves normally inward on the right edge before it is cut off.
+- 코드는 인터넷에 연결할 필요가 없습니다. 예를 들어 외부에서 호스팅되는 svg를 확장하는 것은 허용되지 않습니다. (코드에 인코딩된 svg를 확장하는 것은 괜찮습니다.)
+
+- 앤티앨리어싱을 사용하거나 사용하지 않을 수 있습니다. 그것은 당신에게 달려 있습니다.
+
+- "G"의 가로 막대는 이미지의 오른쪽 가장자리까지 완전히 확장되지 않습니다. 원은 잘리기 전에 오른쪽 가장자리에서 정상적으로 안쪽으로 구부러집니다.

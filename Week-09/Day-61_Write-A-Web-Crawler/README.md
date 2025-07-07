@@ -1,28 +1,28 @@
-# Write a Web Crawler
+# 웹 크롤러 작성
 
-Most of us are familiar with web spiders and crawlers like GoogleBot - they visit a web page, index content there, and then visit outgoing links from that page. Crawlers are an interesting technology with continuing development.
+우리 대부분은 GoogleBot과 같은 웹 스파이더 및 크롤러에 익숙합니다. 이러한 크롤러는 웹 페이지를 방문하여 콘텐츠를 인덱싱한 다음 해당 페이지의 외부 링크를 방문합니다. 크롤러는 지속적으로 개발되는 흥미로운 기술입니다.
 
-Web crawlers marry queuing and HTML parsing and form the basis of search engines etc. Writing a simple crawler is a good exercise in putting a few things together. Writing a well behaved crawler is another step up.
+웹 크롤러는 큐잉과 HTML 구문 분석을 결합하여 검색 엔진 등의 기반을 형성합니다. 간단한 크롤러를 작성하는 것은 몇 가지를 함께 사용하는 좋은 연습입니다. 잘 작동하는 크롤러를 작성하는 것은 또 다른 단계입니다.
 
-For this challenge you may use any single shot web client you wish, e.g. Python's httplib or any of a number of libcurl bindings; you may NOT use a crawling library like Mechanize or whatnot. You may use an HTML parsing library like BeautifulSoup; you may NOT use a headless browser like PhantomJS. The purpose of this challenge is to tie together fetching a page, reassembling links, discovering links and assembling them, adding them to a queue, managing the depth of the queue, and visiting them in some reasonable order - while avoiding duplicate visits.
+이 과제에서는 원하는 단일 샷 웹 클라이언트(예: Python의 httplib 또는 여러 libcurl 바인딩 중 하나)를 사용할 수 있습니다. Mechanize와 같은 크롤링 라이브러리는 사용할 수 없습니다. BeautifulSoup와 같은 HTML 구문 분석 라이브러리를 사용할 수 있습니다. PhantomJS와 같은 헤드리스 브라우저는 사용할 수 없습니다. 이 과제의 목적은 페이지 가져오기, 링크 재조립, 링크 검색 및 조립, 큐에 추가, 큐 깊이 관리, 합리적인 순서로 방문(중복 방문 방지)을 함께 연결하는 것입니다.
 
-Your crawler MUST support the following features:
+크롤러는 다음 기능을 지원해야 합니다.
 
-- HTTP/1.1 client behaviors
-- GET requests are the only method you must support
-- Parse all links presented in HTML - anchors, images, scripts, etc
-- Do not visit the same link more than once per session
+- HTTP/1.1 클라이언트 동작
+- GET 요청만 지원해야 합니다.
+- HTML에 표시된 모든 링크(앵커, 이미지, 스크립트 등) 구문 분석
+- 세션당 동일한 링크를 두 번 이상 방문하지 마십시오.
 
-Optional features include HTTPS support, support for robots.txt, support for domains to which you restrict the crawler, and storing results (for example how wget does so).
+선택적 기능에는 HTTPS 지원, robots.txt 지원, 크롤러를 제한하는 도메인 지원, 결과 저장(예: wget 방식)이 포함됩니다.
 
-Be careful with what you crawl! Don't get yourself banned from the Internet. I highly suggest you crawl a local server you control as you may trigger rate limits and other mechanisms to identify unwanted visitors.
+크롤링하는 내용에 주의하십시오! 인터넷에서 차단당하지 마십시오. 속도 제한 및 원치 않는 방문자를 식별하는 기타 메커니즘이 트리거될 수 있으므로 제어하는 로컬 서버를 크롤링하는 것이 좋습니다.
 
-## Input Description
+## 입력 설명
 
-Take at least two parameters:
-- a starting (seed) URL
-- a maximum depth to recurse to (e.g. "1" would be fetch the HTML page and all resources like images and script associated with it but don't visit any outgoing anchor links; a depth of "2" would visit the anchor links found on that first page only, etc ...)
+최소 두 개의 매개변수를 사용합니다.
+- 시작 (시드) URL
+- 재귀할 최대 깊이 (예: "1"은 HTML 페이지와 관련된 모든 리소스(이미지 및 스크립트 등)를 가져오지만 외부 앵커 링크는 방문하지 않음, 깊이 "2"는 해당 첫 번째 페이지에서 찾은 앵커 링크만 방문함 등)
 
-## Output Description
+## 출력 설명
 
-Array/vector of DISCOVERED URLs.
+검색된 URL의 배열/벡터입니다.

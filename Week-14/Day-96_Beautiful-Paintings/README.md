@@ -1,37 +1,37 @@
-## Beautiful Paintings
+## 아름다운 그림들
 
-There are **n** pictures delivered for the new exhibition. The i-th painting has beauty ai. We know that a visitor becomes happy every time he passes from a painting to a more beautiful one.
+새로운 전시회를 위해 **n**개의 그림이 배달되었습니다. i번째 그림의 아름다움은 ai입니다. 방문객은 그림에서 더 아름다운 그림으로 옮겨갈 때마다 행복해진다는 것을 알고 있습니다.
 
-We are allowed to arranged pictures in any order. What is the maximum possible number of times the visitor may become happy while passing all pictures from first to last? In other words, we are allowed to rearrange elements of a in any order. What is the maximum possible number of indices i (1 ≤ i ≤ n - 1), such that ai + 1 > ai.
+그림을 어떤 순서로든 배열할 수 있습니다. 방문객이 첫 번째 그림부터 마지막 그림까지 모든 그림을 지나면서 행복해질 수 있는 최대 횟수는 얼마입니까? 즉, a의 요소를 어떤 순서로든 재배열할 수 있습니다. ai + 1 > ai를 만족하는 인덱스 i(1 ≤ i ≤ n - 1)의 최대 개수는 얼마입니까?
 
-### Input
-The first line of the input contains integer n (1 ≤ n ≤ 1000) — the number of painting.
+### 입력
+입력의 첫 번째 줄에는 그림의 수인 정수 n(1 ≤ n ≤ 1000)이 포함됩니다.
 
-The second line contains the sequence a1, a2, ..., an (1 ≤ ai ≤ 1000), where ai means the beauty of the i-th painting.
+두 번째 줄에는 시퀀스 a1, a2, ..., an(1 ≤ ai ≤ 1000)이 포함되며, 여기서 ai는 i번째 그림의 아름다움을 의미합니다.
 ```
 5
 20 30 10 50 40
 ```
 
-### Output
-Print one integer — the maximum possible number of neighbouring pairs, such that ai + 1 > ai, after the optimal rearrangement.
+### 출력
+최적의 재배열 후 ai + 1 > ai를 만족하는 인접 쌍의 최대 개수인 정수 하나를 인쇄합니다.
 ```
 4
 ```
 
-### Input
+### 입력
 ```
 4
 200 100 100 200
 ```
 
-### Output
+### 출력
 ```
 2
 ```
 
 
-### Notes
-In the first sample, the optimal order is: 10, 20, 30, 40, 50.
+### 참고
+첫 번째 샘플에서 최적의 순서는 10, 20, 30, 40, 50입니다.
 
-In the second sample, the optimal order is: 100, 200, 100, 200.
+두 번째 샘플에서 최적의 순서는 100, 200, 100, 200입니다.

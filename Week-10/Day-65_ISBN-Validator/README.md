@@ -1,20 +1,20 @@
-# ISBN Validator
+# ISBN 유효성 검사기
 
-ISBN's (International Standard Book Numbers) are identifiers for books. Given the correct sequence of digits, one book can be identified out of millions of others thanks to this ISBN. But when is an ISBN not just a random slurry of digits? That's for you to find out.
+ISBN(국제 표준 도서 번호)은 책의 식별자입니다. 올바른 숫자 순서가 주어지면 이 ISBN 덕분에 수백만 권의 다른 책 중에서 한 권의 책을 식별할 수 있습니다. 하지만 ISBN이 단순한 무작위 숫자 나열이 아닌 경우는 언제일까요? 그것은 여러분이 알아내야 할 일입니다.
 
-## Rules
+## 규칙
 
-Given the following constraints of the ISBN number, you should write a function that can return True if a number is a valid ISBN and False otherwise.
+ISBN 번호의 다음 제약 조건이 주어졌을 때, 숫자가 유효한 ISBN이면 True를 반환하고 그렇지 않으면 False를 반환하는 함수를 작성해야 합니다.
 
-An ISBN is a ten digit code which identifies a book. The first nine digits represent the book and the last digit is used to make sure the ISBN is correct.
+ISBN은 책을 식별하는 10자리 코드입니다. 처음 9자리는 책을 나타내고 마지막 자리는 ISBN이 올바른지 확인하는 데 사용됩니다.
 
-To verify an ISBN you :
-- obtain the sum of 10 times the first digit, 9 times the second digit, 8 times the third digit... all the way till you add 1 times the last digit. If the sum leaves no remainder when divided by 11 the code is a valid ISBN.
+ISBN을 확인하려면 다음을 수행합니다.
+- 첫 번째 자리에 10을 곱하고, 두 번째 자리에 9를 곱하고, 세 번째 자리에 8을 곱하고... 마지막 자리에 1을 곱할 때까지 모두 더한 합을 구합니다. 합을 11로 나누었을 때 나머지가 없으면 코드는 유효한 ISBN입니다.
 
-For example :
+예를 들어:
 
-0-7475-3269-9 is Valid, because
+0-7475-3269-9는 유효합니다. 왜냐하면
 
-(10 * 0) + (9 * 7) + (8 * 4) + (7 * 7) + (6 * 5) + (5 * 3) + (4 * 2) + (3 * 6) + (2 * 9) + (1 * 9) = 242 which can be divided by 11 and have no remainder.
+(10 * 0) + (9 * 7) + (8 * 4) + (7 * 7) + (6 * 5) + (5 * 3) + (4 * 2) + (3 * 6) + (2 * 9) + (1 * 9) = 242는 11로 나누어 나머지가 없기 때문입니다.
 
-For the cases where the last digit has to equal to ten, the last digit is written as X. For example 156881111X.
+마지막 자리가 10이어야 하는 경우 마지막 자리는 X로 씁니다. 예를 들어 156881111X입니다.

@@ -1,13 +1,13 @@
-# Subtract the swapped bits without temp storage
+# 임시 저장소 없이 바뀐 비트 빼기
 
-This is more informational than a challenge. You can actually switch 2 variables with the XOR operation ^. XOR works with two arguments. It turns both arguments in their binary representation, and for each bit, returns 1 if they are different, 0 otherwise.
+이것은 챌린지라기보다는 정보 제공에 가깝습니다. 실제로 XOR 연산 ^을 사용하여 두 변수를 바꿀 수 있습니다. XOR은 두 개의 인수를 사용합니다. 두 인수 모두 이진 표현으로 변환하고 각 비트에 대해 서로 다르면 1을 반환하고 그렇지 않으면 0을 반환합니다.
 
-Create a function to swap int variables *X* and *Y* _without the use of an additional temporary storage variable_ using _only_ [*XOR bitwise operations*][1].
+[*XOR 비트 연산*][1]만을 사용하여 _추가 임시 저장 변수를 사용하지 않고_ 정수 변수 *X*와 *Y*를 바꾸는 함수를 만드십시오.
 
-## Output
-- Return the *SUBTRACTION of swapped numbers* by [*XOR bitwise operations*][1].
+## 출력
+- [*XOR 비트 연산*][1]으로 바뀐 숫자의 *뺄셈*을 반환합니다.
 
-_Example_
+_예시_
 
 ```text
 XOR(10, 41) ➞ 31
@@ -16,11 +16,11 @@ XOR(12345, 890412) ➞ 878067
 XOR(2, 1) ➞ -1
 ```
 
-## Notes
-- The swap operation needs to be done _without the use of an additional temporary storage variable_, using _only_ [*XOR bitwise operations*][1].  
+## 참고
+- 스왑 연산은 [*XOR 비트 연산*][1]만을 사용하여 _추가 임시 저장 변수를 사용하지 않고_ 수행해야 합니다.
 
-## Constraints
-- The input numbers *X* and *Y* are positive integers.
-- The input numbers *X* and *Y* are different from each other.
+## 제약 조건
+- 입력 숫자 *X*와 *Y*는 양의 정수입니다.
+- 입력 숫자 *X*와 *Y*는 서로 다릅니다.
 
-[1]: https://en.wikipedia.org/wiki/Bitwise_operation#XOR
+[1]: https://ko.wikipedia.org/wiki/%EB%B9%84%ED%8A%B8_%EC%97%B0%EC%82%B0#XOR

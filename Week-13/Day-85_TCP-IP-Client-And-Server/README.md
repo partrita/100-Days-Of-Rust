@@ -1,32 +1,32 @@
-## TCP/IP Client and Server
+## TCP/IP 클라이언트 및 서버
 
-At the very high level, there are two actors: a client and a server.
+매우 높은 수준에서 클라이언트와 서버라는 두 가지 행위자가 있습니다.
 
-The server has a know IP address that represents a machine to connect to at some point (this address could be retrieved via DNS) and a known port (that represents the service that we want to talk to in that machine).
+서버에는 특정 시점에 연결할 머신을 나타내는 알려진 IP 주소(이 주소는 DNS를 통해 검색할 수 있음)와 해당 머신에서 통신하려는 서비스를 나타내는 알려진 포트가 있습니다.
 
-At this moment, nothing can happen - TCP has its communication based on connections and without some handshaking and connection establishment, no data can be sent. Once the connection gets established, it’s then up to the application to decide whether there’s indeed a server component and a client component. They could be peers and synchronize data back and forth, for instance.
+이 순간에는 아무 일도 일어날 수 없습니다. TCP는 연결을 기반으로 통신하며 약간의 핸드셰이킹과 연결 설정 없이는 데이터를 보낼 수 없습니다. 연결이 설정되면 서버 구성 요소와 클라이언트 구성 요소가 실제로 있는지 여부를 결정하는 것은 애플리케이션에 달려 있습니다. 예를 들어 피어가 되어 데이터를 앞뒤로 동기화할 수 있습니다.
 
-For an application protocol like HTTP/1.1 though, there’s a well-defined client-server model, where a client issues requests with specific methods, and a server that processes these requests and gives back results.
+그러나 HTTP/1.1과 같은 애플리케이션 프로토콜의 경우 클라이언트가 특정 메서드로 요청을 발행하고 서버가 이러한 요청을 처리하고 결과를 반환하는 잘 정의된 클라이언트-서버 모델이 있습니다.
 
-### Echo Server
+### 에코 서버
 
-Create a TCP server that receives incoming messages and echos them back to the sender. It should start by creating a TCP/IP socket connection.
+수신 메시지를 수신하고 발신자에게 다시 에코하는 TCP 서버를 만듭니다. TCP/IP 소켓 연결을 만드는 것으로 시작해야 합니다.
 
-- In the TCP Echo server , we create a socket and bind to a parameterized port number.
-- After binding , the process listens for incoming connections.
-- Then an infinite loop is started to process the client requests for connections.
-- After a connection is requested , it accepts the connection from the client machine and forks a new process.
-- The new process receives data from the client and echoes the same data back.
-- Please note that this server is capable of handling multiple clients as it forks a new process for every client trying to connect to the server.
+- TCP 에코 서버에서는 소켓을 만들고 매개변수화된 포트 번호에 바인딩합니다.
+- 바인딩 후 프로세스는 들어오는 연결을 수신 대기합니다.
+- 그런 다음 클라이언트 연결 요청을 처리하기 위해 무한 루프가 시작됩니다.
+- 연결이 요청되면 클라이언트 머신에서 연결을 수락하고 새 프로세스를 분기합니다.
+- 새 프로세스는 클라이언트에서 데이터를 수신하고 동일한 데이터를 다시 에코합니다.
+- 이 서버는 서버에 연결하려는 모든 클라이언트에 대해 새 프로세스를 분기하므로 여러 클라이언트를 처리할 수 있습니다.
 
-### Echo Client
+### 에코 클라이언트
 
-The client program sets up its socket differently from the way a server does. Instead of binding to a port and listening, it uses connect() to attach the socket directly to the remote address.
+클라이언트 프로그램은 서버와 다른 방식으로 소켓을 설정합니다. 포트에 바인딩하고 수신 대기하는 대신 connect()를 사용하여 소켓을 원격 주소에 직접 연결합니다.
 
-- In the TCP Echo client a socket is created.
-- Using the socket a connection is made to the server.
-- After a connection is established , we send messages input from the user and display the data received from the server
+- TCP 에코 클라이언트에서는 소켓이 생성됩니다.
+- 소켓을 사용하여 서버에 연결합니다.
+- 연결이 설정되면 사용자로부터 입력받은 메시지를 보내고 서버에서 수신한 데이터를 표시합니다.
 
-### Client and Server Together
+### 클라이언트와 서버 함께 사용
 
-The client and server should be run in separate terminal windows, so they can communicate with each other.
+클라이언트와 서버는 서로 통신할 수 있도록 별도의 터미널 창에서 실행해야 합니다.

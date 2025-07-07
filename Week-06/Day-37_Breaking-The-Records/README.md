@@ -1,28 +1,28 @@
-# Breaking the Records
+# 기록 깨기
 
-Maria plays college basketball and wants to go pro. Each season she maintains a record of her play. She tabulates the number of times she breaks her season record for most points and least points in a game. Points scored in the first game establish her record for the season, and she begins counting from there.
+Maria는 대학 농구를 하고 프로로 가고 싶어합니다. 매 시즌 그녀는 자신의 경기 기록을 유지합니다. 그녀는 한 경기에서 최다 득점과 최소 득점에 대한 시즌 기록을 깨는 횟수를 집계합니다. 첫 경기에서 득점한 점수는 시즌 기록을 세우고 거기서부터 계산을 시작합니다.
 
-For example, assume her scores for the season are represented in the array *scores = [12, 24, 10, 24]*. Scores are in the same order as the games played. She would tabulate her results as follows:
+예를 들어, 시즌 점수가 배열 *scores = [12, 24, 10, 24]*로 표시된다고 가정합니다. 점수는 경기 순서와 동일합니다. 그녀는 다음과 같이 결과를 집계합니다.
 
 ```text
-                                 Count
-Game  Score  Minimum  Maximum   Min Max
+                                 횟수
+경기  점수  최소값  최대값   최소 최대
  0      12     12       12       0   0
  1      24     12       24       0   1
  2      10     10       24       1   1
  3      24     10       24       1   1
 ```
 
-## Objective
-Given the scores for a season, find and print the number of times Maria breaks her records for most and least points scored during the season.
+## 목표
+시즌 점수가 주어지면 Maria가 시즌 동안 최다 득점과 최소 득점에 대한 기록을 깨는 횟수를 찾아 인쇄합니다.
 
-Create a **breakingRecords** function. It must return an integer array containing the numbers of times she broke her records. Index 0 is for breaking most points records, and index 1 is for breaking least points records.
+**breakingRecords** 함수를 만듭니다. 이 함수는 그녀가 기록을 깬 횟수를 포함하는 정수 배열을 반환해야 합니다. 인덱스 0은 최다 득점 기록을 깬 횟수이고 인덱스 1은 최소 득점 기록을 깬 횟수입니다.
 
-**breakingRecords** has the following parameter(s):
-    scores: an array of integers
+**breakingRecords**에는 다음 매개변수가 있습니다.
+    scores: 정수 배열
 
 
-## Example
+## 예시
 ```text
 breakingRecords([10,5,20,20,4,5,2,25,1]) ➞ [2,4]
 ```

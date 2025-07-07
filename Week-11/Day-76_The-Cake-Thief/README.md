@@ -1,27 +1,27 @@
-## The Cake Thief
+## 케이크 도둑
 
-You are a renowned thief who has recently switched from stealing precious metals to stealing cakes because of the insane profit margins. You end up hitting the jackpot, breaking into the world's largest privately owned stock of cakes—the vault of the Queen of England.
-While Queen Elizabeth has a limited number of types of cake, she has an unlimited supply of each type.
-Each type of cake has a weight and a value, stored in a tuple with two indices:
+당신은 최근 엄청난 이윤 때문에 귀금속 대신 케이크를 훔치는 것으로 전향한 유명한 도둑입니다. 당신은 대박을 터뜨려 세계에서 가장 큰 개인 소유 케이크 저장고인 영국 여왕의 금고에 침입합니다.
+엘리자베스 여왕은 한정된 종류의 케이크를 가지고 있지만 각 종류는 무제한으로 공급됩니다.
+각 종류의 케이크에는 무게와 가치가 있으며, 두 개의 인덱스가 있는 튜플에 저장됩니다.
 
-- An integer representing the **weight** of the cake in kilograms
-- An integer representing the **monetary value** of the cake in British shillings
+- 킬로그램 단위의 케이크 **무게**를 나타내는 정수
+- 영국 실링 단위의 케이크 **금전적 가치**를 나타내는 정수
 
-For example:
+예를 들어:
 
 ```
-// weighs 7 kilograms and has a value of 160 shillings
+// 무게 7킬로그램, 가치 160실링
 CakeType cakeType = {7, 160};
 
-// weighs 3 kilograms and has a value of 90 shillings
+// 무게 3킬로그램, 가치 90실링
 CakeType cakeType = {3, 90};
 ```
 
-You brought a duffel bag that can hold limited weight, and you want to make off with the most valuable haul possible.
+당신은 제한된 무게를 담을 수 있는 더플백을 가져왔고, 가능한 한 가장 가치 있는 전리품을 챙기고 싶어합니다.
 
-Write a function `maxDuffelBagValue()` that takes **an array of cake type structures** and a **weight capacity**, and returns **the maximum monetary value the duffel bag can hold**.
+**케이크 종류 구조체 배열**과 **무게 용량**을 입력받아 더플백에 담을 수 있는 **최대 금전적 가치**를 반환하는 `maxDuffelBagValue()` 함수를 작성하십시오.
 
-For example:
+예를 들어:
 
 ```
 cakes       = [(7, 160), (3, 90), (2, 15)]
@@ -29,5 +29,5 @@ capacity    = 20
 
 
 max_duffel_bag_value(cake_tuples, capacity)
-# Returns 555 (6 of the middle type of cake and 1 of the last type of cake)
+# 555 반환 (중간 종류 케이크 6개와 마지막 종류 케이크 1개)
 ```

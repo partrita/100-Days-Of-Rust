@@ -1,12 +1,12 @@
-## Analog Clock
+## 아날로그 시계
 
-Write a program which displays the current system time as an analog clock, using ASCII graphics. The clock must show at least the hour and minute pointers, and must have enough resolution of at least 5 minutes.
+ASCII 그래픽을 사용하여 현재 시스템 시간을 아날로그 시계로 표시하는 프로그램을 작성하십시오. 시계는 최소한 시침과 분침을 표시해야 하며 최소 5분 이상의 해상도를 가져야 합니다.
 
-The display can be as small and as ugly as you wish, but the shown time should be easily recognizable.
+디스플레이는 원하는 만큼 작고 못생기게 만들 수 있지만 표시되는 시간은 쉽게 알아볼 수 있어야 합니다.
 
-The program has to run continuously and update its status. If your system can clear the screen, use it, otherwise it's enough to repaint the clock when its state changes.
+프로그램은 계속 실행되고 상태를 업데이트해야 합니다. 시스템에서 화면을 지울 수 있으면 사용하고, 그렇지 않으면 상태가 변경될 때 시계를 다시 그리는 것으로 충분합니다.
 
-### Examples
+### 예시
 
 ```
 +- 10:10 - - - - - - - + - 12:30 - - - - - - - + - 09:15 - - - - - - - +

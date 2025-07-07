@@ -1,56 +1,55 @@
-## Superhero Transformation
+## 슈퍼히어로 변신
 
-We all know that a superhero can transform to certain other superheroes. But not all superheroes can transform to any other superhero. A superhero with name 𝑠 can transform to another superhero with name 𝑡 if 𝑠 can be made equal to 𝑡 by changing any vowel in 𝑠 to any other vowel and any consonant in 𝑠 to any other consonant. Multiple changes can be made.
+우리 모두는 슈퍼히어로가 특정 다른 슈퍼히어로로 변신할 수 있다는 것을 알고 있습니다. 하지만 모든 슈퍼히어로가 다른 어떤 슈퍼히어로로든 변신할 수 있는 것은 아닙니다. 이름이 s인 슈퍼히어로는 s의 모음을 다른 모음으로 바꾸고 s의 자음을 다른 자음으로 바꾸어 s를 t와 같게 만들 수 있다면 이름이 t인 다른 슈퍼히어로로 변신할 수 있습니다. 여러 번 변경할 수 있습니다.
 
-**In this problem**, we consider the letters 'a', 'e', 'i', 'o' and 'u' to be vowels and all the other letters to be consonants.
+**이 문제에서는** 'a', 'e', 'i', 'o', 'u'를 모음으로 간주하고 다른 모든 글자를 자음으로 간주합니다.
 
-Given the names of two superheroes, determine if the superhero with name 𝑠
-can be transformed to the Superhero with name 𝑡.
+두 슈퍼히어로의 이름이 주어졌을 때, 이름이 s인 슈퍼히어로가 이름이 t인 슈퍼히어로로 변신할 수 있는지 확인하십시오.
 
 
-### Input
-The first line contains the string 𝑠 having length between 1 and 1000, inclusive.
+### 입력
+첫 번째 줄에는 길이가 1에서 1000 사이인 문자열 s가 포함됩니다.
 
-The second line contains the string 𝑡 having length between 1 and 1000, inclusive.
+두 번째 줄에는 길이가 1에서 1000 사이인 문자열 t가 포함됩니다.
 
-Both strings 𝑠 and 𝑡 are guaranteed to be different and consist of lowercase English letters only.
+두 문자열 s와 t는 서로 다르며 소문자 영어 알파벳으로만 구성됨이 보장됩니다.
 ```
 a
 u
 ```
 
-### Output
-Output "Yes" (without quotes) if the superhero with name 𝑠 can be transformed to the superhero with name 𝑡 and "No" (without quotes) otherwise.
+### 출력
+이름이 s인 슈퍼히어로가 이름이 t인 슈퍼히어로로 변신할 수 있으면 "Yes"(따옴표 제외)를 출력하고 그렇지 않으면 "No"(따옴표 제외)를 출력합니다.
 
-You can print each letter in any case (upper or lower).
+각 글자는 대문자 또는 소문자로 인쇄할 수 있습니다.
 ```
 Yes
 ```
 
-### Input
+### 입력
 ```
 abc
 ukm
 ```
 
-### Output
+### 출력
 ```
 Yes
 ```
 
 
-### Input
+### 입력
 ```
 akm
 ua
 ```
 
-### Output
+### 출력
 ```
 No
 ```
 
-### Notes
-In the first sample, since both 'a' and 'u' are vowels, it is possible to convert string 𝑠 to 𝑡.
+### 참고
+첫 번째 샘플에서는 'a'와 'u'가 모두 모음이므로 문자열 s를 t로 변환할 수 있습니다.
 
-In the third sample, 'k' is a consonant, whereas 'a' is a vowel, so it is not possible to convert string 𝑠 to 𝑡.
+세 번째 샘플에서는 'k'는 자음이고 'a'는 모음이므로 문자열 s를 t로 변환할 수 없습니다.

@@ -1,6 +1,6 @@
-# Clarence the Slow Typist
+# 느린 타이피스트 클래런스
 
-Clarence is a data entry clerk who works at an internet service provider. His job is to manually enter the IP addresses of all of the ISP's customers into the database. He does this using a keypad which has the following layout:
+클래런스는 인터넷 서비스 제공업체에서 일하는 데이터 입력 사무원입니다. 그의 일은 ISP 고객의 모든 IP 주소를 데이터베이스에 수동으로 입력하는 것입니다. 그는 다음과 같은 레이아웃의 키패드를 사용하여 이 작업을 수행합니다.
 
 ```text
 1	2	3
@@ -8,38 +8,38 @@ Clarence is a data entry clerk who works at an internet service provider. His jo
 7	8	9
 .	0	
 ```
-The distance between the centre of horizontally or vertically adjacent keys is exactly one centimetre. For instance, the distance between the centres of 3 and 9 would be two centimetres. The distance between the centres of 3 and 5 would be sqrt 2cm. The Pythagoras theorem is sufficient to calculate the distance between any two keys.
+가로 또는 세로로 인접한 키의 중심 사이의 거리는 정확히 1cm입니다. 예를 들어, 3과 9의 중심 사이의 거리는 2cm입니다. 3과 5의 중심 사이의 거리는 sqrt 2cm입니다. 피타고라스 정리는 임의의 두 키 사이의 거리를 계산하는 데 충분합니다.
 
-Clarence, as you might expect from one who works in an ISP, uses a very slow and inefficient system of typing. He uses a single finger and searches for the key, and then moves his finger to the key, then presses it, and repeats for all of the digits in the number. You might know of this style as the "eagle search system" since the finger searches above the keyboard for the correct key before plunging down for the keypress, like an eagle plunging down for a kill.
+클래런스는 ISP에서 일하는 사람에게 기대할 수 있듯이 매우 느리고 비효율적인 타이핑 시스템을 사용합니다. 그는 손가락 하나를 사용하여 키를 검색한 다음 손가락을 키로 옮기고 키를 누른 다음 숫자의 모든 자릿수에 대해 반복합니다. 이 스타일은 독수리가 사냥감을 덮치기 전에 올바른 키를 찾아 키보드 위를 탐색하는 것처럼 손가락이 키보드 위를 탐색하기 때문에 "독수리 검색 시스템"으로 알려져 있을 수 있습니다.
 
-For example, here is how Clarence would type out the number 7851:
+예를 들어, 클래런스가 숫자 7851을 입력하는 방법은 다음과 같습니다.
 
-    He starts his finger at 7 and pushes the key.
+    그는 7에서 손가락을 시작하여 키를 누릅니다.
 
-    He moves his finger to the right 1cm to 8 and pushes the key.
+    그는 손가락을 오른쪽으로 1cm 움직여 8로 이동하고 키를 누릅니다.
 
-    He moves his finger upwards 1cm to 5 and pushes the key.
+    그는 손가락을 위로 1cm 움직여 5로 이동하고 키를 누릅니다.
 
-    He moves his finger diagonally upwards and left sqrt 2cm to 1 and pushes the key.
+    그는 손가락을 대각선 위 왼쪽으로 sqrt 2cm 움직여 1로 이동하고 키를 누릅니다.
 
-Therefore the total distance that Clarence moved his finger to type in 7851 is 1 + 1 + sqrt 2 which is about 3.41cm.
+따라서 클래런스가 7851을 입력하기 위해 손가락을 움직인 총 거리는 1 + 1 + sqrt 2이며 약 3.41cm입니다.
 
-## Objective
+## 목표
 
-Your task is to write a program that calculates the distance Clarence must move his finger to type in arbitrary IP addresses.
+여러분의 작업은 클래런스가 임의의 IP 주소를 입력하기 위해 손가락을 움직여야 하는 거리를 계산하는 프로그램을 작성하는 것입니다.
 
-## Input
+## 입력
 
-Input is a string that will be in the form
+입력은 다음과 같은 형식의 문자열입니다.
 
 **().().().()**
 
-where each () is an integer in the range 0 - 999. This represents the IP address that Clarence must type in. An example input might be:
+여기서 각 ()는 0-999 범위의 정수입니다. 이것은 클래런스가 입력해야 하는 IP 주소를 나타냅니다. 예시 입력은 다음과 같습니다.
 
 **219.45.143.143**
 
-I would also like to point out that inputs such as **0.42.42.42** or **999.999.999.999** are still valid inputs, despite the fact that they are invalid IP addresses. **So you don't need to include any IP address verification code in your program**.
+**0.42.42.42** 또는 **999.999.999.999**와 같은 입력도 유효하지 않은 IP 주소임에도 불구하고 여전히 유효한 입력이라는 점을 지적하고 싶습니다. **따라서 프로그램에 IP 주소 확인 코드를 포함할 필요가 없습니다**.
 
-## Output
+## 출력
 
-Output the distance that Clarence must move his finger in order to type in the specified IP address.
+클래런스가 지정된 IP 주소를 입력하기 위해 손가락을 움직여야 하는 거리를 출력합니다.

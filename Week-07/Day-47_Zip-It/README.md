@@ -1,23 +1,23 @@
-# Zip It!
+# 압축하세요!
 
-Most data compression algorithms are pretty complex.
+대부분의 데이터 압축 알고리즘은 매우 복잡합니다.
 
-But they all have in common that they are taking data that is repeating and only store it once and have a system of knowing how to uncompress them (putting the repeated segments back in place).
+하지만 모든 알고리즘은 반복되는 데이터를 가져와 한 번만 저장하고 압축을 푸는 방법(반복된 세그먼트를 다시 제자리에 놓는 방법)을 아는 시스템을 가지고 있다는 공통점이 있습니다.
 
-## Objective
-Design your own data **compress** and **uncompress** techniques. Create these two functions.
+## 목표
+자신만의 데이터 **압축** 및 **압축 해제** 기술을 설계하십시오. 이 두 함수를 만드십시오.
 
-**compress** function signature:
-- input parameter _sourceFilename_ with the source filename to compress
-- input parameter _targetFilename_ with the target filename compressed
+**압축** 함수 서명:
+- 압축할 소스 파일 이름이 있는 입력 매개변수 _sourceFilename_
+- 압축된 대상 파일 이름이 있는 입력 매개변수 _targetFilename_
 
-The **compress** function should generate a _targetFilename_ file, compressed.
+**압축** 함수는 압축된 _targetFilename_ 파일을 생성해야 합니다.
 
-**uncompress** function signature:
-- input parameter _sourceFilename_ with the compressed source filename
-- input parameter _targetFilename_ with the target filename uncompressed
+**압축 해제** 함수 서명:
+- 압축된 소스 파일 이름이 있는 입력 매개변수 _sourceFilename_
+- 압축 해제된 대상 파일 이름이 있는 입력 매개변수 _targetFilename_
 
-The **compress** function should generate a _targetFilename_ file, uncompressed.
+**압축** 함수는 압축 해제된 _targetFilename_ 파일을 생성해야 합니다.
 
-## Notes
-- It is OK if not every type of input data is capable of compression, but on the tests, it is important to garantee the generated compressed file is smaller than the original and also garantee the uncompress process, from a compressed file to its uncompressed, original version.
+## 참고
+- 모든 유형의 입력 데이터를 압축할 수 있는 것은 아니지만 테스트에서는 생성된 압축 파일이 원본보다 작고 압축된 파일에서 압축 해제된 원본 버전으로의 압축 해제 프로세스도 보장하는 것이 중요합니다.

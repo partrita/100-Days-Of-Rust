@@ -1,8 +1,8 @@
-# L33tspeak Translator
+# L33tspeak 번역기
 
-Based on the **L33tspeak Converter** of _day-72 challenge_ rules and mapping, develop now a **Translator** FROM **L33tspeak** input to **traditional** text.
+_72일차 과제_ 규칙 및 매핑의 **L33tspeak 변환기**를 기반으로 이제 **L33tspeak** 입력에서 **일반** 텍스트로의 **번역기**를 개발하십시오.
 
-## Example
+## 예시
 ```text
 570R(V) -> storm
 ```

@@ -1,108 +1,108 @@
-## CATTLEMETER
+## 소떼 측정기
 
-Researchers say bot networks exist that number in the hundreds of thousands, with accounts that share similar characteristics, suggesting someone is using them for a specific purpose. The Russian troll factory known as the Internet Research Agency reportedly used large networks of fake accounts to distribute misinformation in an attempt to destabilize the US election.
+연구원들은 수십만 개에 달하는 봇 네트워크가 존재하며, 계정들이 유사한 특징을 공유하고 있어 누군가가 특정 목적으로 사용하고 있음을 시사한다고 말합니다. 인터넷 연구 기관으로 알려진 러시아 트롤 공장은 미국 선거를 불안정하게 만들려는 시도로 허위 정보를 유포하기 위해 대규모 가짜 계정 네트워크를 사용한 것으로 알려졌습니다.
 
-An analysis by researchers at Oxford University showed more than a third of pro-Trump tweets and nearly a fifth of pro-Clinton tweets between the first and second debates came from automated accounts, which produced more than 1 million tweets. Many of these same trolls and bot networks were also reportedly active in the Virginia state elections, amplifying race-baiting tweets by Donald Trump.
+옥스퍼드 대학 연구원들의 분석에 따르면 첫 번째 토론과 두 번째 토론 사이에 트럼프 지지 트윗의 3분의 1 이상과 클린턴 지지 트윗의 거의 5분의 1이 자동화된 계정에서 나왔으며, 이 계정들은 100만 개 이상의 트윗을 생성했습니다. 이러한 동일한 트롤과 봇 네트워크 중 다수는 버지니아 주 선거에서도 활동하며 도널드 트럼프의 인종 차별적 트윗을 증폭시킨 것으로 알려졌습니다.
 
-Bot networks are also used in some cases to attack journalists by flooding their accounts with suspicious activity, which often results in their accounts being suspended or banned.
+봇 네트워크는 또한 일부 경우 언론인을 공격하는 데 사용되어 의심스러운 활동으로 계정을 넘치게 하여 계정이 정지되거나 금지되는 경우가 많습니다.
 
-The same problem happens in Brazil, where the current president (far-right) has very close ties with bot farms and there is enough profs to link one of his sons to a leader of a group called "the hate cabinet", which is responsible for milions of fake accounts and to spread fake news all the time to favor the president or discredit the opponents.
+현재 대통령(극우)이 봇 농장과 매우 긴밀한 관계를 맺고 있으며 그의 아들 중 한 명을 "증오 내각"이라는 그룹의 지도자와 연결할 충분한 증거가 있는 브라질에서도 동일한 문제가 발생합니다. 이 그룹은 수백만 개의 가짜 계정을 책임지고 대통령에게 유리하거나 반대자를 불신하게 만들기 위해 항상 가짜 뉴스를 퍼뜨립니다.
 
-People who still supports the current Brazil president are knowed as "cattle", as they just follow whatever the president spits.
+현재 브라질 대통령을 여전히 지지하는 사람들은 대통령이 뱉는 모든 것을 따르기 때문에 "소떼"로 알려져 있습니다.
 
-In order to contain the advance of this bot practices, you need to create an algorithm that given a twitter account, it tells if it's fake or not, using a scale from 0 (not a bot) to 100 (definetily a bot).
+이러한 봇 관행의 진전을 막기 위해 트위터 계정이 주어지면 0(봇 아님)에서 100(확실히 봇)까지의 척도를 사용하여 가짜인지 아닌지를 알려주는 알고리즘을 만들어야 합니다.
 
-The current constrains must be taken into account:
+현재 제약 조건을 고려해야 합니다.
 
-### An Egghead
-
-<p align="left">
-  <img src="../../assets/twitter-egghead.png" alt="egg head">
-</p>
-
-By egghead, I am referring to the Twitter user in question not taking the time to upload a profile image. Most real people will upload some sort of profile image. While not every egghead is a fake or bot account, this is typically a sign of a lazy person. Or a bot.
-
-### Stock Profile Images
+### 달걀머리
 
 <p align="left">
-  <img src="../../assets/Twitter-Stock-Image-Profile.png" alt="stock image avatar">
+  <img src="../../assets/twitter-egghead.png" alt="달걀머리">
 </p>
 
-While this move might be a step up from being an egghead, most fake accounts get this wrong. They either use stock images or a profile image shared by other fake accounts.
+달걀머리란 해당 트위터 사용자가 프로필 이미지를 업로드하는 데 시간을 할애하지 않았다는 것을 의미합니다. 대부분의 실제 사람들은 어떤 종류의 프로필 이미지를 업로드합니다. 모든 달걀머리가 가짜 또는 봇 계정은 아니지만 일반적으로 게으른 사람의 표시입니다. 또는 봇입니다.
 
-**[PRO TIP]** Use Google to find out if a profile image has been used by others. To do this you can right click on the profile image and copy the link location. Then simply go to Google Images and search by URL. Paste the URL and find out if others are using this same image.
-
-**[BONUS TIP]** Narrow down your search to just Twitter results by added “site:twitter.com”
-
-### No Bio
-
-An empty Twitter bio is almost a dead giveaway that the profile you are looking at is a dud. This underutilized real estate is key to informing your followers (or potential followers) who you are and what you’re about. Skipping over this is typically a sign of not only laziness, but a tell-tale sign the account is almost certainly fake.
-
-### Excessive Duplicate Tweets
-
-While this does not run rampant like it previously did, if you see a profile’s stream that is all the exact same or very similar tweets, chances are that you are viewing a fake account.
-Most notably, if the tweets are all @replies with the same text, you have found a bot account. While there is no doubt some excessive self promotion on Twitter, some accounts constantly tweet the same thing. Odds are a human is not behind each of those tweets, and better yet it is a sign of someone who does not use automation effectively.
-
-### Confusing Screen Name / URL Combination
+### 스톡 프로필 이미지
 
 <p align="left">
-  <img src="../../../assets/Confusing-Screen-Name.png" alt="confusing screen name">
+  <img src="../../assets/Twitter-Stock-Image-Profile.png" alt="스톡 이미지 아바타">
 </p>
 
-This is an easy one. There are multiple things to look for in a screen name. The first is if you see the profile URL as something like “twitter.com/john-smith” but when you view the profile, the first and last name listed above the bio has no relation to the URL. For example, it would say something like “Sarah Jones” which obviously has no direct relation to “John Smith” that is in the URL.
+이것은 달걀머리보다 한 단계 발전한 것일 수 있지만 대부분의 가짜 계정은 이것을 잘못 알고 있습니다. 스톡 이미지를 사용하거나 다른 가짜 계정과 공유된 프로필 이미지를 사용합니다.
 
-The other red flag regarding screen names and URL combinations is if you see an incoherent URL like “twitter.com/kaywhyeleenq”. Viewing this URL you will see that while this profile has many red flags, the first and last name listed in the profile has no direct relation to the URL. While, not all profiles will have a direct relation, most of the time if the URL does not even contain legitimate words or phrases, it is a common sign the profile was automatically generated via software and not a human.
+**[전문가 팁]** Google을 사용하여 프로필 이미지가 다른 사람이 사용했는지 확인하십시오. 이렇게 하려면 프로필 이미지를 마우스 오른쪽 버튼으로 클릭하고 링크 위치를 복사합니다. 그런 다음 Google 이미지로 이동하여 URL로 검색합니다. URL을 붙여넣고 다른 사람이 이 동일한 이미지를 사용하고 있는지 확인하십시오.
 
-### Incoherent Tweets
+**[보너스 팁]** "site:twitter.com"을 추가하여 검색 범위를 트위터 결과로만 좁힙니다.
+
+### 약력 없음
+
+빈 트위터 약력은 보고 있는 프로필이 가짜라는 거의 확실한 증거입니다. 이 활용되지 않은 공간은 팔로워(또는 잠재적 팔로워)에게 자신이 누구이며 무엇에 관한 것인지 알리는 데 중요합니다. 이것을 건너뛰는 것은 일반적으로 게으름의 표시일 뿐만 아니라 계정이 거의 확실히 가짜라는 명백한 신호입니다.
+
+### 과도한 중복 트윗
+
+이전처럼 만연하지는 않지만 프로필 스트림이 모두 정확히 동일하거나 매우 유사한 트윗인 경우 가짜 계정을 보고 있을 가능성이 큽니다.
+특히 트윗이 모두 동일한 텍스트의 @ 답글인 경우 봇 계정을 찾은 것입니다. 트위터에서 과도한 자기 홍보가 있다는 것은 의심의 여지가 없지만 일부 계정은 지속적으로 같은 내용을 트윗합니다. 이러한 각 트윗 뒤에 사람이 없을 가능성이 높으며, 더 나아가 자동화를 효과적으로 사용하지 않는 사람의 표시입니다.
+
+### 혼란스러운 화면 이름/URL 조합
 
 <p align="left">
-  <img src="../../../assets/Incoherent-Tweets.png" alt="incoherent tweets">
+  <img src="../../../assets/Confusing-Screen-Name.png" alt="혼란스러운 화면 이름">
 </p>
 
-Most of the time fake Twitter accounts simply spew off tweets that directly benefit themselves, like linking directly to their site. However, there are many fake accounts that simply post gibberish or random incoherent thoughts that make absolutely no sense.
+이것은 쉬운 것입니다. 화면 이름에서 찾아야 할 여러 가지가 있습니다. 첫 번째는 프로필 URL이 "twitter.com/john-smith"와 같은 것이지만 프로필을 볼 때 약력 위에 나열된 이름과 성이 URL과 관련이 없는 경우입니다. 예를 들어 URL에 있는 "John Smith"와 분명히 직접적인 관련이 없는 "Sarah Jones"와 같은 내용이 표시됩니다.
 
-### Has Not Tweeted in Years
+화면 이름 및 URL 조합과 관련된 또 다른 위험 신호는 "twitter.com/kaywhyeleenq"와 같은 일관성 없는 URL을 보는 경우입니다. 이 URL을 보면 이 프로필에 많은 위험 신호가 있지만 프로필에 나열된 이름과 성이 URL과 직접적인 관련이 없음을 알 수 있습니다. 모든 프로필이 직접적인 관련이 있는 것은 아니지만 대부분의 경우 URL에 합법적인 단어나 구문조차 포함되어 있지 않으면 프로필이 사람이 아닌 소프트웨어를 통해 자동으로 생성되었다는 일반적인 신호입니다.
+
+### 일관성 없는 트윗
 
 <p align="left">
-  <img src="../../../assets/Has-Not-Tweeted-In-Years.png" alt="not tweeted in years">
+  <img src="../../../assets/Incoherent-Tweets.png" alt="일관성 없는 트윗">
 </p>
 
-Back in the earlier, wild-west days of Twitter, automation was manipulated quite a bit. However, as Twitter has evolved their API access and rules, previous bots and some of their automation no longer work. An easy way to spot this is in accounts that have not tweeted in months or even years. Looking at the time stamp of the most recent tweets, you can get a good idea of the Twitter account is no longer active. For example, the Twitter account in the image above has not tweeted since 2011.
+대부분의 경우 가짜 트위터 계정은 사이트에 직접 연결하는 것처럼 자신에게 직접적인 이익이 되는 트윗을 쏟아냅니다. 그러나 단순히 아무 의미 없는 말도 안 되는 소리나 임의의 일관성 없는 생각을 게시하는 가짜 계정도 많이 있습니다.
 
-### Follows 2,001 People
-
-Twitter has limits on certain things you can do. For example, how many people you can follow. This limit is set to 2,000. Once you follow 2,001 people, you must have at least 2,000 people following you back before you can exceed the 2,001 limit. A common limitation of bots is that they are not smart enough to manage their following restrictions to get around this limitation. Therefore, many fake accounts get stuck on following 2,001 users.
-Once an account gets past the 2,001 following limitation, then I believe the unwritten rule is that you can follow 10% more than are following you. So if your account has 2,000 users following it, then theoretically you can follow approximately 2,200 users.
-
-### No Interaction With Others
-
-Accounts that show no signs of interaction with others are often fake accounts. Social media is meant to be a two-way conversation. Those accounts who simply do not interact with others is often a sign of a bot account.
-The quick way to find out if there is interaction with other users is to simply view recent tweets by the user. If you can see that within their last 20-30 tweets there are no @replies or retweets, chances are the account you are looking at is automated/fake.
-
-### No or Low Follower Counts
-
-Another common sign of a bot account is an account that does not tend to have anyone following the account back. This is commonly seen with accounts that are following 2,001 users but only have a handful of accounts following back. While there are a number of reasons someone may not want to follow an account, chances are in this case it is due to the account not being worth one to follow. Twitter users are becoming smarter at whether or not someone deserves to be followed back.
-
-### An Unrealistic Amount of Tweets
+### 몇 년 동안 트윗하지 않음
 
 <p align="left">
-  <img src="../../../assets/An-Insane-Amount-of-Tweets.png" alt="insane amount of tweets">
+  <img src="../../../assets/Has-Not-Tweeted-In-Years.png" alt="몇 년 동안 트윗하지 않음">
 </p>
 
-No doubt automation has its place in Twitter when used responsibly. However, a sure sign of an automated/fake account is typically an insane amount of tweets that is more than likely not humanly possible. I mean, who has the time to tweet 123,684 times? In the image above you can see how tweeting this often did wonders for increasing the amount of followers for this account.
+트위터의 초기 무법 시대에는 자동화가 상당히 많이 조작되었습니다. 그러나 트위터가 API 액세스 및 규칙을 발전시키면서 이전 봇과 일부 자동화는 더 이상 작동하지 않습니다. 이것을 발견하는 쉬운 방법은 몇 달 또는 몇 년 동안 트윗하지 않은 계정입니다. 가장 최근 트윗의 타임스탬프를 보면 트위터 계정이 더 이상 활성 상태가 아닌지 알 수 있습니다. 예를 들어 위 이미지의 트위터 계정은 2011년 이후로 트윗하지 않았습니다.
 
-## The Cattle Scale
+### 2,001명 팔로우
 
-For each of the above items that an account triggers, add 10 to the score. The output should consider the following scale:
+트위터에는 할 수 있는 특정 작업에 제한이 있습니다. 예를 들어 팔로우할 수 있는 사람의 수입니다. 이 제한은 2,000명으로 설정되어 있습니다. 2,001명을 팔로우하면 2,001명 제한을 초과하기 전에 최소 2,000명이 다시 팔로우해야 합니다. 봇의 일반적인 한계는 이 제한을 피하기 위해 팔로잉 제한을 관리할 만큼 똑똑하지 않다는 것입니다. 따라서 많은 가짜 계정이 2,001명의 사용자를 팔로우하는 데 갇혀 있습니다.
+계정이 2,001명 팔로잉 제한을 통과하면 팔로워보다 10% 더 많이 팔로우할 수 있다는 불문율이 있다고 생각합니다. 따라서 계정에 2,000명의 사용자가 팔로우하고 있다면 이론적으로 약 2,200명의 사용자를 팔로우할 수 있습니다.
 
-- 0 - 20 - Not a cattle
-- 21 - 80 - Sounds like a cattle (muhhhh)
-- 81 - 100 - It's definetely a cattle ! Avoid it !
-- 100+ - Too much cattle! 🐮
+### 다른 사람과의 상호 작용 없음
 
-## Input example
+다른 사람과의 상호 작용 흔적이 없는 계정은 종종 가짜 계정입니다. 소셜 미디어는 양방향 대화를 의미합니다. 다른 사람과 단순히 상호 작용하지 않는 계정은 종종 봇 계정의 신호입니다.
+다른 사용자와의 상호 작용이 있는지 확인하는 빠른 방법은 사용자의 최근 트윗을 보는 것입니다. 최근 20-30개 트윗 내에 @ 답글이나 리트윗이 없는 것을 볼 수 있다면 보고 있는 계정이 자동화/가짜 계정일 가능성이 큽니다.
+
+### 팔로워 수 없음 또는 낮음
+
+봇 계정의 또 다른 일반적인 징후는 계정을 다시 팔로우하는 사람이 없는 경향이 있는 계정입니다. 이것은 2,001명의 사용자를 팔로우하지만 소수의 계정만 다시 팔로우하는 계정에서 흔히 볼 수 있습니다. 누군가가 계정을 팔로우하지 않으려는 여러 가지 이유가 있지만 이 경우 계정이 팔로우할 가치가 없기 때문일 가능성이 큽니다. 트위터 사용자는 누군가를 다시 팔로우할 가치가 있는지 여부에 대해 더 똑똑해지고 있습니다.
+
+### 비현실적인 양의 트윗
+
+<p align="left">
+  <img src="../../../assets/An-Insane-Amount-of-Tweets.png" alt="엄청난 양의 트윗">
+</p>
+
+책임감 있게 사용될 때 트위터에서 자동화가 제자리를 잡는다는 것은 의심의 여지가 없습니다. 그러나 자동화/가짜 계정의 확실한 징후는 일반적으로 인간적으로 불가능할 가능성이 높은 엄청난 양의 트윗입니다. 내 말은, 누가 123,684번 트윗할 시간이 있겠습니까? 위 이미지에서 이렇게 자주 트윗하는 것이 이 계정의 팔로워 수를 늘리는 데 얼마나 큰 효과가 있었는지 알 수 있습니다.
+
+## 소떼 척도
+
+계정이 트리거하는 위의 각 항목에 대해 점수에 10을 더합니다. 출력은 다음 척도를 고려해야 합니다.
+
+- 0 - 20 - 소떼 아님
+- 21 - 80 - 소떼 같음 (음메)
+- 81 - 100 - 확실히 소떼임! 피하십시오!
+- 100+ - 너무 많은 소떼! 🐮
+
+## 입력 예시
 
 ```
-input: @DaniloGentili
-output: Too much cattle! 🐮
+입력: @DaniloGentili
+출력: 너무 많은 소떼! 🐮
 ```

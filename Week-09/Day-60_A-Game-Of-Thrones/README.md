@@ -1,30 +1,30 @@
-# A Game of Threes
+# 3의 게임
 
-Back in middle school, I had a peculiar way of dealing with super boring classes. I would take my handy pocket calculator and play a "Game of Threes". Here's how you play it:
+중학교 시절, 저는 매우 지루한 수업을 견디는 독특한 방법이 있었습니다. 휴대용 계산기를 꺼내 "3의 게임"을 하곤 했습니다. 게임 방법은 다음과 같습니다.
 
-First, you mash in a random large number to start with. Then, repeatedly do the following:
-- If the number is divisible by 3, divide it by 3.
-- If it's not, either add 1 or subtract 1 (to make it divisible by 3), then divide it by 3.
+먼저, 임의의 큰 숫자를 입력하여 시작합니다. 그런 다음 다음을 반복합니다.
+- 숫자가 3으로 나누어지면 3으로 나눕니다.
+- 그렇지 않으면 1을 더하거나 빼서 (3으로 나누어지도록 만든 후) 3으로 나눕니다.
 
-The game stops when you reach "1".
+"1"에 도달하면 게임이 중단됩니다.
 
-While the game was originally a race against myself in order to hone quick math reflexes, it also poses an opportunity for some interesting programming challenges. Today, the challenge is to create a program that "plays" the Game of Threes.
+원래 이 게임은 빠른 수학적 반사 신경을 연마하기 위해 자신과의 경쟁이었지만, 흥미로운 프로그래밍 과제를 제시하기도 합니다. 오늘의 과제는 3의 게임을 "플레이"하는 프로그램을 만드는 것입니다.
 
-## Challenge Description
+## 과제 설명
 
-The input is a single number: the number at which the game starts. Write a program that plays the Threes game, and outputs a valid sequence of steps you need to take to get to 1. Each step should be output as the number you start at, followed by either -1 or 1 (if you are adding/subtracting 1 before dividing), or 0 (if you are just dividing). The last line should simply be 1.
+입력은 게임이 시작되는 단일 숫자입니다. 3의 게임을 플레이하고 1에 도달하는 데 필요한 유효한 단계 시퀀스를 출력하는 프로그램을 작성하십시오. 각 단계는 시작하는 숫자, 그 뒤에 -1 또는 1(나누기 전에 더하거나 빼는 경우) 또는 0(그냥 나누는 경우)을 출력해야 합니다. 마지막 줄은 단순히 1이어야 합니다.
 
-## Input Description
+## 입력 설명
 
-The input is a single number: the number at which the game starts.
+입력은 게임이 시작되는 단일 숫자입니다.
 
 ```text
 100
 ```
 
-## Output Description
+## 출력 설명
 
-The output is a list of valid steps that must be taken to play the game. Each step is represented by the number you start at, followed by either -1 or 1 (if you are adding/subtracting 1 before dividing), or 0 (if you are just dividing). The last line should simply be 1.
+출력은 게임을 플레이하는 데 필요한 유효한 단계 목록입니다. 각 단계는 시작하는 숫자, 그 뒤에 -1 또는 1(나누기 전에 더하거나 빼는 경우) 또는 0(그냥 나누는 경우)으로 표시됩니다. 마지막 줄은 단순히 1이어야 합니다.
 
 ```text
 100 -1

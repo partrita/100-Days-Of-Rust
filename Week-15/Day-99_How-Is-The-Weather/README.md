@@ -1,36 +1,36 @@
-## How is the Weather?
+## 날씨가 어때요?
 
-You intend to visit **Brazil** and get to know its main tourist spots on your well-deserved vacation.
+당신은 **브라질**을 방문하여 마땅히 받아야 할 휴가에 주요 관광지를 알아볼 계획입니다.
 
-To make the most of this period, from the list of municipalities in your travel itinerary, you would like to know the weather conditions for the next 5 days (including the current day) of each municipality informed.
+이 기간을 최대한 활용하기 위해 여행 일정에 있는 지방 자치 단체 목록에서 각 지방 자치 단체의 향후 5일(현재 날짜 포함) 동안의 날씨 상태를 알고 싶습니다.
 
-Write a function that displays the weather forecast for a municipality informed for the next 5 days (including the current day).
+해당 지방 자치 단체의 향후 5일(현재 날짜 포함) 동안의 일기 예보를 표시하는 함수를 작성하십시오.
 
-### Input parameters:
-- Name of the municipality (it can be a partial name, the system must do a best guess)
-- State abbreviation (all uppercase, 2 characters long)
+### 입력 매개변수:
+- 지방 자치 단체 이름 (부분적인 이름일 수 있으며 시스템은 최선을 다해 추측해야 함)
+- 주 약자 (모두 대문자, 2자 길이)
 
-## Output:
-Object with the following structure:
-- Name of the municipality
-- State abbreviation
-- List/Vector/Array containing 5 forecasts (one for each day, including today). Each forecast has:
-    - Morning:
-        - Minimum Temperature (° C)
-        - Maximum Temperature (° C)
-        - Resume
-    - Afternoon:
-        - Minimum Temperature (° C)
-        - Maximum Temperature (° C)
-        - Resume
-    - Evening:
-        - Minimum Temperature (° C)
-        - Maximum Temperature (° C)
-        - Resume    
+## 출력:
+다음 구조를 가진 객체:
+- 지방 자치 단체 이름
+- 주 약자
+- 5개의 예보를 포함하는 목록/벡터/배열 (오늘을 포함하여 각 날짜에 대해 하나씩). 각 예보에는 다음이 포함됩니다.
+    - 오전:
+        - 최저 기온(°C)
+        - 최고 기온(°C)
+        - 요약
+    - 오후:
+        - 최저 기온(°C)
+        - 최고 기온(°C)
+        - 요약
+    - 저녁:
+        - 최저 기온(°C)
+        - 최고 기온(°C)
+        - 요약
 
-### Notes:
-- You can make use of the public [API](https://servicodados.ibge.gov.br/api/v1/localidades/municipios) of the Brazilian Institute of Geography and Statistics (IBGE) to get more information about municipalities and states. This API was used on [day-98 challenge](../../Week-14/day-98/README.md).
+### 참고:
+- 브라질 지리 통계 연구소(IBGE)의 공용 [API](https://servicodados.ibge.gov.br/api/v1/localidades/municipios)를 사용하여 지방 자치 단체 및 주에 대한 자세한 정보를 얻을 수 있습니다. 이 API는 [98일차 과제](../../Week-14/day-98/README.md)에서 사용되었습니다.
 
-- You can make use of the public [weather forecast API](https://portal.inmet.gov.br/manual/manual-de-uso-da-api-de-previs%C3%A3o) of the Brazilian Institute of Geography and Statistics (IBGE).
+- 브라질 지리 통계 연구소(IBGE)의 공용 [일기 예보 API](https://portal.inmet.gov.br/manual/manual-de-uso-da-api-de-previs%C3%A3o)를 사용할 수 있습니다.
 
-- If the forecast is not available in all three times of the day, use a single forecast for the whole day. This is specially common for days after day 3.
+- 하루 세 번 모두 예보를 사용할 수 없는 경우 하루 종일 단일 예보를 사용하십시오. 이것은 특히 3일 이후의 날에 일반적입니다.

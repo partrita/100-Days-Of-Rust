@@ -1,17 +1,17 @@
-## Make it look like you are working
+## 일하는 것처럼 보이게 만들기
 
-Often, we find ourselves running a script or query that will take a significant amount of time to run. usually, you can leave that script open and enjoy some guilt-free procrastination.
+종종 우리는 실행하는 데 상당한 시간이 걸리는 스크립트나 쿼리를 실행합니다. 일반적으로 해당 스크립트를 열어두고 죄책감 없이 미루는 것을 즐길 수 있습니다.
 
-Now, what if you could write a script that seems to be one of the above scripts to any onlookers, but in looks only? You could put it up on a screen and enjoy days of kitten livestreams before anyone realised that all the complicated rigmarole on the screen didn't have anything to do with your actual job.
+이제, 구경꾼에게는 위 스크립트 중 하나처럼 보이지만 보기만 그런 스크립트를 작성할 수 있다면 어떨까요? 화면에 띄워놓고 화면의 복잡한 절차가 실제 업무와 아무 관련이 없다는 것을 누군가 알아차리기 전에 며칠 동안 새끼 고양이 라이브 스트림을 즐길 수 있습니다.
 
-Your challenge is to write this script !
+여러분의 과제는 이 스크립트를 작성하는 것입니다!
 
-## A good solution will:
+## 좋은 해결책은 다음과 같습니다.
 
-- Make something appear on the screen that looks like a script is doing work. "Screen" can be terminal, browser, etc.
-- Be fairly original (yes, we've all seen the neverending progress bar programs)
-- Survive cursory examination by a technical person
+- 스크립트가 작동하는 것처럼 보이는 것을 화면에 표시합니다. "화면"은 터미널, 브라우저 등일 수 있습니다.
+- 상당히 독창적이어야 합니다 (네, 우리 모두 끝없는 진행률 표시줄 프로그램을 본 적이 있습니다).
+- 기술자의 cursory 검사를 통과해야 합니다.
 
-## A bad solution will:
+## 나쁜 해결책은 다음과 같습니다.
 
-- Get you fired
+- 해고당하게 됩니다.

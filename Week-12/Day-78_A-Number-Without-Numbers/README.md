@@ -1,5 +1,5 @@
-## A number without numbers
+## 숫자 없는 숫자
 
-Now that it's (almost) 2021, it's time for a code question involving the number 2021.
+이제 (거의) 2021년이 되었으니 숫자 2021과 관련된 코드 질문을 할 차례입니다.
 
-Your task is to make a program that prints the number 2021, without using any of the characters 0123456789 in your code, and independently of any external variables such as the date or time or a random seed.
+여러분의 과제는 코드에 0123456789 문자를 사용하지 않고 날짜, 시간 또는 임의 시드와 같은 외부 변수와 독립적으로 숫자 2021을 인쇄하는 프로그램을 만드는 것입니다.

@@ -1,8 +1,8 @@
-# Javelin Parabolic Throw
+# 창 던지기 포물선 운동
 
-Write a function that takes initial speed (**v** in m/s) and throw angle (**a** in degrees) and returns the maximum height and maximum range reached by javelin as a string.
+초기 속도(**v**, m/s)와 투척 각도(**a**, 도)를 입력받아 창이 도달하는 최대 높이와 최대 거리를 문자열로 반환하는 함수를 작성하십시오.
 
-## Examples
+## 예시
 ```text
 javelinThrow(36.7, 45) ➞ "Ymax=34m, Xmax=137m"
 
@@ -11,7 +11,7 @@ javelinThrow(51.3, 20) ➞ "Ymax=16m, Xmax=172m"
 javelinThrow(100.1, 89) ➞ "Ymax=511m, Xmax=36m"
 ```
 
-## Notes
-- Javelin starts moving at h=0m.
-- Gravitational acceleration is **g=9.81 m/s^2**.
-- All results should be rounded to the nearest whole number.
+## 참고
+- 창은 h=0m에서 움직이기 시작합니다.
+- 중력 가속도는 **g=9.81 m/s^2**입니다.
+- 모든 결과는 가장 가까운 정수로 반올림해야 합니다.

@@ -1,14 +1,13 @@
-## Minutes Before the New Year
+## 새해 전까지 남은 시간 (분)
 
-New Year is coming and you are excited to know how many minutes remain before the New Year. You know that currently the clock shows **ℎ** hours and **𝑚** minutes, where **0≤ℎℎ<24** and **0≤𝑚𝑚<60**. 
+새해가 다가오고 새해까지 몇 분이 남았는지 알고 싶어 설렙니다. 현재 시계는 **h**시 **m**분을 가리키고 있으며, **0 ≤ hh < 24**이고 **0 ≤ mm < 60**입니다.
 
-We use 24-hour time format!
+24시간 형식을 사용합니다!
 
-Your task is to find the number of minutes before the New Year. You know that New Year comes when the clock shows 0
-hours and 0 minutes.
+여러분의 과제는 새해까지 남은 시간을 분 단위로 찾는 것입니다. 새해는 시계가 0시 0분을 가리킬 때 온다는 것을 알고 있습니다.
 
 
-### Input
+### 입력
 ```
 23 55
 23 0
@@ -17,7 +16,7 @@ hours and 0 minutes.
 23 59
 ```
 
-### Output
+### 출력
 ```
 5
 60

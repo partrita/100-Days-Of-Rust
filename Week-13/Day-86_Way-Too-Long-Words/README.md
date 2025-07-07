@@ -1,16 +1,16 @@
-## Way Too Long Words
+## 너무 긴 단어
 
-Sometimes some words like "**localization**" or "**internationalization**" are so long that writing them many times in one text is quite tiresome.
+때때로 "**localization**"이나 "**internationalization**"과 같은 일부 단어는 너무 길어서 한 텍스트에 여러 번 쓰는 것이 상당히 지겹습니다.
 
-Let's consider a word too long, if its length is **strictly more than 10 characters**. All too long words should be replaced with a special abbreviation.
+단어 길이가 **10자보다 엄격하게 긴** 경우 너무 긴 단어로 간주합니다. 너무 긴 모든 단어는 특수 약자로 대체해야 합니다.
 
-This abbreviation is made like this: we write down the first and the last letter of a word and between them we write the number of letters between the first and the last letters. That number is in decimal system and doesn't contain any leading zeroes.
+이 약자는 다음과 같이 만듭니다. 단어의 첫 글자와 마지막 글자를 적고 그 사이에 첫 글자와 마지막 글자 사이의 글자 수를 적습니다. 이 숫자는 10진수이며 앞에 0이 포함되지 않습니다.
 
-Thus, "**localization**" will be spelt as "**l10n**", and "**internationalization**" will be spelt as "**i18n**".
+따라서 "**localization**"은 "**l10n**"으로, "**internationalization**"은 "**i18n**"으로 표기됩니다.
 
-You are suggested to automatize the process of changing the words with abbreviations. At that all too long words should be replaced by the abbreviation and the words that are not too long should not undergo any changes.
+단어를 약자로 변경하는 프로세스를 자동화하는 것이 좋습니다. 이때 너무 긴 모든 단어는 약자로 대체하고 너무 길지 않은 단어는 변경하지 않아야 합니다.
 
-### Input
+### 입력
 ```
 word
 localization
@@ -18,7 +18,7 @@ internationalization
 pneumonoultramicroscopicsilicovolcanoconiosis
 ```
 
-### Output
+### 출력
 ```
 word
 l10n

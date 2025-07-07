@@ -1,35 +1,35 @@
-## Elephant
+## 코끼리
 
-An elephant decided to visit his friend. It turned out that the elephant's house is located at point 0 and his friend's house is located at point x(x > 0) of the coordinate line. In one step the elephant can move 1, 2, 3, 4 or 5 positions forward. Determine, what is the minimum number of steps he needs to make in order to get to his friend's house.
+코끼리가 친구를 방문하기로 결정했습니다. 코끼리의 집은 좌표선 0 지점에 있고 친구의 집은 x(x > 0) 지점에 있다는 것이 밝혀졌습니다. 코끼리는 한 번에 1, 2, 3, 4 또는 5칸 앞으로 이동할 수 있습니다. 친구 집에 도착하기 위해 필요한 최소 걸음 수를 결정하십시오.
 
-### Input
-The first line of the input contains an integer x (1 ≤ x ≤ 1 000 000) — The coordinate of the friend's house.
+### 입력
+입력의 첫 번째 줄에는 정수 x(1 ≤ x ≤ 1,000,000)가 포함됩니다. 이는 친구 집의 좌표입니다.
 
-### Output
-Print the minimum number of steps that elephant needs to make to get from point 0 to point x.
+### 출력
+코끼리가 0 지점에서 x 지점까지 이동하는 데 필요한 최소 걸음 수를 인쇄합니다.
 
 
-### Input Example
+### 입력 예시
 ```
 5
 ```
 
-### Output Example
+### 출력 예시
 ```
 1
 ```
 
-### Input Example
+### 입력 예시
 ```
 12
 ```
 
-### Output Example
+### 출력 예시
 ```
 3
 ```
 
-### Notes
-In the first sample the elephant needs to make one step of length 5 to reach the point x.
+### 참고
+첫 번째 샘플에서 코끼리는 x 지점에 도달하기 위해 길이 5의 한 걸음을 내딛어야 합니다.
 
-In the second sample the elephant can get to point x if he moves by 3, 5 and 4. There are other ways to get the optimal answer but the elephant cannot reach x in less than three moves.
+두 번째 샘플에서 코끼리는 3, 5, 4만큼 이동하면 x 지점에 도달할 수 있습니다. 최적의 답을 얻는 다른 방법도 있지만 코끼리는 세 걸음 미만으로 x에 도달할 수 없습니다.

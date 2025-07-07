@@ -1,11 +1,11 @@
-# ISBN Generator
+# ISBN 생성기
 
-ISBN's (International Standard Book Numbers) are identifiers for books. Given the correct sequence of digits, one book can be identified out of millions of others thanks to this ISBN. 
+ISBN(국제 표준 도서 번호)은 책의 식별자입니다. 올바른 숫자 순서가 주어지면 이 ISBN 덕분에 수백만 권의 다른 책 중에서 한 권의 책을 식별할 수 있습니다.
 
-**Objective**
-Write an ISBN generator.
+**목표**
+ISBN 생성기를 작성하십시오.
 
-## Rules
+## 규칙
 
-- Follow the ISBN rules of **day-65 challenge** (**ISBN Validator**), **use this validator** to check the generated identifiers on **your tests**.
+- **65일차 과제**(**ISBN 유효성 검사기**)의 ISBN 규칙을 따르고, **이 유효성 검사기를 사용**하여 **테스트**에서 생성된 식별자를 확인하십시오.
 

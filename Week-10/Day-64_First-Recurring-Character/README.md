@@ -1,27 +1,27 @@
-# First Recurring Character
+# 첫 번째 반복 문자
 
-Write a program that outputs the first recurring character in a string.
+문자열에서 첫 번째 반복 문자를 출력하는 프로그램을 작성하십시오.
 
-## Input Description
+## 입력 설명
 
-A string of alphabetical characters. Example:
+알파벳 문자열입니다. 예시:
 ```text
 ABCDEBC
 ```
 
-## Output Description
+## 출력 설명
 
-The first recurring character from the input. From the above example:
+입력에서 첫 번째 반복 문자입니다. 위 예시에서:
 ```text
 B
 ```
 
-## Note
+## 참고
 
-What is exactly the definition of 'first recurring character'? 
-- It is the character that recurs first (B in the series ABBA)
+'첫 번째 반복 문자'의 정확한 정의는 무엇입니까?
+- 가장 먼저 반복되는 문자입니다 (ABBA 시리즈에서 B).
 
-## Examples
+## 예시
 ```text
 ABCDEBC ➞ B
 ABBA ➞ B

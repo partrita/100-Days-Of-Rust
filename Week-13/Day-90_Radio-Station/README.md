@@ -1,27 +1,27 @@
-## Radio Station
+## 라디오 방송국
 
-As the guys fried the radio station facilities, the school principal gave them tasks as a punishment. Dustin's task was to add comments to nginx configuration for school's website. The school has **n** servers. 
+친구들이 라디오 방송국 시설을 망가뜨리자 교장 선생님은 벌로 그들에게 과제를 내주었습니다. 더스틴의 과제는 학교 웹사이트의 nginx 구성에 주석을 추가하는 것이었습니다. 학교에는 **n**개의 서버가 있습니다.
 
-Each server has a name and an ip (names aren't necessarily unique, but ips are). Dustin knows the ip and name of each server. 
+각 서버에는 이름과 IP가 있습니다(이름은 반드시 고유하지는 않지만 IP는 고유합니다). 더스틴은 각 서버의 IP와 이름을 알고 있습니다.
 
-For simplicity, we'll assume that an **nginx** command is of form "**command ip;**" where **command** is a string consisting of English lowercase letter only, and ip is the ip of one of school servers.
+간단하게 하기 위해 **nginx** 명령은 "**command ip;**" 형식이라고 가정합니다. 여기서 **command**는 영어 소문자로만 구성된 문자열이고 ip는 학교 서버 중 하나의 IP입니다.
 
 <p align="center">
   <img src="../../../assets/Dustin.png" alt="OMG">
 </p>
 
 
-Each ip is of form "a.b.c.d" where a, b, c and d are non-negative integers less than or equal to 255 (with no leading zeros). The nginx configuration file Dustin has to add comments to has m commands. Nobody ever memorizes the ips of servers, so to understand the configuration better, Dustin has to comment the name of server that the ip belongs to at the end of each line (after each command). More formally, if a line is "command ip;" Dustin has to replace it with "command ip; #name" where name is the name of the server with ip equal to ip.
+각 IP는 "a.b.c.d" 형식이며 여기서 a, b, c, d는 0보다 크거나 같고 255보다 작거나 같은 정수입니다(앞에 0이 없음). 더스틴이 주석을 추가해야 하는 nginx 구성 파일에는 m개의 명령이 있습니다. 아무도 서버의 IP를 외우지 않으므로 구성을 더 잘 이해하기 위해 더스틴은 각 줄 끝(각 명령 뒤)에 IP가 속한 서버의 이름을 주석으로 달아야 합니다. 더 공식적으로 말하면 줄이 "command ip;"이면 더스틴은 이것을 "command ip; #name"으로 바꿔야 합니다. 여기서 name은 IP가 ip와 같은 서버의 이름입니다.
 
-Dustin doesn't know anything about nginx, so he panicked again and his friends asked you to do his task for him.
+더스틴은 nginx에 대해 아무것도 모르기 때문에 다시 당황했고 친구들은 당신에게 그의 과제를 대신 해달라고 요청했습니다.
 
 
-### Input
-The first line of input contains two integers n and m (1 ≤ n, m ≤ 1000).
+### 입력
+입력의 첫 번째 줄에는 두 개의 정수 n과 m(1 ≤ n, m ≤ 1000)이 포함됩니다.
 
-The next n lines contain the names and ips of the servers. Each line contains a string name, name of the server and a string ip, ip of the server, separated by space (1 ≤ |name| ≤ 10, name only consists of English lowercase letters). It is guaranteed that all ip are distinct.
+다음 n개의 줄에는 서버의 이름과 IP가 포함됩니다. 각 줄에는 서버 이름인 문자열 name과 서버 IP인 문자열 ip가 공백으로 구분되어 포함됩니다(1 ≤ |name| ≤ 10, name은 영어 소문자로만 구성됨). 모든 IP는 고유함이 보장됩니다.
 
-The next m lines contain the commands in the configuration file. Each line is of form "command ip;" (1 ≤ |command| ≤ 10, command only consists of English lowercase letters). It is guaranteed that ip belongs to one of the n school servers.
+다음 m개의 줄에는 구성 파일의 명령이 포함됩니다. 각 줄은 "command ip;" 형식입니다(1 ≤ |command| ≤ 10, command는 영어 소문자로만 구성됨). ip는 n개의 학교 서버 중 하나에 속함이 보장됩니다.
 
 ```
 2 2
@@ -31,8 +31,8 @@ block 192.168.0.1;
 proxy 192.168.0.2;
 ```
 
-### Output
-Print m lines, the commands in the configuration file after Dustin did his task.
+### 출력
+더스틴이 과제를 수행한 후 구성 파일의 명령인 m개의 줄을 인쇄합니다.
 
 ```
 block 192.168.0.1; #replica
@@ -40,7 +40,7 @@ proxy 192.168.0.2; #main
 ```
 
 
-### Input
+### 입력
 ```
 3 5
 google 8.8.8.8
@@ -53,7 +53,7 @@ unblock 8.8.8.8;
 check 138.197.64.57;
 ```
 
-### Output
+### 출력
 ```
 redirect 138.197.64.57; #server
 block 8.8.8.8; #google

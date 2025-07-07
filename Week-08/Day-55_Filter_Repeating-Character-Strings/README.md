@@ -1,8 +1,8 @@
-# Filter Repeating Character Strings
+# 반복되는 문자열 필터링
 
-Create a function that keeps only strings with repeating identical characters (in other words, it has a set size of 1).
+반복되는 동일한 문자(즉, 집합 크기가 1)만 있는 문자열만 유지하는 함수를 만듭니다.
 
-## Examples
+## 예시
 ```text
 identicalFilter(["aaaaaa", "bc", "d", "eeee", "xyz"]) 
 ➞ ["aaaaaa", "d", "eeee"]
@@ -14,6 +14,6 @@ identicalFilter(["xxxxo", "oxo", "xox", "ooxxoo", "oxo"])
 ➞ []
 ```
 
-## Notes
-- A string with a single character is trivially counted as a string with repeating identical characters.
-- If there are no strings with repeating identical characters, return an empty array (see example #3).
+## 참고
+- 단일 문자로 된 문자열은 반복되는 동일한 문자를 가진 문자열로 간단하게 계산됩니다.
+- 반복되는 동일한 문자를 가진 문자열이 없으면 빈 배열을 반환합니다(예시 #3 참조).

@@ -1,34 +1,34 @@
-## Vestigium
+## 베스티지움
 
-Vestigium means "trace" in Latin. In this problem we work with Latin squares and matrix traces.
+베스티지움은 라틴어로 "흔적"을 의미합니다. 이 문제에서는 라틴 방진과 행렬의 대각합을 다룹니다.
 
-The trace of a square matrix is the sum of the values on the main diagonal (which runs from the upper left to the lower right).
+정방 행렬의 대각합은 주 대각선(왼쪽 위에서 오른쪽 아래로 이어짐)에 있는 값의 합입니다.
 
-An **N-by-N** square matrix is a Latin square if each cell contains one of **N** different values, and no value is repeated within a row or a column. In this problem, we will deal only with "natural Latin squares" in which the N values are the integers between 1 and **N**.
+**N x N** 정방 행렬은 각 셀에 **N**개의 서로 다른 값 중 하나가 포함되어 있고 행이나 열 내에서 값이 반복되지 않으면 라틴 방진입니다. 이 문제에서는 N개의 값이 1과 **N** 사이의 정수인 "자연 라틴 방진"만 다룹니다.
 
-Given a matrix that contains only integers between 1 and N, we want to compute its trace and check whether it is a natural Latin square. To give some additional information, instead of simply telling us whether the matrix is a natural Latin square or not, please compute the number of rows and the number of columns that contain repeated values.
+1과 N 사이의 정수만 포함하는 행렬이 주어지면 대각합을 계산하고 자연 라틴 방진인지 확인하려고 합니다. 추가 정보를 제공하기 위해 행렬이 자연 라틴 방진인지 여부를 단순히 알려주는 대신 반복되는 값을 포함하는 행과 열의 수를 계산하십시오.
 
-### Input
+### 입력
 
-The first line of the input gives the number of test cases, T. T test cases follow. Each starts with a line containing a single integer **N**: the size of the matrix to explore. Then, **N** lines follow. The i-th of these lines contains N integers **Mi,1, Mi,2 ..., Mi,N. Mi,j** is the integer in the i-th row and j-th column of the matrix.
+입력의 첫 번째 줄에는 테스트 케이스의 수 T가 주어집니다. T개의 테스트 케이스가 이어집니다. 각 테스트 케이스는 탐색할 행렬의 크기인 단일 정수 **N**을 포함하는 줄로 시작합니다. 그런 다음 **N**개의 줄이 이어집니다. 이 줄 중 i번째 줄에는 N개의 정수 **Mi,1, Mi,2 ..., Mi,N**이 포함됩니다. **Mi,j**는 행렬의 i번째 행과 j번째 열에 있는 정수입니다.
 
-### Output
+### 출력
 
-For each test case, output one line containing Case #x: k r c, where x is the test case number (starting from 1), k is the trace of the matrix, r is the number of rows of the matrix that contain repeated elements, and c is the number of columns of the matrix that contain repeated elements.
+각 테스트 케이스에 대해 Case #x: k r c 형식으로 한 줄을 출력합니다. 여기서 x는 테스트 케이스 번호(1부터 시작), k는 행렬의 대각합, r은 반복되는 요소를 포함하는 행렬의 행 수, c는 반복되는 요소를 포함하는 행렬의 열 수입니다.
 
-### Limits
+### 제한
 
-Test set 1 (Visible Verdict)
-Time limit: 20 seconds per test set.
-Memory limit: 1GB.
+테스트 세트 1 (보이는 판정)
+시간 제한: 테스트 세트당 20초.
+메모리 제한: 1GB.
 1 ≤ T ≤ 100.
 2 ≤ N ≤ 100.
-1 ≤ Mi,j ≤ N, for all i, j.
+모든 i, j에 대해 1 ≤ Mi,j ≤ N입니다.
 
-### Sample
+### 샘플
 
 ```
-Input              Output
+입력              출력
 
 3
 4
@@ -47,14 +47,14 @@ Input              Output
 1 2 3
 ```
 
-In Sample Case #1, the input is a natural Latin square, which means no row or column has repeated elements. All four values in the main diagonal are 1, and so the trace (their sum) is 4.
+샘플 케이스 #1에서 입력은 자연 라틴 방진이므로 행이나 열에 반복되는 요소가 없습니다. 주 대각선의 네 값은 모두 1이므로 대각합(합계)은 4입니다.
 
-In Sample Case #2, all rows and columns have repeated elements. Notice that each row or column with repeated elements is counted only once regardless of the number of elements that are repeated or how often they are repeated within the row or column. In addition, notice that some integers in the range 1 through N may be absent from the input.
+샘플 케이스 #2에서는 모든 행과 열에 반복되는 요소가 있습니다. 반복되는 요소를 가진 각 행이나 열은 반복되는 요소의 수나 행 또는 열 내에서 반복되는 횟수에 관계없이 한 번만 계산됩니다. 또한 1부터 N까지의 범위에 있는 일부 정수가 입력에 없을 수 있습니다.
 
-In Sample Case #3, the leftmost and rightmost columns have repeated elements.
+샘플 케이스 #3에서는 가장 왼쪽과 가장 오른쪽 열에 반복되는 요소가 있습니다.
 
-### #Analysis
+### #분석
 
-One simple way to check whether the values in a row or column are a permutation of the values from 1 to N is to sort them and then step through them, checking whether the sorted list starts at 1 and increases by 1 each time. Another option, which avoids the sort and takes time linear in N, is to look at the values one by one and store each one in a hash table-based data structure. If we ever find that a value is already in the set, then that row or column contains a repeated value. Because there are N values and the problem guarantees that they are integers between 1 and N, inclusive, the absence of duplicates implies that we have a permutation as desired.
+행이나 열의 값이 1부터 N까지의 값의 순열인지 확인하는 한 가지 간단한 방법은 정렬한 다음 정렬된 목록이 1에서 시작하여 매번 1씩 증가하는지 확인하는 것입니다. 정렬을 피하고 N에 대해 선형 시간을 사용하는 또 다른 옵션은 값을 하나씩 보고 해시 테이블 기반 데이터 구조에 각 값을 저장하는 것입니다. 값이 이미 집합에 있음을 발견하면 해당 행이나 열에 반복되는 값이 포함됩니다. N개의 값이 있고 문제가 1과 N 사이의 정수(포함)임을 보장하므로 중복이 없으면 원하는 대로 순열이 있음을 의미합니다.
 
-Finding the trace is also straightforward — iterate through the rows taking the i-th value from the i-th row, and add the values together.
+대각합을 찾는 것도 간단합니다. 행을 반복하여 i번째 행에서 i번째 값을 가져와 값을 더합니다.

@@ -1,7 +1,7 @@
-# Sales by Match
+# 색상별 양말 판매량
 
-Alex works at a clothing store. There is a large pile of socks that must be paired by color for sale. Given **an array of integers representing the color of each sock**, determine **how many pairs of socks with matching colors there are**.
+Alex는 옷가게에서 일합니다. 판매를 위해 색상별로 짝을 맞춰야 하는 양말 더미가 많이 있습니다. **각 양말의 색상을 나타내는 정수 배열**이 주어지면 **색상이 일치하는 양말 쌍이 몇 개인지 확인**하십시오.
 
-For example, there are *n = 7* socks with colors *ar = [1,2,1,2,1,3,2]*. There is one pair of color **1** and one of color **2**.  
+예를 들어, *ar = [1,2,1,2,1,3,2]* 색상의 양말이 *n = 7*개 있습니다. 색상 **1**의 쌍 하나와 색상 **2**의 쌍 하나가 있습니다.
 
-The number of pairs is **2**. 
+쌍의 수는 **2**입니다.

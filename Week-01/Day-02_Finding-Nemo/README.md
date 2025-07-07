@@ -11,7 +11,7 @@ findNemo("I am finding Nemo !") ➞ "I found Nemo at 4!"
 
 findNemo("Nemo is me") ➞ "I found Nemo at 1!"
 
-findNemo("I Nemo am") ➞ "I found Nemo at 2!"
+findNimo("I Nemo am") ➞ "I found Nemo at 2!"
 ```
 
 ---

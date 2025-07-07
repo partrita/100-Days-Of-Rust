@@ -1,8 +1,8 @@
-# Convert to Hex
+# 16진수로 변환
 
-Create a function that takes a strings characters as ASCII and returns each characters hexadecimal value as a string.
+문자열의 문자를 ASCII로 받아 각 문자의 16진수 값을 문자열로 반환하는 함수를 만듭니다.
 
-## Examples
+## 예시
 ```text
 toHex("hello world") ➞ "68 65 6c 6c 6f 20 77 6f 72 6c 64"
 
@@ -11,6 +11,6 @@ toHex("Big Boi") ➞ "42 69 67 20 42 6f 69"
 toHex("Marty Poppinson") ➞ "4d 61 72 74 79 20 50 6f 70 70 69 6e 73 6f 6e"
 ```
 
-## Notes
-- Each byte must be seperated by a space.
-- All alpha hex characters must be lowercase.
+## 참고
+- 각 바이트는 공백으로 구분해야 합니다.
+- 모든 알파벳 16진수 문자는 소문자여야 합니다.

@@ -1,0 +1,9 @@
+[book]
+authors = ["fkt"]
+language = "ko"
+src = "src"
+title = "100-Days-Of-Rust"
+
+[output.html]
+git-repository-url = "https://github.com/partrita/100-Days-Of-Rust"
+edit-url-template = "https://github.com/partrita/100-Days-Of-Rust/edit/main/{path}"

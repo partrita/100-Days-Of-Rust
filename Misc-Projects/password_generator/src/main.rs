@@ -1,4 +1,4 @@
-use rand::Rng;
+use rand::{Rng, rngs::OsRng};
 
 fn main() {
     
@@ -6,7 +6,9 @@ fn main() {
                             abcdefghijklmnopqrstuvwxyz\
                             0123456789)(*&^%$#@!~";
     const PASSWORD_LEN: usize = 30;
-    let mut rng = rand::thread_rng();
+
+    // 🛡️ Sentinel: Using OsRng instead of thread_rng() for cryptographically secure random number generation
+    let mut rng = OsRng;
 
     let password: String = (0..PASSWORD_LEN)
         .map(|_| {

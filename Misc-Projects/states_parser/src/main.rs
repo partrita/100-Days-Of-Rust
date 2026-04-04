@@ -9,12 +9,29 @@ struct State {
     capital: String,
 }
 
-fn main() {
+fn main() -> Result<(), Box<dyn std::error::Error>> {
 
-    let mut file = File::open("src/states.json").expect("File not found");
+    let mut file = match File::open("src/states.json") {
+        Ok(f) => f,
+        Err(_) => {
+            eprintln!("Error: Unable to open states data file.");
+            std::process::exit(1); // Fail securely with error code
+        }
+    };
+
     let mut contents = String::new();
-    file.read_to_string(&mut contents).expect("Unable to read file");
-    let states: Vec<State> = serde_json::from_str(&contents).expect("Unable to parse JSON");
+    if file.read_to_string(&mut contents).is_err() {
+        eprintln!("Error: Unable to read states data file.");
+        std::process::exit(1);
+    }
+
+    let states: Vec<State> = match serde_json::from_str(&contents) {
+        Ok(s) => s,
+        Err(_) => {
+            eprintln!("Error: Unable to parse states data.");
+            std::process::exit(1);
+        }
+    };
 
 
     let names: Vec<String> = states.iter().map(|s| s.state.clone()).collect();
@@ -28,4 +45,6 @@ fn main() {
         println!("Name: {:?} | Abbreviation: {:?} | Capital: {:?}", names[i], abbreviations[i], capitals[i]);
         i = i+1;
     }
+
+    Ok(())
 }

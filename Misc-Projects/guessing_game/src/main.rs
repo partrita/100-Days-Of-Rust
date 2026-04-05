@@ -14,9 +14,17 @@ fn main() {
 
         let mut guess = String::new();
 
-        io::stdin()
-            .read_line(&mut guess)
-            .expect("Failed to read line");
+        match io::stdin().read_line(&mut guess) {
+            Ok(0) => {
+                println!("EOF reached. Exiting securely.");
+                return;
+            }
+            Ok(_) => {}
+            Err(_) => {
+                println!("Failed to read input. Exiting securely.");
+                return;
+            }
+        }
 
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num, 

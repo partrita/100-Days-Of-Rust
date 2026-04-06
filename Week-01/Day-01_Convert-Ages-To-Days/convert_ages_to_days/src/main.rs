@@ -26,9 +26,19 @@ fn main() {
             Err(_) => continue,
         };
 
-        let age: u32 = guess * 365;
+        // 🛡️ Sentinel: Prevent integer overflow and unrealistic inputs
+        if guess > 130 {
+            println!("Please input a realistic age.");
+            continue;
+        }
 
-        println!("You are roughly {age} days old!")
+        match guess.checked_mul(365) {
+            Some(age) => println!("You are roughly {age} days old!"),
+            None => {
+                println!("Error calculating age. Exiting securely.");
+                return;
+            }
+        }
 
     }
 

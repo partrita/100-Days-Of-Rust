@@ -1,7 +1,6 @@
 mod colors;
 
 fn main() {
-
     colors::print_black("Hello Black!");
     colors::print_blue("Hello Blue!");
     colors::print_green("Hello Green!");
@@ -10,5 +9,4 @@ fn main() {
     colors::print_magenta("Hello Magenta!");
     colors::print_yellow("Hello Yellow!");
     colors::print_white("Hello White!");
-    
 }

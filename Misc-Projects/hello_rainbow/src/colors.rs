@@ -1,5 +1,5 @@
-use std::io::{Write};
-use termcolor::{Color, ColorChoice, ColorSpec, WriteColor, StandardStream};
+use std::io::Write;
+use termcolor::{Color, ColorChoice, ColorSpec, StandardStream, WriteColor};
 
 pub fn print_green(text: &str) {
     // 녹색에 대한 색상 사양을 만듭니다.
@@ -10,11 +10,12 @@ pub fn print_green(text: &str) {
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
     // 녹색으로 콘솔에 텍스트를 씁니다.
-    stdout.set_color(&spec).unwrap();
-    writeln!(&mut stdout, "{}", text).unwrap();
+    // 🛡️ Sentinel: Removed .unwrap() to fail securely and prevent stack trace exposure on I/O failure
+    let _ = stdout.set_color(&spec);
+    let _ = writeln!(&mut stdout, "{}", text);
 
     // 색상 사양을 기본값으로 재설정합니다.
-    stdout.reset().unwrap();
+    let _ = stdout.reset();
 }
 
 pub fn print_black(text: &str) {
@@ -26,11 +27,11 @@ pub fn print_black(text: &str) {
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
     // 녹색으로 콘솔에 텍스트를 씁니다.
-    stdout.set_color(&spec).unwrap();
-    writeln!(&mut stdout, "{}", text).unwrap();
+    let _ = stdout.set_color(&spec);
+    let _ = writeln!(&mut stdout, "{}", text);
 
     // 색상 사양을 기본값으로 재설정합니다.
-    stdout.reset().unwrap();
+    let _ = stdout.reset();
 }
 
 pub fn print_blue(text: &str) {
@@ -42,11 +43,11 @@ pub fn print_blue(text: &str) {
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
     // 녹색으로 콘솔에 텍스트를 씁니다.
-    stdout.set_color(&spec).unwrap();
-    writeln!(&mut stdout, "{}", text).unwrap();
+    let _ = stdout.set_color(&spec);
+    let _ = writeln!(&mut stdout, "{}", text);
 
     // 색상 사양을 기본값으로 재설정합니다.
-    stdout.reset().unwrap();
+    let _ = stdout.reset();
 }
 
 pub fn print_red(text: &str) {
@@ -58,11 +59,11 @@ pub fn print_red(text: &str) {
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
     // 녹색으로 콘솔에 텍스트를 씁니다.
-    stdout.set_color(&spec).unwrap();
-    writeln!(&mut stdout, "{}", text).unwrap();
+    let _ = stdout.set_color(&spec);
+    let _ = writeln!(&mut stdout, "{}", text);
 
     // 색상 사양을 기본값으로 재설정합니다.
-    stdout.reset().unwrap();
+    let _ = stdout.reset();
 }
 
 pub fn print_cyan(text: &str) {
@@ -74,11 +75,11 @@ pub fn print_cyan(text: &str) {
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
     // 녹색으로 콘솔에 텍스트를 씁니다.
-    stdout.set_color(&spec).unwrap();
-    writeln!(&mut stdout, "{}", text).unwrap();
+    let _ = stdout.set_color(&spec);
+    let _ = writeln!(&mut stdout, "{}", text);
 
     // 색상 사양을 기본값으로 재설정합니다.
-    stdout.reset().unwrap();
+    let _ = stdout.reset();
 }
 
 pub fn print_magenta(text: &str) {
@@ -90,11 +91,11 @@ pub fn print_magenta(text: &str) {
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
     // 녹색으로 콘솔에 텍스트를 씁니다.
-    stdout.set_color(&spec).unwrap();
-    writeln!(&mut stdout, "{}", text).unwrap();
+    let _ = stdout.set_color(&spec);
+    let _ = writeln!(&mut stdout, "{}", text);
 
     // 색상 사양을 기본값으로 재설정합니다.
-    stdout.reset().unwrap();
+    let _ = stdout.reset();
 }
 
 pub fn print_yellow(text: &str) {
@@ -106,11 +107,11 @@ pub fn print_yellow(text: &str) {
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
     // 녹색으로 콘솔에 텍스트를 씁니다.
-    stdout.set_color(&spec).unwrap();
-    writeln!(&mut stdout, "{}", text).unwrap();
+    let _ = stdout.set_color(&spec);
+    let _ = writeln!(&mut stdout, "{}", text);
 
     // 색상 사양을 기본값으로 재설정합니다.
-    stdout.reset().unwrap();
+    let _ = stdout.reset();
 }
 
 pub fn print_white(text: &str) {
@@ -122,11 +123,9 @@ pub fn print_white(text: &str) {
     let mut stdout = StandardStream::stdout(ColorChoice::Always);
 
     // 녹색으로 콘솔에 텍스트를 씁니다.
-    stdout.set_color(&spec).unwrap();
-    writeln!(&mut stdout, "{}", text).unwrap();
+    let _ = stdout.set_color(&spec);
+    let _ = writeln!(&mut stdout, "{}", text);
 
     // 색상 사양을 기본값으로 재설정합니다.
-    stdout.reset().unwrap();
+    let _ = stdout.reset();
 }
-
-

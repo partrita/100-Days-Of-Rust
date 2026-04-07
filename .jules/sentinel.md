@@ -7,3 +7,8 @@
 **Vulnerability:** Calling `.expect()` on `io::stdin().read_line()` exposes stack traces on failure (panic) and, more importantly, fails to handle EOF properly. When stdin is closed (EOF), `read_line` returns `Ok(0)`, which typically leads to parsing failures down the line. In loop-based prompts, this results in an infinite loop causing 100% CPU usage (Denial of Service).
 **Learning:** Always explicitly handle `io::stdin().read_line()` results. We must gracefully catch standard `Err` results to avoid stack trace leaks, but crucially, we must check for `Ok(0)` to detect EOF and break loops securely.
 **Prevention:** Replace `.expect()` with a `match` block when reading from `stdin`. Handle `Ok(0)` by breaking the read loop, allow `Ok(_)` to continue processing, and securely exit or break on `Err(_)`.
+
+## 2024-04-10 - Prevent Integer Overflow Denial of Service in User Inputs
+**Vulnerability:** A CLI utility reading user input as an integer multiplied it without any validation, leading to application panic (DoS) when providing exceptionally large inputs (e.g., `40000000`) due to integer overflow.
+**Learning:** Always validate and bound user inputs to realistic ranges before performing arithmetic. In addition to logical bounds checking, defense-in-depth requires using safe arithmetic methods like `checked_mul` to fail securely instead of panicking on overflow.
+**Prevention:** Add input bounds checking (e.g., `if age > 130`) and use `checked_mul`, `checked_add`, etc. for arithmetic operations, securely matching on `Some()` and `None` to prevent unhandled panics.

@@ -12,3 +12,8 @@
 **Vulnerability:** A CLI utility reading user input as an integer multiplied it without any validation, leading to application panic (DoS) when providing exceptionally large inputs (e.g., `40000000`) due to integer overflow.
 **Learning:** Always validate and bound user inputs to realistic ranges before performing arithmetic. In addition to logical bounds checking, defense-in-depth requires using safe arithmetic methods like `checked_mul` to fail securely instead of panicking on overflow.
 **Prevention:** Add input bounds checking (e.g., `if age > 130`) and use `checked_mul`, `checked_add`, etc. for arithmetic operations, securely matching on `Some()` and `None` to prevent unhandled panics.
+
+## 2024-04-15 - Prevent Information Leakage via Unhandled Errors in `main`
+**Vulnerability:** Returning `Result<(), Box<dyn Error>>` from `main` and using the `?` operator for file operations exposes raw OS error details (like paths and OS error codes) to the user when an operation fails.
+**Learning:** In CLI applications, the default Rust error formatter for `main` returning `Result` is verbose and intended for debugging, making it unsuitable for user-facing output as it violates the principle of failing securely and not leaking internal details.
+**Prevention:** Do not return `Result` from `main` when standard user-facing error handling is required. Instead, use explicit `match` blocks for operations that can fail, log generic, safe error messages to the user, and exit securely.

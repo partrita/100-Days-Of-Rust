@@ -9,7 +9,8 @@ struct State {
     capital: String,
 }
 
-fn main() -> Result<(), Box<dyn std::error::Error>> {
+// 🛡️ Sentinel: Removed Result return type from main to avoid leaking error details via ? operator.
+fn main() {
 
     let mut file = match File::open("src/states.json") {
         Ok(f) => f,
@@ -45,6 +46,4 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         println!("Name: {:?} | Abbreviation: {:?} | Capital: {:?}", names[i], abbreviations[i], capitals[i]);
         i = i+1;
     }
-
-    Ok(())
 }

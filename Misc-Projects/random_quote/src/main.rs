@@ -1,5 +1,6 @@
 use serde::{Deserialize, Serialize};
-use reqwest::blocking::get;
+use reqwest::blocking::Client;
+use std::time::Duration;
 
 pub type Response = Vec<Quote>;
 
@@ -12,8 +13,17 @@ pub struct Quote {
 }
 
 fn main() {
+    // 🛡️ Sentinel: Add timeout to external API calls to prevent DoS via hanging connections
+    let client = match Client::builder().timeout(Duration::from_secs(5)).build() {
+        Ok(c) => c,
+        Err(_) => {
+            eprintln!("Error: Failed to initialize HTTP client. Exiting securely.");
+            std::process::exit(1);
+        }
+    };
+
     // 🛡️ Sentinel: Fix unhandled panics by catching and handling errors securely
-    match get("https://zenquotes.io/api/random") {
+    match client.get("https://zenquotes.io/api/random").send() {
         Ok(res) => {
             match res.json::<Response>() {
                 Ok(quotes) => {

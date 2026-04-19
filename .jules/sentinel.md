@@ -17,3 +17,8 @@
 **Vulnerability:** Returning `Result<(), Box<dyn Error>>` from `main` and using the `?` operator for file operations exposes raw OS error details (like paths and OS error codes) to the user when an operation fails.
 **Learning:** In CLI applications, the default Rust error formatter for `main` returning `Result` is verbose and intended for debugging, making it unsuitable for user-facing output as it violates the principle of failing securely and not leaking internal details.
 **Prevention:** Do not return `Result` from `main` when standard user-facing error handling is required. Instead, use explicit `match` blocks for operations that can fail, log generic, safe error messages to the user, and exit securely.
+
+## 2024-04-20 - Enforce Timeouts on External API Calls
+**Vulnerability:** External API requests (e.g., using `reqwest::blocking::get`) without explicit timeouts can hang indefinitely if the remote server becomes unresponsive. This can lead to resource exhaustion and Denial of Service (DoS) in the application.
+**Learning:** Default HTTP clients often do not enforce a strict timeout. It is critical to explicitly configure a reasonable timeout (e.g., 5-10 seconds) for all external network requests to ensure the application fails fast and gracefully instead of hanging.
+**Prevention:** Instantiate a custom HTTP client configured with a timeout (e.g., `Client::builder().timeout(Duration::from_secs(5)).build()`) and use it for requests instead of relying on default convenience functions like `reqwest::blocking::get`. Ensure the client building process securely handles potential errors without panicking.

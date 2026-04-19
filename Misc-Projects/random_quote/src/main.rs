@@ -18,7 +18,7 @@ fn main() {
         Ok(c) => c,
         Err(_) => {
             eprintln!("Error: Failed to initialize HTTP client. Exiting securely.");
-            return;
+            std::process::exit(1);
         }
     };
 
